@@ -1,0 +1,2 @@
+/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles/edit_cache.dir
+/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles/rebuild_cache.dir
