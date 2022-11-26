@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles /home/mehmetmertgunduz/Projects/mkhtml/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml//CMakeFiles/progress.marks
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/genhtml/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/genhtml/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,57 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/genhtml/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/genhtml/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named gencss
+# Convenience name for target.
+src/genhtml/CMakeFiles/genhtml.dir/rule:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/genhtml/CMakeFiles/genhtml.dir/rule
+.PHONY : src/genhtml/CMakeFiles/genhtml.dir/rule
 
-# Build rule for target.
-gencss: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gencss
-.PHONY : gencss
-
-# fast build rule for target.
-gencss/fast:
-	$(MAKE) $(MAKESILENT) -f src/gencss/CMakeFiles/gencss.dir/build.make src/gencss/CMakeFiles/gencss.dir/build
-.PHONY : gencss/fast
-
-#=============================================================================
-# Target rules for targets named genhtml
-
-# Build rule for target.
-genhtml: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 genhtml
+# Convenience name for target.
+genhtml: src/genhtml/CMakeFiles/genhtml.dir/rule
 .PHONY : genhtml
 
 # fast build rule for target.
 genhtml/fast:
-	$(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/build
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/build
 .PHONY : genhtml/fast
 
-#=============================================================================
-# Target rules for targets named mkhtml
+createHtml.o: createHtml.c.o
+.PHONY : createHtml.o
 
-# Build rule for target.
-mkhtml: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mkhtml
-.PHONY : mkhtml
+# target to build an object file
+createHtml.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o
+.PHONY : createHtml.c.o
 
-# fast build rule for target.
-mkhtml/fast:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/mkhtml.dir/build.make app/CMakeFiles/mkhtml.dir/build
-.PHONY : mkhtml/fast
+createHtml.i: createHtml.c.i
+.PHONY : createHtml.i
+
+# target to preprocess a source file
+createHtml.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.i
+.PHONY : createHtml.c.i
+
+createHtml.s: createHtml.c.s
+.PHONY : createHtml.s
+
+# target to generate assembly for a file
+createHtml.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.s
+.PHONY : createHtml.c.s
 
 # Help Target
 help:
@@ -163,9 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... gencss"
 	@echo "... genhtml"
-	@echo "... mkhtml"
+	@echo "... createHtml.o"
+	@echo "... createHtml.i"
+	@echo "... createHtml.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

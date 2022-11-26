@@ -1,0 +1,1 @@
+add_library(genhtml createHtml.c)
