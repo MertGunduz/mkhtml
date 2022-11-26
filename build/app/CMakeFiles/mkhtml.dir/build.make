@@ -94,6 +94,7 @@ app/mkhtml: app/CMakeFiles/mkhtml.dir/main.c.o
 app/mkhtml: app/CMakeFiles/mkhtml.dir/build.make
 app/mkhtml: src/gencss/libgencss.a
 app/mkhtml: src/genhtml/libgenhtml.a
+app/mkhtml: src/genmessages/libgenmessages.a
 app/mkhtml: app/CMakeFiles/mkhtml.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable mkhtml"
 	cd /home/mehmetmertgunduz/Projects/mkhtml/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mkhtml.dir/link.txt --verbose=$(VERBOSE)

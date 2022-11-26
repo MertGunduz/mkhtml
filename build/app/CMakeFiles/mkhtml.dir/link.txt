@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/mkhtml.dir/main.c.o -o mkhtml  ../src/gencss/libgencss.a ../src/genhtml/libgenhtml.a 
+/usr/bin/cc CMakeFiles/mkhtml.dir/main.c.o -o mkhtml  ../src/gencss/libgencss.a ../src/genhtml/libgenhtml.a ../src/genmessages/libgenmessages.a 

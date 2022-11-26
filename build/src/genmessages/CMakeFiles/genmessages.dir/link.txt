@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgenmessages.a CMakeFiles/genmessages.dir/argcErrorMessage.c.o
+/usr/bin/ranlib libgenmessages.a

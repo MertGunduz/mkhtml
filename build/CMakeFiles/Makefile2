@@ -98,16 +98,19 @@ app/clean: app/CMakeFiles/mkhtml.dir/clean
 # Recursive "all" directory target.
 src/all: src/gencss/all
 src/all: src/genhtml/all
+src/all: src/genmessages/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/gencss/preinstall
 src/preinstall: src/genhtml/preinstall
+src/preinstall: src/genmessages/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/gencss/clean
 src/clean: src/genhtml/clean
+src/clean: src/genmessages/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -139,6 +142,21 @@ src/genhtml/preinstall:
 # Recursive "clean" directory target.
 src/genhtml/clean: src/genhtml/CMakeFiles/genhtml.dir/clean
 .PHONY : src/genhtml/clean
+
+#=============================================================================
+# Directory level rules for directory src/genmessages
+
+# Recursive "all" directory target.
+src/genmessages/all: src/genmessages/CMakeFiles/genmessages.dir/all
+.PHONY : src/genmessages/all
+
+# Recursive "preinstall" directory target.
+src/genmessages/preinstall:
+.PHONY : src/genmessages/preinstall
+
+# Recursive "clean" directory target.
+src/genmessages/clean: src/genmessages/CMakeFiles/genmessages.dir/clean
+.PHONY : src/genmessages/clean
 
 #=============================================================================
 # Target rules for target src/gencss/CMakeFiles/gencss.dir
@@ -193,19 +211,46 @@ src/genhtml/CMakeFiles/genhtml.dir/clean:
 .PHONY : src/genhtml/CMakeFiles/genhtml.dir/clean
 
 #=============================================================================
+# Target rules for target src/genmessages/CMakeFiles/genmessages.dir
+
+# All Build rule for target.
+src/genmessages/CMakeFiles/genmessages.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=5,6 "Built target genmessages"
+.PHONY : src/genmessages/CMakeFiles/genmessages.dir/all
+
+# Build rule for subdir invocation for target.
+src/genmessages/CMakeFiles/genmessages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/genmessages/CMakeFiles/genmessages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 0
+.PHONY : src/genmessages/CMakeFiles/genmessages.dir/rule
+
+# Convenience name for target.
+genmessages: src/genmessages/CMakeFiles/genmessages.dir/rule
+.PHONY : genmessages
+
+# clean rule for target.
+src/genmessages/CMakeFiles/genmessages.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/clean
+.PHONY : src/genmessages/CMakeFiles/genmessages.dir/clean
+
+#=============================================================================
 # Target rules for target app/CMakeFiles/mkhtml.dir
 
 # All Build rule for target.
 app/CMakeFiles/mkhtml.dir/all: src/gencss/CMakeFiles/gencss.dir/all
 app/CMakeFiles/mkhtml.dir/all: src/genhtml/CMakeFiles/genhtml.dir/all
+app/CMakeFiles/mkhtml.dir/all: src/genmessages/CMakeFiles/genmessages.dir/all
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/mkhtml.dir/build.make app/CMakeFiles/mkhtml.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/mkhtml.dir/build.make app/CMakeFiles/mkhtml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=5,6 "Built target mkhtml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=7,8 "Built target mkhtml"
 .PHONY : app/CMakeFiles/mkhtml.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/mkhtml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/mkhtml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/mkhtml.dir/rule

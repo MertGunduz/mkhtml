@@ -1,5 +1,5 @@
-app/CMakeFiles/mkhtml.dir/main.c.o: \
- /home/mehmetmertgunduz/Projects/mkhtml/app/main.c \
+src/genmessages/CMakeFiles/genmessages.dir/argcErrorMessage.c.o: \
+ /home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/argcErrorMessage.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -23,6 +23,4 @@ app/CMakeFiles/mkhtml.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/mehmetmertgunduz/Projects/mkhtml/app/../src/gencss/gencss.h \
- /home/mehmetmertgunduz/Projects/mkhtml/app/../src/genhtml/genhtml.h \
- /home/mehmetmertgunduz/Projects/mkhtml/app/../src/genmessages/genmessages.h
+ /home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/genmessages.h

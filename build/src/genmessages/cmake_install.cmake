@@ -1,4 +1,4 @@
-# Install script for directory: /home/mehmetmertgunduz/Projects/mkhtml/src
+# Install script for directory: /home/mehmetmertgunduz/Projects/mkhtml/src/genmessages
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,20 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/mehmetmertgunduz/Projects/mkhtml/build/src/gencss/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/mehmetmertgunduz/Projects/mkhtml/build/src/genmessages/cmake_install.cmake")
 endif()
 
