@@ -1,0 +1,4 @@
+[favicon]example-images/modern-gnu.png
+[1h]About GNU/UNIX
+[1i]example-images/modern-gnu.png
+[1p]The GNU operating system is a complete free software system, upward-compatible with Unix. GNU stands for “GNU's Not Unix.” It is pronounced as one syllable with a hard g. Richard Stallman made the Initial Announcement of the GNU Project in September 1983.
