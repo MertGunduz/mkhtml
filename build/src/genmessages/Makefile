@@ -178,6 +178,54 @@ helpMessage.c.s:
 	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/helpMessage.c.s
 .PHONY : helpMessage.c.s
 
+invalidSelectorMessage.o: invalidSelectorMessage.c.o
+.PHONY : invalidSelectorMessage.o
+
+# target to build an object file
+invalidSelectorMessage.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/invalidSelectorMessage.c.o
+.PHONY : invalidSelectorMessage.c.o
+
+invalidSelectorMessage.i: invalidSelectorMessage.c.i
+.PHONY : invalidSelectorMessage.i
+
+# target to preprocess a source file
+invalidSelectorMessage.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/invalidSelectorMessage.c.i
+.PHONY : invalidSelectorMessage.c.i
+
+invalidSelectorMessage.s: invalidSelectorMessage.c.s
+.PHONY : invalidSelectorMessage.s
+
+# target to generate assembly for a file
+invalidSelectorMessage.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/invalidSelectorMessage.c.s
+.PHONY : invalidSelectorMessage.c.s
+
+patherrorMessage.o: patherrorMessage.c.o
+.PHONY : patherrorMessage.o
+
+# target to build an object file
+patherrorMessage.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/patherrorMessage.c.o
+.PHONY : patherrorMessage.c.o
+
+patherrorMessage.i: patherrorMessage.c.i
+.PHONY : patherrorMessage.i
+
+# target to preprocess a source file
+patherrorMessage.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/patherrorMessage.c.i
+.PHONY : patherrorMessage.c.i
+
+patherrorMessage.s: patherrorMessage.c.s
+.PHONY : patherrorMessage.s
+
+# target to generate assembly for a file
+patherrorMessage.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/patherrorMessage.c.s
+.PHONY : patherrorMessage.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -193,6 +241,12 @@ help:
 	@echo "... helpMessage.o"
 	@echo "... helpMessage.i"
 	@echo "... helpMessage.s"
+	@echo "... invalidSelectorMessage.o"
+	@echo "... invalidSelectorMessage.i"
+	@echo "... invalidSelectorMessage.s"
+	@echo "... patherrorMessage.o"
+	@echo "... patherrorMessage.i"
+	@echo "... patherrorMessage.s"
 .PHONY : help
 
 

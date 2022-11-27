@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/argcErrorMessage.c" "src/genmessages/CMakeFiles/genmessages.dir/argcErrorMessage.c.o" "gcc" "src/genmessages/CMakeFiles/genmessages.dir/argcErrorMessage.c.o.d"
   "/home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/helpMessage.c" "src/genmessages/CMakeFiles/genmessages.dir/helpMessage.c.o" "gcc" "src/genmessages/CMakeFiles/genmessages.dir/helpMessage.c.o.d"
+  "/home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/invalidSelectorMessage.c" "src/genmessages/CMakeFiles/genmessages.dir/invalidSelectorMessage.c.o" "gcc" "src/genmessages/CMakeFiles/genmessages.dir/invalidSelectorMessage.c.o.d"
+  "/home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/patherrorMessage.c" "src/genmessages/CMakeFiles/genmessages.dir/patherrorMessage.c.o" "gcc" "src/genmessages/CMakeFiles/genmessages.dir/patherrorMessage.c.o.d"
   )
 
 # Targets to which this target links.

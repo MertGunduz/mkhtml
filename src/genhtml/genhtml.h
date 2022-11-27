@@ -20,6 +20,6 @@ static int totalSelectors = 2;
 static int totalCssStyles = 2;
 static int totalCssOptions = 2;
 
-extern void runCliCommand(clicommand cliCommandInput);
-extern void generateTemplate(char path[]);
-extern bool controlPath(char path[]);
+void runCliCommand(clicommand cliCommandInput);
+void generateTemplate(char path[]);
+bool controlPath(char path[]);

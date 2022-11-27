@@ -23,4 +23,6 @@ src/genmessages/CMakeFiles/genmessages.dir/helpMessage.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/genmessages.h
+ /home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/genmessages.h \
+ /home/mehmetmertgunduz/Projects/mkhtml/src/genmessages/../genhtml/genhtml.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h

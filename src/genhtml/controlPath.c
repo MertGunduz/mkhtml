@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include "genhtml.h"
 
-extern bool controlPath(char path[])
+bool controlPath(char path[])
 {
     FILE *file = fopen(path, "r");
 
