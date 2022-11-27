@@ -1,2 +1,2 @@
-/usr/bin/ar qc libgenhtml.a CMakeFiles/genhtml.dir/createHtml.c.o
+/usr/bin/ar qc libgenhtml.a CMakeFiles/genhtml.dir/runCliCommand.c.o
 /usr/bin/ranlib libgenhtml.a

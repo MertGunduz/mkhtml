@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "genmessages.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "genhtml.h": "c"
     }
 }

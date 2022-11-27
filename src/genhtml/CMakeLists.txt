@@ -1,1 +1,1 @@
-add_library(genhtml createHtml.c)
+add_library(genhtml runCliCommand.c)

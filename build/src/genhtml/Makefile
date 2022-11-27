@@ -130,29 +130,29 @@ genhtml/fast:
 	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/build
 .PHONY : genhtml/fast
 
-createHtml.o: createHtml.c.o
-.PHONY : createHtml.o
+runCliCommand.o: runCliCommand.c.o
+.PHONY : runCliCommand.o
 
 # target to build an object file
-createHtml.c.o:
-	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o
-.PHONY : createHtml.c.o
+runCliCommand.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o
+.PHONY : runCliCommand.c.o
 
-createHtml.i: createHtml.c.i
-.PHONY : createHtml.i
+runCliCommand.i: runCliCommand.c.i
+.PHONY : runCliCommand.i
 
 # target to preprocess a source file
-createHtml.c.i:
-	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.i
-.PHONY : createHtml.c.i
+runCliCommand.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.i
+.PHONY : runCliCommand.c.i
 
-createHtml.s: createHtml.c.s
-.PHONY : createHtml.s
+runCliCommand.s: runCliCommand.c.s
+.PHONY : runCliCommand.s
 
 # target to generate assembly for a file
-createHtml.c.s:
-	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.s
-.PHONY : createHtml.c.s
+runCliCommand.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.s
+.PHONY : runCliCommand.c.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... genhtml"
-	@echo "... createHtml.o"
-	@echo "... createHtml.i"
-	@echo "... createHtml.s"
+	@echo "... runCliCommand.o"
+	@echo "... runCliCommand.i"
+	@echo "... runCliCommand.s"
 .PHONY : help
 
 

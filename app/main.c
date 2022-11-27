@@ -11,19 +11,15 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc == 2 && strncmp("--help", argv[1], 6) == 0 && strlen(argv[1]) == 6) /* help */
-    {
-        helpMessage();
-    }
-    else if (argc >= HTML_GEN_ARGC && argc <= HTMLCSS_GEN_ARGC) /* generation */
+    if (argc >= HTML_GEN_ARGC && argc <= HTMLCSS_GEN_ARGC) /* generation */
     {
         if (argc == HTML_GEN_ARGC) /* html generation */
         {
-            fprintf(stdout, "html gen\n");
+            //
         }
         else if (argc == HTMLCSS_GEN_ARGC) /* html-css generation */
         {  
-            fprintf(stdout, "htmlcss gen\n");
+            //
         }
     }
     else /* error */

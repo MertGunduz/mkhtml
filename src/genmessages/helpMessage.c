@@ -5,10 +5,11 @@
 
 void helpMessage()
 {
-    fprintf(stdout, "non-CSS usage: mkhtml [GENERATION-PATH]\n");
-    fprintf(stdout, "CSS usage: mkhtml [GENERATION-PATH] -css [STYLE-TYPE] [CSS-OPTION]\n");
+    fprintf(stdout, "Template usage: mkhtml [GENERATION-PATH] -t\n");
+    fprintf(stdout, "Non-CSS usage: mkhtml [GENERATION-PATH]\n");
+    fprintf(stdout, "CSS usage: mkhtml [GENERATION-PATH] -c [STYLE-TYPE] [CSS-OPTION]\n");
     fprintf(stdout, "Create HTML documentations with automated styling.\n");
-    fprintf(stdout, "Example: mkhtml docs -css unix -i\n\n");
+    fprintf(stdout, "Example: mkhtml docs -c unix -i\n\n");
     fprintf(stdout, "CSS style types\n");
     fprintf(stdout, "unix        old school unix documentation styling\n");
     fprintf(stdout, "tails       tails-website looking styling \n\n");

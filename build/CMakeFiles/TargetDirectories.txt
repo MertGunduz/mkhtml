@@ -5,9 +5,6 @@
 /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml/CMakeFiles/genhtml.dir
 /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml/CMakeFiles/edit_cache.dir
 /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml/CMakeFiles/rebuild_cache.dir
-/home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtmlcss/CMakeFiles/genhtmlcss.dir
-/home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtmlcss/CMakeFiles/edit_cache.dir
-/home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtmlcss/CMakeFiles/rebuild_cache.dir
 /home/mehmetmertgunduz/Projects/mkhtml/build/src/genmessages/CMakeFiles/genmessages.dir
 /home/mehmetmertgunduz/Projects/mkhtml/build/src/genmessages/CMakeFiles/edit_cache.dir
 /home/mehmetmertgunduz/Projects/mkhtml/build/src/genmessages/CMakeFiles/rebuild_cache.dir

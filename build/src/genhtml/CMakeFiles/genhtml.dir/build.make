@@ -69,28 +69,28 @@ include src/genhtml/CMakeFiles/genhtml.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/genhtml/CMakeFiles/genhtml.dir/flags.make
 
-src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o: src/genhtml/CMakeFiles/genhtml.dir/flags.make
-src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o: ../src/genhtml/createHtml.c
-src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o: src/genhtml/CMakeFiles/genhtml.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o"
-	cd /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o -MF CMakeFiles/genhtml.dir/createHtml.c.o.d -o CMakeFiles/genhtml.dir/createHtml.c.o -c /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/createHtml.c
+src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o: src/genhtml/CMakeFiles/genhtml.dir/flags.make
+src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o: ../src/genhtml/runCliCommand.c
+src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o: src/genhtml/CMakeFiles/genhtml.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o"
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o -MF CMakeFiles/genhtml.dir/runCliCommand.c.o.d -o CMakeFiles/genhtml.dir/runCliCommand.c.o -c /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/runCliCommand.c
 
-src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/genhtml.dir/createHtml.c.i"
-	cd /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/createHtml.c > CMakeFiles/genhtml.dir/createHtml.c.i
+src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/genhtml.dir/runCliCommand.c.i"
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/runCliCommand.c > CMakeFiles/genhtml.dir/runCliCommand.c.i
 
-src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/genhtml.dir/createHtml.c.s"
-	cd /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/createHtml.c -o CMakeFiles/genhtml.dir/createHtml.c.s
+src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/genhtml.dir/runCliCommand.c.s"
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build/src/genhtml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/runCliCommand.c -o CMakeFiles/genhtml.dir/runCliCommand.c.s
 
 # Object files for target genhtml
 genhtml_OBJECTS = \
-"CMakeFiles/genhtml.dir/createHtml.c.o"
+"CMakeFiles/genhtml.dir/runCliCommand.c.o"
 
 # External object files for target genhtml
 genhtml_EXTERNAL_OBJECTS =
 
-src/genhtml/libgenhtml.a: src/genhtml/CMakeFiles/genhtml.dir/createHtml.c.o
+src/genhtml/libgenhtml.a: src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o
 src/genhtml/libgenhtml.a: src/genhtml/CMakeFiles/genhtml.dir/build.make
 src/genhtml/libgenhtml.a: src/genhtml/CMakeFiles/genhtml.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libgenhtml.a"

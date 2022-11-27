@@ -93,7 +93,6 @@ mkhtml_EXTERNAL_OBJECTS =
 app/mkhtml: app/CMakeFiles/mkhtml.dir/main.c.o
 app/mkhtml: app/CMakeFiles/mkhtml.dir/build.make
 app/mkhtml: src/genhtml/libgenhtml.a
-app/mkhtml: src/genhtmlcss/libgenhtmlcss.a
 app/mkhtml: src/genmessages/libgenmessages.a
 app/mkhtml: app/CMakeFiles/mkhtml.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable mkhtml"
