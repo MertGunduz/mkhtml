@@ -1,5 +1,5 @@
-src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o: \
- /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/runCliCommand.c \
+src/genhtml/CMakeFiles/genhtml.dir/controlPath.c.o: \
+ /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/controlPath.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -26,5 +26,5 @@ src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/genhtml.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/genhtml.h

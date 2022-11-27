@@ -130,6 +130,54 @@ genhtml/fast:
 	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/build
 .PHONY : genhtml/fast
 
+controlPath.o: controlPath.c.o
+.PHONY : controlPath.o
+
+# target to build an object file
+controlPath.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/controlPath.c.o
+.PHONY : controlPath.c.o
+
+controlPath.i: controlPath.c.i
+.PHONY : controlPath.i
+
+# target to preprocess a source file
+controlPath.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/controlPath.c.i
+.PHONY : controlPath.c.i
+
+controlPath.s: controlPath.c.s
+.PHONY : controlPath.s
+
+# target to generate assembly for a file
+controlPath.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/controlPath.c.s
+.PHONY : controlPath.c.s
+
+generateTemplate.o: generateTemplate.c.o
+.PHONY : generateTemplate.o
+
+# target to build an object file
+generateTemplate.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/generateTemplate.c.o
+.PHONY : generateTemplate.c.o
+
+generateTemplate.i: generateTemplate.c.i
+.PHONY : generateTemplate.i
+
+# target to preprocess a source file
+generateTemplate.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/generateTemplate.c.i
+.PHONY : generateTemplate.c.i
+
+generateTemplate.s: generateTemplate.c.s
+.PHONY : generateTemplate.s
+
+# target to generate assembly for a file
+generateTemplate.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/generateTemplate.c.s
+.PHONY : generateTemplate.c.s
+
 runCliCommand.o: runCliCommand.c.o
 .PHONY : runCliCommand.o
 
@@ -163,6 +211,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... genhtml"
+	@echo "... controlPath.o"
+	@echo "... controlPath.i"
+	@echo "... controlPath.s"
+	@echo "... generateTemplate.o"
+	@echo "... generateTemplate.i"
+	@echo "... generateTemplate.s"
 	@echo "... runCliCommand.o"
 	@echo "... runCliCommand.i"
 	@echo "... runCliCommand.s"

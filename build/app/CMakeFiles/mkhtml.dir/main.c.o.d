@@ -51,4 +51,5 @@ app/CMakeFiles/mkhtml.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /home/mehmetmertgunduz/Projects/mkhtml/app/../src/genhtml/genhtml.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
  /home/mehmetmertgunduz/Projects/mkhtml/app/../src/genmessages/genmessages.h

@@ -1,5 +1,5 @@
-src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o: \
- /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/runCliCommand.c \
+src/genhtml/CMakeFiles/genhtml.dir/generateTemplate.c.o: \
+ /home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/generateTemplate.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

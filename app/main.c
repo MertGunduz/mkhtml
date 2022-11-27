@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         {
             userCli = (clicommand){argv[1], argv[2], argv[3], argv[4]};
         }
-
+        
         /* run the cli command */
         runCliCommand(userCli);
     }

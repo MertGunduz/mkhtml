@@ -147,12 +147,12 @@ src/genmessages/clean: src/genmessages/CMakeFiles/genmessages.dir/clean
 src/genhtml/CMakeFiles/genhtml.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=1,2 "Built target genhtml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=1,2,3,4 "Built target genhtml"
 .PHONY : src/genhtml/CMakeFiles/genhtml.dir/all
 
 # Build rule for subdir invocation for target.
 src/genhtml/CMakeFiles/genhtml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/genhtml/CMakeFiles/genhtml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 0
 .PHONY : src/genhtml/CMakeFiles/genhtml.dir/rule
@@ -173,7 +173,7 @@ src/genhtml/CMakeFiles/genhtml.dir/clean:
 src/genmessages/CMakeFiles/genmessages.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=3,4,5 "Built target genmessages"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=5,6,7 "Built target genmessages"
 .PHONY : src/genmessages/CMakeFiles/genmessages.dir/all
 
 # Build rule for subdir invocation for target.
@@ -200,12 +200,12 @@ app/CMakeFiles/mkhtml.dir/all: src/genhtml/CMakeFiles/genhtml.dir/all
 app/CMakeFiles/mkhtml.dir/all: src/genmessages/CMakeFiles/genmessages.dir/all
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/mkhtml.dir/build.make app/CMakeFiles/mkhtml.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/mkhtml.dir/build.make app/CMakeFiles/mkhtml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=6,7 "Built target mkhtml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles --progress-num=8,9 "Built target mkhtml"
 .PHONY : app/CMakeFiles/mkhtml.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/mkhtml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/mkhtml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehmetmertgunduz/Projects/mkhtml/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/mkhtml.dir/rule

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/genhtml.dir/controlPath.c.o"
+  "CMakeFiles/genhtml.dir/controlPath.c.o.d"
+  "CMakeFiles/genhtml.dir/generateTemplate.c.o"
+  "CMakeFiles/genhtml.dir/generateTemplate.c.o.d"
   "CMakeFiles/genhtml.dir/runCliCommand.c.o"
   "CMakeFiles/genhtml.dir/runCliCommand.c.o.d"
   "libgenhtml.a"

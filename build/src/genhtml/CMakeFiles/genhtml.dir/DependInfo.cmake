@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/controlPath.c" "src/genhtml/CMakeFiles/genhtml.dir/controlPath.c.o" "gcc" "src/genhtml/CMakeFiles/genhtml.dir/controlPath.c.o.d"
+  "/home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/generateTemplate.c" "src/genhtml/CMakeFiles/genhtml.dir/generateTemplate.c.o" "gcc" "src/genhtml/CMakeFiles/genhtml.dir/generateTemplate.c.o.d"
   "/home/mehmetmertgunduz/Projects/mkhtml/src/genhtml/runCliCommand.c" "src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o" "gcc" "src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.o.d"
   )
 
