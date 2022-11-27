@@ -1,1 +1,2 @@
 void argcErrorMessage();
+void helpMessage();

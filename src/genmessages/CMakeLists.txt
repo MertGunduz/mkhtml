@@ -1,1 +1,1 @@
-add_library(genmessages argcErrorMessage.c)
+add_library(genmessages argcErrorMessage.c helpMessage.c)

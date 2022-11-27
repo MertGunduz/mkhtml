@@ -154,6 +154,30 @@ argcErrorMessage.c.s:
 	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/argcErrorMessage.c.s
 .PHONY : argcErrorMessage.c.s
 
+helpMessage.o: helpMessage.c.o
+.PHONY : helpMessage.o
+
+# target to build an object file
+helpMessage.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/helpMessage.c.o
+.PHONY : helpMessage.c.o
+
+helpMessage.i: helpMessage.c.i
+.PHONY : helpMessage.i
+
+# target to preprocess a source file
+helpMessage.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/helpMessage.c.i
+.PHONY : helpMessage.c.i
+
+helpMessage.s: helpMessage.c.s
+.PHONY : helpMessage.s
+
+# target to generate assembly for a file
+helpMessage.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/helpMessage.c.s
+.PHONY : helpMessage.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -166,6 +190,9 @@ help:
 	@echo "... argcErrorMessage.o"
 	@echo "... argcErrorMessage.i"
 	@echo "... argcErrorMessage.s"
+	@echo "... helpMessage.o"
+	@echo "... helpMessage.i"
+	@echo "... helpMessage.s"
 .PHONY : help
 
 

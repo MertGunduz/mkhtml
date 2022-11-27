@@ -5,5 +5,7 @@
 
 void argcErrorMessage()
 {
-    fprintf(stdout, "Please enter the command line arguments\n");
+    fprintf(stdout, "non-CSS usage: mkhtml [GENERATION-PATH]\n");
+    fprintf(stdout, "CSS usage: mkhtml [GENERATION-PATH] -css [STYLE-TYPE] [CSS-OPTION]\n");
+    fprintf(stdout, "Try \'mkhtml --help\' for more information\n");
 }
