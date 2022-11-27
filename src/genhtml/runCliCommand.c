@@ -1,7 +1,8 @@
 /* createHtml.c */
+#include <stdio.h>
 #include "genhtml.h"
 
-void runCliCommand(clicommand cliCommandInput)
+extern void runCliCommand(clicommand cliCommandInput)
 {
-    /* analyzes the cli command and generates the files */
+    // CODE HERE
 }

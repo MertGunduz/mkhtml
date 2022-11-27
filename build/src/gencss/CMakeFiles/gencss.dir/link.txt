@@ -1,2 +1,0 @@
-/usr/bin/ar qc libgencss.a CMakeFiles/gencss.dir/createCss.c.o
-/usr/bin/ranlib libgencss.a

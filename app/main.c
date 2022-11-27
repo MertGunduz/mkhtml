@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
             userCli = (clicommand){argv[1], argv[2], argv[3], argv[4]};
         }
 
-        runCliCommand(userCli);
         /* run the cli command */
+        runCliCommand(userCli);
     }
     else /* error */
     {

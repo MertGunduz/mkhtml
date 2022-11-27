@@ -1,2 +1,0 @@
-/usr/bin/ar qc libgenhtmlcss.a CMakeFiles/genhtmlcss.dir/createHtmlCss.c.o
-/usr/bin/ranlib libgenhtmlcss.a

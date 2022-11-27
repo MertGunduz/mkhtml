@@ -1,9 +1,5 @@
 /* genhtml.h */
-
-char *argumentsArray[] = {"--help", "--github", "--version"};
-char *selectorsArray[] = {"-c", "-t"};
-char *cssStyle[] = {"unix", "tails"};
-char *cssOption[] = {"-i", "-s"};
+#pragma once
 
 typedef struct clicommand {
     char *argument; /* path, --help, --github, --version */
@@ -12,4 +8,9 @@ typedef struct clicommand {
     char *cssOption; /* -i, -s */
 } clicommand;
 
-void runCliCommand(clicommand cliCommandInput);
+static char *argumentsArray[] = {"--help", "--github", "--version"};
+static char *selectorsArray[] = {"-c", "-t"};
+static char *cssStylesArray[] = {"unix", "tails"};
+static char *cssOptionsArray[] = {"-i", "-s"};
+
+extern void runCliCommand(clicommand cliCommandInput);
