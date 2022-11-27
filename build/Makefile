@@ -143,6 +143,19 @@ genhtml/fast:
 .PHONY : genhtml/fast
 
 #=============================================================================
+# Target rules for targets named genhtmlcss
+
+# Build rule for target.
+genhtmlcss: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 genhtmlcss
+.PHONY : genhtmlcss
+
+# fast build rule for target.
+genhtmlcss/fast:
+	$(MAKE) $(MAKESILENT) -f src/genhtmlcss/CMakeFiles/genhtmlcss.dir/build.make src/genhtmlcss/CMakeFiles/genhtmlcss.dir/build
+.PHONY : genhtmlcss/fast
+
+#=============================================================================
 # Target rules for targets named genmessages
 
 # Build rule for target.
@@ -178,6 +191,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gencss"
 	@echo "... genhtml"
+	@echo "... genhtmlcss"
 	@echo "... genmessages"
 	@echo "... mkhtml"
 .PHONY : help
