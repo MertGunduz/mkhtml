@@ -92,7 +92,6 @@ mkhtml_EXTERNAL_OBJECTS =
 
 app/mkhtml: app/CMakeFiles/mkhtml.dir/main.c.o
 app/mkhtml: app/CMakeFiles/mkhtml.dir/build.make
-app/mkhtml: src/gencss/libgencss.a
 app/mkhtml: src/genhtml/libgenhtml.a
 app/mkhtml: src/genhtmlcss/libgenhtmlcss.a
 app/mkhtml: src/genmessages/libgenmessages.a

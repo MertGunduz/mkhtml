@@ -1,2 +1,2 @@
 add_executable(mkhtml main.c)
-target_link_libraries(mkhtml gencss genhtml genhtmlcss genmessages)
+target_link_libraries(mkhtml genhtml genhtmlcss genmessages)

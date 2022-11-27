@@ -1,1 +1,0 @@
-void createCss(char fileName[]);

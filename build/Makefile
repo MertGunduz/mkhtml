@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gencss
-
-# Build rule for target.
-gencss: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gencss
-.PHONY : gencss
-
-# fast build rule for target.
-gencss/fast:
-	$(MAKE) $(MAKESILENT) -f src/gencss/CMakeFiles/gencss.dir/build.make src/gencss/CMakeFiles/gencss.dir/build
-.PHONY : gencss/fast
-
-#=============================================================================
 # Target rules for targets named genhtml
 
 # Build rule for target.
@@ -189,7 +176,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... gencss"
 	@echo "... genhtml"
 	@echo "... genhtmlcss"
 	@echo "... genmessages"

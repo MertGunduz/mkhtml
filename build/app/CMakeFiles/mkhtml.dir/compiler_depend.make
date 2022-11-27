@@ -57,7 +57,6 @@ app/CMakeFiles/mkhtml.dir/main.c.o: ../app/main.c \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  ../src/gencss/gencss.h \
   ../src/genhtml/genhtml.h \
   ../src/genmessages/genmessages.h
 
@@ -151,8 +150,6 @@ app/CMakeFiles/mkhtml.dir/main.c.o: ../app/main.c \
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-../src/gencss/gencss.h:
 
 /usr/include/features.h:
 
