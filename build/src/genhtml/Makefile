@@ -202,6 +202,30 @@ runCliCommand.c.s:
 	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/runCliCommand.c.s
 .PHONY : runCliCommand.c.s
 
+terminate.o: terminate.c.o
+.PHONY : terminate.o
+
+# target to build an object file
+terminate.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/terminate.c.o
+.PHONY : terminate.c.o
+
+terminate.i: terminate.c.i
+.PHONY : terminate.i
+
+# target to preprocess a source file
+terminate.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/terminate.c.i
+.PHONY : terminate.c.i
+
+terminate.s: terminate.c.s
+.PHONY : terminate.s
+
+# target to generate assembly for a file
+terminate.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genhtml/CMakeFiles/genhtml.dir/build.make src/genhtml/CMakeFiles/genhtml.dir/terminate.c.s
+.PHONY : terminate.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,6 +244,9 @@ help:
 	@echo "... runCliCommand.o"
 	@echo "... runCliCommand.i"
 	@echo "... runCliCommand.s"
+	@echo "... terminate.o"
+	@echo "... terminate.i"
+	@echo "... terminate.s"
 .PHONY : help
 
 

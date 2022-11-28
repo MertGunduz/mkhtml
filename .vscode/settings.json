@@ -3,6 +3,7 @@
         "genmessages.h": "c",
         "stdio.h": "c",
         "genhtml.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "stdbool.h": "c"
     }
 }

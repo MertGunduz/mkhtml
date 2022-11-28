@@ -1,9 +1,0 @@
-[name]=
-[language]=
-[title]=
-[favicon]=
-[keywords]=
-[description]=
-[1h]=
-[1i]=
-[1p]=

@@ -27,7 +27,7 @@ void runCliCommand(clicommand cliCommandInput)
         else
         {
             patherrorMessage(cliCommandInput.argument);
-            exit(0);
+            terminate();
         }
 
         /* selector validation */
@@ -52,6 +52,29 @@ void runCliCommand(clicommand cliCommandInput)
     }
     else if (cliCommandInput.argument != NULL && cliCommandInput.selector == NULL && cliCommandInput.cssStyle == NULL && cliCommandInput.cssOption == NULL) /* one argument commands */
     {
+        /* path validation */
+        if (strcmp(cliCommandInput.argument, "--help") == 0)
+        {
+            helpMessage();
+            terminate();
+        }
+        else if (strcmp(cliCommandInput.argument, "--version") == 0)
+        {
+            terminate();
+        }
+        else if (strcmp(cliCommandInput.argument, "--github") == 0)
+        {
+            terminate();
+        }
 
+        if (controlPath(cliCommandInput.argument))
+        {
+            isArgumentsValid = true;
+        }
+        else
+        {
+            patherrorMessage(cliCommandInput.argument);
+            exit(0);
+        }
     }
 }

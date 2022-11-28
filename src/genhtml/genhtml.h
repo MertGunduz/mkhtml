@@ -23,3 +23,4 @@ static int totalCssOptions = 2;
 void runCliCommand(clicommand cliCommandInput);
 void generateTemplate(char path[]);
 bool controlPath(char path[]);
+void terminate();
