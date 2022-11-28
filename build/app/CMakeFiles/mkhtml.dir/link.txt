@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/mkhtml.dir/main.c.o -o mkhtml  ../src/genhtml/libgenhtml.a ../src/genmessages/libgenmessages.a 
