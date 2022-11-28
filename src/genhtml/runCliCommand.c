@@ -27,17 +27,12 @@ void runCliCommand(clicommand cliCommandInput)
         else
         {
             patherrorMessage(cliCommandInput.argument);
+            exit(0);
         }
 
         /* selector validation */
         for (int i = 0; i < totalSelectors; i++)
         {
-            if (i == totalSelectors - 1 && strcmp(cliCommandInput.selector, selectorsArray[i]) == 1)
-            {
-                isSelectorsValid = false;
-                break;
-            }
-
             if (strcmp(cliCommandInput.selector, selectorsArray[i]) == 0)
             {
                 isSelectorsValid = true;
