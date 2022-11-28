@@ -11,14 +11,14 @@ typedef struct clicommand {
 } clicommand;
 
 static char *argumentsArray[] = {"--help", "--github", "--version"};
-static char *selectorsArray[] = {"-c", "-t"};
+static char *selectorsArray[] = {"-c", "--css", "-t", "--template"};
 static char *cssStylesArray[] = {"unix", "tails"};
-static char *cssOptionsArray[] = {"-i", "-s"};
+static char *cssOptionsArray[] = {"-i", "--inline", "-s", "--seperate"};
 
 static int totalArguments = 3;
-static int totalSelectors = 2;
+static int totalSelectors = 4;
 static int totalCssStyles = 2;
-static int totalCssOptions = 2;
+static int totalCssOptions = 4;
 
 void runCliCommand(clicommand cliCommandInput);
 void generateTemplate(char path[]);

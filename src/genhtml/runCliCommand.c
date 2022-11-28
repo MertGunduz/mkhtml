@@ -43,7 +43,15 @@ void runCliCommand(clicommand cliCommandInput)
         /* command run system */
         if (isArgumentsValid && isSelectorsValid)
         {
-            generateTemplate(cliCommandInput.argument);
+            if (strcmp(cliCommandInput.selector, "--template") == 0 || strcmp(cliCommandInput.selector, "-t") == 0)
+            {
+                generateTemplate(cliCommandInput.argument);
+            }
+            else
+            {
+                cssArgumentsMessage();
+                terminate();
+            }
         }
         else
         {

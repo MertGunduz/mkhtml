@@ -154,6 +154,30 @@ argcErrorMessage.c.s:
 	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/argcErrorMessage.c.s
 .PHONY : argcErrorMessage.c.s
 
+cssArgumentsMessage.o: cssArgumentsMessage.c.o
+.PHONY : cssArgumentsMessage.o
+
+# target to build an object file
+cssArgumentsMessage.c.o:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/cssArgumentsMessage.c.o
+.PHONY : cssArgumentsMessage.c.o
+
+cssArgumentsMessage.i: cssArgumentsMessage.c.i
+.PHONY : cssArgumentsMessage.i
+
+# target to preprocess a source file
+cssArgumentsMessage.c.i:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/cssArgumentsMessage.c.i
+.PHONY : cssArgumentsMessage.c.i
+
+cssArgumentsMessage.s: cssArgumentsMessage.c.s
+.PHONY : cssArgumentsMessage.s
+
+# target to generate assembly for a file
+cssArgumentsMessage.c.s:
+	cd /home/mehmetmertgunduz/Projects/mkhtml/build && $(MAKE) $(MAKESILENT) -f src/genmessages/CMakeFiles/genmessages.dir/build.make src/genmessages/CMakeFiles/genmessages.dir/cssArgumentsMessage.c.s
+.PHONY : cssArgumentsMessage.c.s
+
 helpMessage.o: helpMessage.c.o
 .PHONY : helpMessage.o
 
@@ -238,6 +262,9 @@ help:
 	@echo "... argcErrorMessage.o"
 	@echo "... argcErrorMessage.i"
 	@echo "... argcErrorMessage.s"
+	@echo "... cssArgumentsMessage.o"
+	@echo "... cssArgumentsMessage.i"
+	@echo "... cssArgumentsMessage.s"
 	@echo "... helpMessage.o"
 	@echo "... helpMessage.i"
 	@echo "... helpMessage.s"
