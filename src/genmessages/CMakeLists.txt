@@ -1,1 +1,1 @@
-add_library(genmessages STATIC argcErrorMessage.c helpMessage.c patherrorMessage.c invalidSelectorMessage.c cssArgumentsMessage.c)
+add_library(genmessages STATIC argcErrorMessage.c helpMessage.c patherrorMessage.c invalidSelectorMessage.c cssArgumentsMessage.c versionMessage.c)

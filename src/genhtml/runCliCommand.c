@@ -68,6 +68,7 @@ void runCliCommand(clicommand cliCommandInput)
         }
         else if (strcmp(cliCommandInput.argument, "--version") == 0)
         {
+            versionMessage();
             terminate();
         }
         else if (strcmp(cliCommandInput.argument, "--github") == 0)
