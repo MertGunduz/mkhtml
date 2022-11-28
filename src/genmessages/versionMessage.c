@@ -1,4 +1,4 @@
-/* patherrorMessage.c */
+/* versionMessage.c */
 
 #include <stdio.h>
 #include "genmessages.h"

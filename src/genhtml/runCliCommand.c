@@ -73,6 +73,7 @@ void runCliCommand(clicommand cliCommandInput)
         }
         else if (strcmp(cliCommandInput.argument, "--github") == 0)
         {
+            githubMessage();
             terminate();
         }
 
