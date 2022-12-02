@@ -7,7 +7,7 @@ void generateTemplate(char path[])
 {
     if (controlPath(path))
     {
-        char template[] = "[name]=\n[language]=\n[title]=\n[favicon]=\n[keywords]=\n[description]=\n[1h]=\n[1i]=\n[1p]=";
+        char template[] = "[name]=\n[language]=\n[title]=\n[favicon]=\n[keywords]=\n[description]=\n[h]=\n[img]=\n[p]=";
 
         strcat(path, "/mkhtmlf.txt");
 
