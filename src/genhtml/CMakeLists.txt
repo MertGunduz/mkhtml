@@ -1,1 +1,1 @@
-add_library(genhtml STATIC runCliCommand.c generateTemplate.c controlPath.c terminate.c)
+add_library(genhtml STATIC runCliCommand.c generateTemplate.c controlPath.c terminate.c generateHtml.c clearEmptyLines.c)

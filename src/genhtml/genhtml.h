@@ -1,6 +1,7 @@
 /* genhtml.h */
 #pragma once
 
+#include <stdio.h>
 #include <stdbool.h>
 
 typedef struct clicommand {
@@ -24,3 +25,5 @@ void runCliCommand(clicommand cliCommandInput);
 void generateTemplate(char path[]);
 bool controlPath(char path[]);
 void terminate();
+void generateHtml(char path[]);
+void clearEmptyLines(FILE *file);

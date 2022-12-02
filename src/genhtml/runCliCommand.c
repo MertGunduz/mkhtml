@@ -80,6 +80,7 @@ void runCliCommand(clicommand cliCommandInput)
         if (controlPath(cliCommandInput.argument))
         {
             isArgumentsValid = true;
+            generateHtml(cliCommandInput.argument);
         }
         else
         {
