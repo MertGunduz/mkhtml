@@ -5,11 +5,13 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "genhtml.h"
+#include "../genmessages/genmessages.h"
 
 void generateHtml(char path[])
 {
     /* keywords for the string extraction from the mkhtmlf.txt file */
     char mkhtmlfData[4096]; // full line form, example: [name]=freebsd
+    char fullLineTaker[4096]; // full line taker for error messages
     char lineSpecifierData[64]; // line specifier form, example: [name]
     char lineData[4096]; // FAKE - changed line data form, example: freebsd
     char nlineData[4096]; // REAL line data form, example: freebsd
@@ -18,6 +20,7 @@ void generateHtml(char path[])
     char *htmlContentData[256]; // the pure html content data
     int fileLine = 1; // file line counter
     bool isHtmlDataCorrect = false; // for showing the errors
+    bool isEqualSignFound = false;
     char htmlContentCatData[4096];
     int equalSignIndex = 0; // the index of the equal sign for finding the datas
     char *token;
@@ -44,9 +47,17 @@ void generateHtml(char path[])
                     if (mkhtmlfData[i] == '=')
                     {
                         equalSignIndex = i;
+                        isEqualSignFound = true;
                     }
                 }
 
+                if (!isEqualSignFound)
+                {
+                    equalSignErrorMessage(fileLine);
+                    terminate();
+                }
+
+                strncpy(fullLineTaker, mkhtmlfData, strlen(mkhtmlfData) - 1);
                 strncpy(lineSpecifierData, mkhtmlfData, equalSignIndex);
                 token = strtok(mkhtmlfData, "="); token = strtok(NULL, "=");
                 strcpy(lineData, token); strtok("\n", lineData); strncpy(nlineData, lineData, strlen(lineData) - 1);
@@ -92,17 +103,18 @@ void generateHtml(char path[])
                     }
                     
                     if (!isHtmlDataCorrect)
-                    {
-                        // message here
-                        printf("%d\n", fileLine);
+                    { 
+                        // message here 
+                        wrongHtmlFormatMessage(fullLineTaker, lineSpecifierData, fileLine);
                         terminate();
                     }
                 }
 
-
                 // clear the data from variables
                 strncpy(lineSpecifierData, spacer, 64);
                 strncpy(nlineData, lineDataSpacer, 4096);
+                strncpy(fullLineTaker, lineDataSpacer, 4096);
+                isEqualSignFound = false;
             }
             fileLine++;
         }

@@ -9,3 +9,5 @@ void invalidSelectorMessage(clicommand cliCommandInput);
 void cssArgumentsMessage();
 void versionMessage();
 void githubMessage();
+void wrongHtmlFormatMessage(char* fullLine, char *lineSpecifierData, int errorLine);
+void equalSignErrorMessage(int errorLine);
