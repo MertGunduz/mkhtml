@@ -14,6 +14,10 @@ void generateHtml(char path[])
     char nlineData[4096]; // REAL line data form, example: freebsd
     char spacer[64] = {0}; // spacer for lineSpecifierData
     char lineDataSpacer[4096] = {0}; // spacer for lineData
+    char *htmlContentData[256]; // the pure html content data
+    int fileLine = 1;
+    bool isHtmlDataCorrect = false;
+    char htmlContentCatData[4096];
     int equalSignIndex = 0; // the index of the equal sign for finding the datas
     char *token;
 
@@ -76,14 +80,31 @@ void generateHtml(char path[])
                     description = (char *)malloc(strlen(nlineData) + 2);
                     strcpy(description, nlineData);
                 }
+                else
+                {
+                    for (int i = 0; i < totalTags; i++)
+                    {
+                        if (strcmp(lineSpecifierData, tagsArray[i]) == 0 )
+                        {
+                            isHtmlDataCorrect = true;
+                        }
+                    }
+                    
+                    if (!isHtmlDataCorrect)
+                    {
+                        // message here
+                        printf("%d\n", fileLine);
+                        terminate();
+                    }
+                }
+
 
                 // clear the data from variables
                 strncpy(lineSpecifierData, spacer, 64);
                 strncpy(nlineData, lineDataSpacer, 4096);
             }
+            fileLine++;
         }
-        
-        printf("%s", description);
     }
     else
     {
