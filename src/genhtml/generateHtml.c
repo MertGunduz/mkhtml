@@ -1,4 +1,5 @@
 /* generateHtml.c */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -15,8 +16,8 @@ void generateHtml(char path[])
     char spacer[64] = {0}; // spacer for lineSpecifierData
     char lineDataSpacer[4096] = {0}; // spacer for lineData
     char *htmlContentData[256]; // the pure html content data
-    int fileLine = 1;
-    bool isHtmlDataCorrect = false;
+    int fileLine = 1; // file line counter
+    bool isHtmlDataCorrect = false; // for showing the errors
     char htmlContentCatData[4096];
     int equalSignIndex = 0; // the index of the equal sign for finding the datas
     char *token;

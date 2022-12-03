@@ -1,4 +1,5 @@
 /* terminate.c */
+
 #include <stdlib.h>
 #include "genhtml.h"
 

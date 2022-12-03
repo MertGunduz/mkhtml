@@ -1,4 +1,5 @@
 /* clearEmptyLines.c */
+
 #include <stdio.h>
 #include <string.h>
 #include "genhtml.h"
