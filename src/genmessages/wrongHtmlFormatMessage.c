@@ -5,6 +5,10 @@
 
 void wrongHtmlFormatMessage(char *fullLine, char *lineSpecifierData, int errorLine)
 {
-    fprintf(stdout, "mkhtmlf.txt: Error in the tag \'%s\', line %d: undefined tag\n", lineSpecifierData, errorLine);
-    fprintf(stdout, "mkhtmlf.txt: Error line: \'%s'\n", fullLine);
+    char line[16]; sprintf(line, "%d", errorLine);
+
+    bold(fullLine); bold(lineSpecifierData); bold(line);
+
+    fprintf(stdout, "mkhtmlf.txt: Error in the tag \'%s%s%s\', line %s%s%s: %sundefined tag%s\n",KRED, lineSpecifierData, KNRM, KRED, line, KNRM, KMAG, KNRM);
+    fprintf(stdout, "mkhtmlf.txt: Error line: \'%s%s%s\'\n", KRED, fullLine, KNRM);
 }

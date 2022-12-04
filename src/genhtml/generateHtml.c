@@ -53,7 +53,8 @@ void generateHtml(char path[])
 
                 if (!isEqualSignFound)
                 {
-                    equalSignErrorMessage(fileLine);
+                    strncpy(fullLineTaker, mkhtmlfData, strlen(mkhtmlfData) - 1);
+                    equalSignErrorMessage(fullLineTaker, fileLine);
                     terminate();
                 }
 
