@@ -17,13 +17,14 @@ void generateHtml(char path[])
     char nlineData[4096]; // REAL line data form, example: freebsd
     char spacer[64] = {0}; // spacer for lineSpecifierData
     char lineDataSpacer[4096] = {0}; // spacer for lineData
-    char *htmlContentData[256]; // the pure html content data
+    char htmlTagData[64][32]; // the html content tag data
+    char htmlContentData[4096][32]; // the pure html content data
+    int hDtCt = 0; // for indexing the htmldata (html data counter)
     int fileLine = 1; // file line counter
     bool isHtmlDataCorrect = false; // for showing the errors
     bool isEqualSignFound = false;
-    char htmlContentCatData[4096];
     int equalSignIndex = 0; // the index of the equal sign for finding the datas
-    char *token;
+    char *token; // for strtokenizing 
 
     /* mkhtmlf file opened for reading */
     FILE *file = fopen("mkhtmlf.txt", "r");
@@ -100,12 +101,19 @@ void generateHtml(char path[])
                         if (strcmp(lineSpecifierData, tagsArray[i]) == 0 )
                         {
                             isHtmlDataCorrect = true;
+                            break;
                         }
                     }
-                    
-                    if (!isHtmlDataCorrect)
+
+                    if (isHtmlDataCorrect)
                     { 
-                        // message here 
+                        strcpy(htmlContentData[hDtCt], nlineData);
+                        strcpy(htmlTagData[hDtCt], lineSpecifierData);
+
+                        hDtCt++;
+                    }
+                    else
+                    {
                         wrongHtmlFormatMessage(fullLineTaker, lineSpecifierData, fileLine);
                         terminate();
                     }
@@ -118,6 +126,12 @@ void generateHtml(char path[])
                 isEqualSignFound = false;
             }
             fileLine++;
+        } // file reading finished
+
+        /* writing part starts */
+        for (int i = 0; i < hDtCt; i++)
+        {
+            fprintf(stdout, "%d --> %s%s\n", i, htmlContentData[i], htmlTagData[i]);
         }
     }
     else
