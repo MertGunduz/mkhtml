@@ -1,0 +1,105 @@
+\hypertarget{genhtml_8h}{}\doxysection{src/genhtml/genhtml.h File Reference}
+\label{genhtml_8h}\index{src/genhtml/genhtml.h@{src/genhtml/genhtml.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for genhtml.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structclicommand}{clicommand}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structclicommand}{clicommand}} \mbox{\hyperlink{genhtml_8h_a7d38fdd23592d62dc9c25a64b9f632e3}{clicommand}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{genhtml_8h_a446d64fb48d6c48ab491412e9601e646}{run\+Cli\+Command}} (\mbox{\hyperlink{structclicommand}{clicommand}} cli\+Command\+Input)
+\item 
+void \mbox{\hyperlink{genhtml_8h_a3d6f7a51768edff127d6f925ab2b4cab}{generate\+Template}} (char path\mbox{[}$\,$\mbox{]})
+\item 
+bool \mbox{\hyperlink{genhtml_8h_a929a91e1aad23fbd8af9e22ba78e4125}{control\+Path}} (char path\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{genhtml_8h_a74a45d2648335936561898c390281a6a}{terminate}} ()
+\item 
+void \mbox{\hyperlink{genhtml_8h_a25ce92bcdb2e56dd3e2bdf7f1982ea50}{generate\+Html}} (char path\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{genhtml_8h_a406d115e3535dd28fcbbfedd750ca579}{clear\+Empty\+Lines}} (FILE $\ast$file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{genhtml_8h_a7d38fdd23592d62dc9c25a64b9f632e3}\label{genhtml_8h_a7d38fdd23592d62dc9c25a64b9f632e3}} 
+\index{genhtml.h@{genhtml.h}!clicommand@{clicommand}}
+\index{clicommand@{clicommand}!genhtml.h@{genhtml.h}}
+\doxysubsubsection{\texorpdfstring{clicommand}{clicommand}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structclicommand}{clicommand}} \mbox{\hyperlink{structclicommand}{clicommand}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{genhtml_8h_a406d115e3535dd28fcbbfedd750ca579}\label{genhtml_8h_a406d115e3535dd28fcbbfedd750ca579}} 
+\index{genhtml.h@{genhtml.h}!clearEmptyLines@{clearEmptyLines}}
+\index{clearEmptyLines@{clearEmptyLines}!genhtml.h@{genhtml.h}}
+\doxysubsubsection{\texorpdfstring{clearEmptyLines()}{clearEmptyLines()}}
+{\footnotesize\ttfamily void clear\+Empty\+Lines (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file clear\+Empty\+Lines.\+c.
+
+\mbox{\Hypertarget{genhtml_8h_a929a91e1aad23fbd8af9e22ba78e4125}\label{genhtml_8h_a929a91e1aad23fbd8af9e22ba78e4125}} 
+\index{genhtml.h@{genhtml.h}!controlPath@{controlPath}}
+\index{controlPath@{controlPath}!genhtml.h@{genhtml.h}}
+\doxysubsubsection{\texorpdfstring{controlPath()}{controlPath()}}
+{\footnotesize\ttfamily bool control\+Path (\begin{DoxyParamCaption}\item[{char}]{path\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file control\+Path.\+c.
+
+\mbox{\Hypertarget{genhtml_8h_a25ce92bcdb2e56dd3e2bdf7f1982ea50}\label{genhtml_8h_a25ce92bcdb2e56dd3e2bdf7f1982ea50}} 
+\index{genhtml.h@{genhtml.h}!generateHtml@{generateHtml}}
+\index{generateHtml@{generateHtml}!genhtml.h@{genhtml.h}}
+\doxysubsubsection{\texorpdfstring{generateHtml()}{generateHtml()}}
+{\footnotesize\ttfamily void generate\+Html (\begin{DoxyParamCaption}\item[{char}]{path\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file generate\+Html.\+c.
+
+\mbox{\Hypertarget{genhtml_8h_a3d6f7a51768edff127d6f925ab2b4cab}\label{genhtml_8h_a3d6f7a51768edff127d6f925ab2b4cab}} 
+\index{genhtml.h@{genhtml.h}!generateTemplate@{generateTemplate}}
+\index{generateTemplate@{generateTemplate}!genhtml.h@{genhtml.h}}
+\doxysubsubsection{\texorpdfstring{generateTemplate()}{generateTemplate()}}
+{\footnotesize\ttfamily void generate\+Template (\begin{DoxyParamCaption}\item[{char}]{path\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file generate\+Template.\+c.
+
+\mbox{\Hypertarget{genhtml_8h_a446d64fb48d6c48ab491412e9601e646}\label{genhtml_8h_a446d64fb48d6c48ab491412e9601e646}} 
+\index{genhtml.h@{genhtml.h}!runCliCommand@{runCliCommand}}
+\index{runCliCommand@{runCliCommand}!genhtml.h@{genhtml.h}}
+\doxysubsubsection{\texorpdfstring{runCliCommand()}{runCliCommand()}}
+{\footnotesize\ttfamily void run\+Cli\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structclicommand}{clicommand}}}]{cli\+Command\+Input }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file run\+Cli\+Command.\+c.
+
+\mbox{\Hypertarget{genhtml_8h_a74a45d2648335936561898c390281a6a}\label{genhtml_8h_a74a45d2648335936561898c390281a6a}} 
+\index{genhtml.h@{genhtml.h}!terminate@{terminate}}
+\index{terminate@{terminate}!genhtml.h@{genhtml.h}}
+\doxysubsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily void terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file terminate.\+c.
+
