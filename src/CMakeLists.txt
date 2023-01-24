@@ -1,2 +1,0 @@
-add_subdirectory(genhtml)
-add_subdirectory(genmessages)

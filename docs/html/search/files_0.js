@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['argcerrormessage_2ec_50',['argcErrorMessage.c',['../d9/d23/argcErrorMessage_8c.html',1,'']]]
+  ['chatgptbot_2epy_8',['chatgptbot.py',['../df/ddf/chatgptbot_8py.html',1,'']]]
 ];
