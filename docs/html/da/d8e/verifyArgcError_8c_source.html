@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mkhtml: src/mkgen/verify.c Source File</title>
+<title>mkhtml: src/mkgen/verifyArgcError.c Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -68,27 +68,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">verify.c</div>  </div>
+<div class="title">verifyArgcError.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../db/df6/verify_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="../../da/d8e/verifyArgcError_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d6e/mkgen_8h.html">mkgen.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../db/df6/verify_8c.html#aec8b52c969a5fcc53c4c1dc85cd23830">   18</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../db/df6/verify_8c.html#aec8b52c969a5fcc53c4c1dc85cd23830">verify</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *firstArgument)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (argc == 2 || argc == 3)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="../../d2/d6e/mkgen_8h.html#a71fb30fc585d8838d4c70e5519244cb1">verifyArgcError</a>(argc);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../da/d8e/verifyArgcError_8c.html#a71fb30fc585d8838d4c70e5519244cb1">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d8e/verifyArgcError_8c.html#a71fb30fc585d8838d4c70e5519244cb1">verifyArgcError</a>(<span class="keywordtype">int</span> argc)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (argc == 1)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        fprintf(stdout, <span class="stringliteral">&quot;wb: error in the size of argc, missing arguments\n&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        fprintf(stdout, <span class="stringliteral">&quot;wb: error in the size of argc, too many arguments\n&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;wb: size of argc: %d\n&quot;</span>, argc);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="averify_8c_html_aec8b52c969a5fcc53c4c1dc85cd23830"><div class="ttname"><a href="../../db/df6/verify_8c.html#aec8b52c969a5fcc53c4c1dc85cd23830">verify</a></div><div class="ttdeci">bool verify(int argc, char *firstArgument)</div><div class="ttdoc">the control cli argument control system of mkhtml</div><div class="ttdef"><b>Definition:</b> <a href="../../db/df6/verify_8c_source.html#l00018">verify.c:18</a></div></div>
 <div class="ttc" id="amkgen_8h_html"><div class="ttname"><a href="../../d2/d6e/mkgen_8h.html">mkgen.h</a></div><div class="ttdoc">the html generation library of mkhtml</div></div>
-<div class="ttc" id="amkgen_8h_html_a71fb30fc585d8838d4c70e5519244cb1"><div class="ttname"><a href="../../d2/d6e/mkgen_8h.html#a71fb30fc585d8838d4c70e5519244cb1">verifyArgcError</a></div><div class="ttdeci">void verifyArgcError(int argc)</div><div class="ttdoc">prints the verify function argc count error info</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d8e/verifyArgcError_8c_source.html#l00017">verifyArgcError.c:17</a></div></div>
+<div class="ttc" id="averifyArgcError_8c_html_a71fb30fc585d8838d4c70e5519244cb1"><div class="ttname"><a href="../../da/d8e/verifyArgcError_8c.html#a71fb30fc585d8838d4c70e5519244cb1">verifyArgcError</a></div><div class="ttdeci">void verifyArgcError(int argc)</div><div class="ttdoc">prints the verify function argc count error info</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d8e/verifyArgcError_8c_source.html#l00017">verifyArgcError.c:17</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,4 +1,80 @@
 \hypertarget{mkgen_8h}{}\doxysection{src/mkgen/mkgen.h File Reference}
 \label{mkgen_8h}\index{src/mkgen/mkgen.h@{src/mkgen/mkgen.h}}
-This graph shows which files directly or indirectly include this file\+:
+
+
+the html generation library of mkhtml  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for mkgen.\+h\+:
 % FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{mkgen_8h_a29a6e0ad447dd100cd13143e2a0b3445}{verify}} (int argv, char $\ast$first\+Argument)
+\begin{DoxyCompactList}\small\item\em the control cli argument control system of mkhtml \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a71fb30fc585d8838d4c70e5519244cb1}{verify\+Argc\+Error}} (int argc)
+\begin{DoxyCompactList}\small\item\em prints the verify function argc count error info \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the html generation library of mkhtml 
+
+\begin{DoxyAuthor}{Author}
+Mehmet Mert Gunduz
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24/01/2023 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]no known bugs. \end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mkgen_8h_a29a6e0ad447dd100cd13143e2a0b3445}\label{mkgen_8h_a29a6e0ad447dd100cd13143e2a0b3445}} 
+\index{mkgen.h@{mkgen.h}!verify@{verify}}
+\index{verify@{verify}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily bool verify (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{first\+Argument }\end{DoxyParamCaption})}
+
+
+
+the control cli argument control system of mkhtml 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & \\
+\hline
+{\em first\+Argument} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file verify.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a71fb30fc585d8838d4c70e5519244cb1}\label{mkgen_8h_a71fb30fc585d8838d4c70e5519244cb1}} 
+\index{mkgen.h@{mkgen.h}!verifyArgcError@{verifyArgcError}}
+\index{verifyArgcError@{verifyArgcError}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{verifyArgcError()}{verifyArgcError()}}
+{\footnotesize\ttfamily void verify\+Argc\+Error (\begin{DoxyParamCaption}\item[{int}]{argc }\end{DoxyParamCaption})}
+
+
+
+prints the verify function argc count error info 
+
+controls the argc, if the argc value equals to 1 writes \char`\"{}missing arguments\char`\"{}, if not writes \char`\"{}too many arguments\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em argc} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file verify\+Argc\+Error.\+c.
+

@@ -13,6 +13,10 @@
 
 int main(int argc, char *argv[])
 {
-   
-   return 0;
+    if (verify(argc, argv[1]))
+    {
+
+    }
+
+    return 0;
 }
