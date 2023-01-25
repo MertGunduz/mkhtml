@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-    if (verify(argc, argv[1]))
+    if (argVerify(argc, argv[1]))
     {
 
     }

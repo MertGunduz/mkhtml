@@ -1,0 +1,1 @@
+add_library(mkgen STATIC argVerify.c htmlGen.c wrongArgumentsMessage.c secondArgumentMissingMessage.c badArgcMessage.c)

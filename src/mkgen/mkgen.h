@@ -10,12 +10,18 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
+#include <curl/curl.h>
+#include <string.h>
 
 /* CONTROL FUNCTIONS */
-bool verify(int argv, char *firstArgument);
+bool argVerify(int argc, char *firstArgument);
 
 /* GENERATION FUNCTIONS */
+void htmlGen(char *subject);
 
 /* MESSAGE FUNCTIONS */
-void verifyArgcError(int argc);
+void wrongArgumentsMessage();
+void secondArgumentMissingMessage();
+void badArgcMessage(int argc);
