@@ -24,7 +24,7 @@ void htmlGen(char *subject)
     /* headers */
     struct curl_slist *headers=NULL;
     headers = curl_slist_append(headers, "Content-Type: application/json");
-    headers = curl_slist_append(headers, "Authorization: Bearer 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");
+    headers = curl_slist_append(headers, "Authorization: Bearer sk-");
 
     /* curl control */
     if (!curl)

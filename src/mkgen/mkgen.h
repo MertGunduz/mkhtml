@@ -14,6 +14,7 @@
 #include <stdbool.h>
 #include <curl/curl.h>
 #include <string.h>
+#include <unistd.h>
 
 /* CONTROL FUNCTIONS */
 bool argVerify(int argc, char *firstArgument);

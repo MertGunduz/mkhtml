@@ -14,6 +14,6 @@
 /// @brief prints information about missing second argument
 void secondArgumentMissingMessage()
 {
-    fprintf(stdout, "mkhtml: second argument missing, please enter the data\n");
-    fprintf(stdout, "mkhtml: try \'mkhtml --help\' for more information\n");
+    fprintf(stderr, "mkhtml: second argument missing, please enter the data\n");
+    fprintf(stderr, "mkhtml: try \'mkhtml --help\' for more information\n");
 }

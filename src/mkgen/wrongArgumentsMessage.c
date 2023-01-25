@@ -14,6 +14,6 @@
 /// @brief prints information about wrong arguments
 void wrongArgumentsMessage()
 {
-    fprintf(stdout, "mkhtml: invalid argument, please enter valid arguments\n");
-    fprintf(stdout, "mkhtml: try \'mkhtml --help\' for more information\n");
+    fprintf(stderr, "mkhtml: invalid argument, please enter valid arguments\n");
+    fprintf(stderr, "mkhtml: try \'mkhtml --help\' for more information\n");
 }

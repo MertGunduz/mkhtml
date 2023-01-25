@@ -14,7 +14,7 @@
 /// @brief prints information about wrong arguments
 void badArgcMessage(int argc)
 {
-    fprintf(stdout, "mkhtml: please enter the arguments correctly\n");
-    fprintf(stdout, "mkhtml: prompted total arguments: %d\n", argc - 1);
-    fprintf(stdout, "mkhtml: try \'mkhtml --help\' for more information\n");
+    fprintf(stderr, "mkhtml: please enter the arguments correctly\n");
+    fprintf(stderr, "mkhtml: prompted total arguments: %d\n", argc - 1);
+    fprintf(stderr, "mkhtml: try \'mkhtml --help\' for more information\n");
 }
