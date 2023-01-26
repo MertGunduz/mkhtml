@@ -15,16 +15,23 @@
 /// @param subject 
 void htmlGen(char *subject)
 {
+    /* request data */
+    char requestData[512];
+
+    /* writing request data */
+    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"say this is a test\", \"max_tokens\": 10, \"temperature\": 0}");
+
     /* FILE FOR WRITING */
-    FILE *wfd = fopen("data.txt", "w");
+    FILE *fp = fopen("mkhtml-response.json", "wb");
 
     /* curl initialization */
     CURL *curl = curl_easy_init();
+    CURLcode res;
 
     /* headers */
     struct curl_slist *headers=NULL;
     headers = curl_slist_append(headers, "Content-Type: application/json");
-    headers = curl_slist_append(headers, "Authorization: Bearer sk-");
+    headers = curl_slist_append(headers, "Authorization: Bearer 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");
 
     /* curl control */
     if (!curl)
@@ -36,14 +43,20 @@ void htmlGen(char *subject)
     /*CURL OPTIONS */
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.openai.com/v1/completions");
     curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
-    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "{\"model\": \"text-davinci-003\", \"prompt\": \"Say this is a test\", \"max_tokens\": 400, \"temperature\": 0}");
-    curl_easy_setopt(curl, CURLOPT_WRITEDATA, wfd);
-    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, NULL);
+    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, requestData);
+    curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
 
-    /* perform and free memory */
-    curl_easy_perform(curl);
+    /* perform */
+    res = curl_easy_perform(curl);
+
+    if(res != CURLE_OK) 
+    {
+        fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+    }
+
+    /* free curl struct */
     curl_easy_cleanup(curl);
 
     /* free file */
-    free(wfd);
+    free(fp);
 }
