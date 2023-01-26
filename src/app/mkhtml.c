@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     {
         if (strcmp(argv[1], "-G") == 0 || strcmp(argv[1], "--generate") == 0)
         {
-            fprintf(stdout, "generation menu\n");
+            htmlGen(argv[2]);
         }
         else if (strcmp(argv[1], "-k") == 0 || strcmp(argv[1], "--key") == 0)
         {

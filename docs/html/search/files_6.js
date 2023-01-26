@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['invalidselectormessage_2ec_62',['invalidSelectorMessage.c',['../df/d62/invalidSelectorMessage_8c.html',1,'']]]
+  ['wrongargumentsmessage_2ec_27',['wrongArgumentsMessage.c',['../dd/d10/wrongArgumentsMessage_8c.html',1,'']]]
 ];

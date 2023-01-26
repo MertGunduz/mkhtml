@@ -1,9 +1,9 @@
-digraph "src/mkgen/argVerify.c"
+digraph "src/mkgen/verifyFileStructureError.c"
 {
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="src/mkgen/argVerify.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="the control cli argument control system of mkhtml"];
+  Node1 [label="src/mkgen/verifyFileStructure\lError.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="prints the verify function file structure availability error info"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="mkgen.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d6e/mkgen_8h.html",tooltip="the html generation library of mkhtml"];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

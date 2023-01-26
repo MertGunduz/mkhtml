@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['patherrormessage_79',['patherrorMessage',['../d9/d34/genmessages_8h.html#ac9ddd0f699734bb4389ce36640ae02c3',1,'patherrorMessage(char path[]):&#160;patherrorMessage.c'],['../df/d2a/patherrorMessage_8c.html#ac9ddd0f699734bb4389ce36640ae02c3',1,'patherrorMessage(char path[]):&#160;patherrorMessage.c']]]
+  ['wrongargumentsmessage_36',['wrongArgumentsMessage',['../d2/d6e/mkgen_8h.html#a17dd96e3e5f4d48cc1876b97f619868f',1,'wrongArgumentsMessage():&#160;wrongArgumentsMessage.c'],['../dd/d10/wrongArgumentsMessage_8c.html#a17dd96e3e5f4d48cc1876b97f619868f',1,'wrongArgumentsMessage():&#160;wrongArgumentsMessage.c']]]
 ];

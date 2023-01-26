@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wrongargumentsmessage_15',['wrongArgumentsMessage',['../d2/d6e/mkgen_8h.html#a17dd96e3e5f4d48cc1876b97f619868f',1,'wrongArgumentsMessage():&#160;wrongArgumentsMessage.c'],['../dd/d10/wrongArgumentsMessage_8c.html#a17dd96e3e5f4d48cc1876b97f619868f',1,'wrongArgumentsMessage():&#160;wrongArgumentsMessage.c']]],
-  ['wrongargumentsmessage_2ec_16',['wrongArgumentsMessage.c',['../dd/d10/wrongArgumentsMessage_8c.html',1,'']]]
+  ['verifyfilestructureerror_15',['verifyFileStructureError',['../d2/d6e/mkgen_8h.html#a8f11f14157d85b08fb7564b5607da472',1,'verifyFileStructureError():&#160;verifyFileStructureError.c'],['../df/d4d/verifyFileStructureError_8c.html#a8f11f14157d85b08fb7564b5607da472',1,'verifyFileStructureError():&#160;verifyFileStructureError.c']]],
+  ['verifyfilestructureerror_2ec_16',['verifyFileStructureError.c',['../df/d4d/verifyFileStructureError_8c.html',1,'']]]
 ];

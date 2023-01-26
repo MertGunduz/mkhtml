@@ -11,6 +11,7 @@ the html generation library of mkhtml
 {\ttfamily \#include $<$curl/curl.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
 Include dependency graph for mkgen.\+h\+:
 % FIG 0
 This graph shows which files directly or indirectly include this file\+:
@@ -20,6 +21,8 @@ This graph shows which files directly or indirectly include this file\+:
 \item 
 bool \mbox{\hyperlink{mkgen_8h_accd7a277a011046979c4c497d64e40ee}{arg\+Verify}} (int argc, char $\ast$first\+Argument)
 \begin{DoxyCompactList}\small\item\em checks the argument count and the arguments. returns true if everything is correct, if not returns false \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{mkgen_8h_ab6ea1f9a659d797ed8db959140b8561f}{structure\+Verify}} ()
+\begin{DoxyCompactList}\small\item\em the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/.mkhtml folder \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}{html\+Gen}} (char $\ast$subject)
 \begin{DoxyCompactList}\small\item\em the html generator system (works with openai api) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}{wrong\+Arguments\+Message}} ()
@@ -27,7 +30,9 @@ void \mbox{\hyperlink{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}{wrong\+Argumen
 void \mbox{\hyperlink{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}{second\+Argument\+Missing\+Message}} ()
 \begin{DoxyCompactList}\small\item\em prints information about missing second argument \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_af8d33a1b516f012b50b366f53496519b}{bad\+Argc\+Message}} (int argc)
-\begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a8f11f14157d85b08fb7564b5607da472}{verify\+File\+Structure\+Error}} ()
+\begin{DoxyCompactList}\small\item\em prints error information and solving advice about the file structure error \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -115,6 +120,37 @@ prints information about missing second argument
 
 
 Definition at line 15 of file second\+Argument\+Missing\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_ab6ea1f9a659d797ed8db959140b8561f}\label{mkgen_8h_ab6ea1f9a659d797ed8db959140b8561f}} 
+\index{mkgen.h@{mkgen.h}!structureVerify@{structureVerify}}
+\index{structureVerify@{structureVerify}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{structureVerify()}{structureVerify()}}
+{\footnotesize\ttfamily bool structure\+Verify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/.mkhtml folder 
+
+\begin{DoxyReturn}{Returns}
+true if argc is 2 and file structure found, otherwise returns false 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file structure\+Verify.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a8f11f14157d85b08fb7564b5607da472}\label{mkgen_8h_a8f11f14157d85b08fb7564b5607da472}} 
+\index{mkgen.h@{mkgen.h}!verifyFileStructureError@{verifyFileStructureError}}
+\index{verifyFileStructureError@{verifyFileStructureError}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{verifyFileStructureError()}{verifyFileStructureError()}}
+{\footnotesize\ttfamily void verify\+File\+Structure\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints error information and solving advice about the file structure error 
+
+
+
+Definition at line 15 of file verify\+File\+Structure\+Error.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}\label{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}} 
 \index{mkgen.h@{mkgen.h}!wrongArgumentsMessage@{wrongArgumentsMessage}}
