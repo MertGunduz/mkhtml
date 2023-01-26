@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['verify_17',['verify',['../d2/d6e/mkgen_8h.html#a29a6e0ad447dd100cd13143e2a0b3445',1,'verify(int argv, char *firstArgument):&#160;verify.c'],['../db/df6/verify_8c.html#aec8b52c969a5fcc53c4c1dc85cd23830',1,'verify(int argc, char *firstArgument):&#160;verify.c']]],
-  ['verifyargcerror_18',['verifyArgcError',['../d2/d6e/mkgen_8h.html#a71fb30fc585d8838d4c70e5519244cb1',1,'verifyArgcError(int argc):&#160;verifyArgcError.c'],['../da/d8e/verifyArgcError_8c.html#a71fb30fc585d8838d4c70e5519244cb1',1,'verifyArgcError(int argc):&#160;verifyArgcError.c']]]
+  ['badargcmessage_26',['badArgcMessage',['../d0/d9e/badArgcMessage_8c.html#af8d33a1b516f012b50b366f53496519b',1,'badArgcMessage(int argc):&#160;badArgcMessage.c'],['../d2/d6e/mkgen_8h.html#af8d33a1b516f012b50b366f53496519b',1,'badArgcMessage(int argc):&#160;badArgcMessage.c']]]
 ];

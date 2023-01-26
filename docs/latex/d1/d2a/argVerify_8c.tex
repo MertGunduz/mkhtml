@@ -1,0 +1,83 @@
+\hypertarget{argVerify_8c}{}\doxysection{src/mkgen/arg\+Verify.c File Reference}
+\label{argVerify_8c}\index{src/mkgen/argVerify.c@{src/mkgen/argVerify.c}}
+
+
+the control cli argument control system of mkhtml  
+
+
+{\ttfamily \#include \char`\"{}mkgen.\+h\char`\"{}}\newline
+Include dependency graph for arg\+Verify.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{argVerify_8c_aee10183611a60f95854817ed7e60a942}{check\+Arguments}} (char $\ast$argument\+Prompt, int argument\+Ct, char $\ast$arguments\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em checks arguments and compares the prompted argument \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{argVerify_8c_accd7a277a011046979c4c497d64e40ee}{arg\+Verify}} (int argc, char $\ast$first\+Argument)
+\begin{DoxyCompactList}\small\item\em checks the argument count and the arguments. returns true if everything is correct, if not returns false \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the control cli argument control system of mkhtml 
+
+\begin{DoxyAuthor}{Author}
+Mehmet Mert Gunduz
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24/01/2023 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]no known bugs. \end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{argVerify_8c_accd7a277a011046979c4c497d64e40ee}\label{argVerify_8c_accd7a277a011046979c4c497d64e40ee}} 
+\index{argVerify.c@{argVerify.c}!argVerify@{argVerify}}
+\index{argVerify@{argVerify}!argVerify.c@{argVerify.c}}
+\doxysubsubsection{\texorpdfstring{argVerify()}{argVerify()}}
+{\footnotesize\ttfamily bool arg\+Verify (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{first\+Argument }\end{DoxyParamCaption})}
+
+
+
+checks the argument count and the arguments. returns true if everything is correct, if not returns false 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em first\+Argument} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file arg\+Verify.\+c.
+
+\mbox{\Hypertarget{argVerify_8c_aee10183611a60f95854817ed7e60a942}\label{argVerify_8c_aee10183611a60f95854817ed7e60a942}} 
+\index{argVerify.c@{argVerify.c}!checkArguments@{checkArguments}}
+\index{checkArguments@{checkArguments}!argVerify.c@{argVerify.c}}
+\doxysubsubsection{\texorpdfstring{checkArguments()}{checkArguments()}}
+{\footnotesize\ttfamily bool check\+Arguments (\begin{DoxyParamCaption}\item[{char $\ast$}]{argument\+Prompt,  }\item[{int}]{argument\+Ct,  }\item[{char $\ast$}]{arguments\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+checks arguments and compares the prompted argument 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument\+Prompt} & \\
+\hline
+{\em argument\+Ct} & \\
+\hline
+{\em arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file arg\+Verify.\+c.
+

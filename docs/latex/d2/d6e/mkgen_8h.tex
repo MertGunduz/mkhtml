@@ -6,7 +6,11 @@ the html generation library of mkhtml
 
 
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$curl/curl.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
 Include dependency graph for mkgen.\+h\+:
 % FIG 0
 This graph shows which files directly or indirectly include this file\+:
@@ -14,10 +18,16 @@ This graph shows which files directly or indirectly include this file\+:
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{mkgen_8h_a29a6e0ad447dd100cd13143e2a0b3445}{verify}} (int argv, char $\ast$first\+Argument)
-\begin{DoxyCompactList}\small\item\em the control cli argument control system of mkhtml \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{mkgen_8h_a71fb30fc585d8838d4c70e5519244cb1}{verify\+Argc\+Error}} (int argc)
-\begin{DoxyCompactList}\small\item\em prints the verify function argc count error info \end{DoxyCompactList}\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{mkgen_8h_accd7a277a011046979c4c497d64e40ee}{arg\+Verify}} (int argc, char $\ast$first\+Argument)
+\begin{DoxyCompactList}\small\item\em checks the argument count and the arguments. returns true if everything is correct, if not returns false \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}{html\+Gen}} (char $\ast$subject)
+\begin{DoxyCompactList}\small\item\em the html generator system (works with openai api) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}{wrong\+Arguments\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}{second\+Argument\+Missing\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about missing second argument \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_af8d33a1b516f012b50b366f53496519b}{bad\+Argc\+Message}} (int argc)
+\begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -30,23 +40,23 @@ Mehmet Mert Gunduz
 24/01/2023 
 \end{DoxyDate}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]no known bugs. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000005}{Bug}}]no known bugs. \end{DoxyRefDesc}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{mkgen_8h_a29a6e0ad447dd100cd13143e2a0b3445}\label{mkgen_8h_a29a6e0ad447dd100cd13143e2a0b3445}} 
-\index{mkgen.h@{mkgen.h}!verify@{verify}}
-\index{verify@{verify}!mkgen.h@{mkgen.h}}
-\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
-{\footnotesize\ttfamily bool verify (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{first\+Argument }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{mkgen_8h_accd7a277a011046979c4c497d64e40ee}\label{mkgen_8h_accd7a277a011046979c4c497d64e40ee}} 
+\index{mkgen.h@{mkgen.h}!argVerify@{argVerify}}
+\index{argVerify@{argVerify}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{argVerify()}{argVerify()}}
+{\footnotesize\ttfamily bool arg\+Verify (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{first\+Argument }\end{DoxyParamCaption})}
 
 
 
-the control cli argument control system of mkhtml 
+checks the argument count and the arguments. returns true if everything is correct, if not returns false 
 
 
 \begin{DoxyParams}{Parameters}
-{\em argv} & \\
+{\em argc} & \\
 \hline
 {\em first\+Argument} & \\
 \hline
@@ -56,25 +66,67 @@ true or false
 \end{DoxyReturn}
 
 
-Definition at line 18 of file verify.\+c.
+Definition at line 20 of file arg\+Verify.\+c.
 
-\mbox{\Hypertarget{mkgen_8h_a71fb30fc585d8838d4c70e5519244cb1}\label{mkgen_8h_a71fb30fc585d8838d4c70e5519244cb1}} 
-\index{mkgen.h@{mkgen.h}!verifyArgcError@{verifyArgcError}}
-\index{verifyArgcError@{verifyArgcError}!mkgen.h@{mkgen.h}}
-\doxysubsubsection{\texorpdfstring{verifyArgcError()}{verifyArgcError()}}
-{\footnotesize\ttfamily void verify\+Argc\+Error (\begin{DoxyParamCaption}\item[{int}]{argc }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{mkgen_8h_af8d33a1b516f012b50b366f53496519b}\label{mkgen_8h_af8d33a1b516f012b50b366f53496519b}} 
+\index{mkgen.h@{mkgen.h}!badArgcMessage@{badArgcMessage}}
+\index{badArgcMessage@{badArgcMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{badArgcMessage()}{badArgcMessage()}}
+{\footnotesize\ttfamily void bad\+Argc\+Message (\begin{DoxyParamCaption}\item[{int}]{argc }\end{DoxyParamCaption})}
 
 
 
-prints the verify function argc count error info 
+prints information about wrong arguments 
 
-controls the argc, if the argc value equals to 1 writes \char`\"{}missing arguments\char`\"{}, if not writes \char`\"{}too many arguments\char`\"{} 
+
+
+Definition at line 15 of file bad\+Argc\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}\label{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}} 
+\index{mkgen.h@{mkgen.h}!htmlGen@{htmlGen}}
+\index{htmlGen@{htmlGen}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{htmlGen()}{htmlGen()}}
+{\footnotesize\ttfamily void html\+Gen (\begin{DoxyParamCaption}\item[{char $\ast$}]{subject }\end{DoxyParamCaption})}
+
+
+
+the html generator system (works with openai api) 
+
+
 \begin{DoxyParams}{Parameters}
-{\em argc} & ~\newline
+{\em subject} & ~\newline
  \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 17 of file verify\+Argc\+Error.\+c.
+Definition at line 16 of file html\+Gen.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}\label{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}} 
+\index{mkgen.h@{mkgen.h}!secondArgumentMissingMessage@{secondArgumentMissingMessage}}
+\index{secondArgumentMissingMessage@{secondArgumentMissingMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{secondArgumentMissingMessage()}{secondArgumentMissingMessage()}}
+{\footnotesize\ttfamily void second\+Argument\+Missing\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about missing second argument 
+
+
+
+Definition at line 15 of file second\+Argument\+Missing\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}\label{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}} 
+\index{mkgen.h@{mkgen.h}!wrongArgumentsMessage@{wrongArgumentsMessage}}
+\index{wrongArgumentsMessage@{wrongArgumentsMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{wrongArgumentsMessage()}{wrongArgumentsMessage()}}
+{\footnotesize\ttfamily void wrong\+Arguments\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about wrong arguments 
+
+
+
+Definition at line 15 of file wrong\+Arguments\+Message.\+c.
 

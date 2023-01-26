@@ -7,7 +7,15 @@ digraph "src/mkgen/mkgen.h"
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="src/app/mkhtml.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d61/mkhtml_8c.html",tooltip="the main application file of mkhtml"];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="src/mkgen/verify.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/df6/verify_8c.html",tooltip="the control cli argument control system of mkhtml"];
+  Node3 [label="src/mkgen/argVerify.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d2a/argVerify_8c.html",tooltip="the control cli argument control system of mkhtml"];
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="src/mkgen/verifyArgcError.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d8e/verifyArgcError_8c.html",tooltip="prints the verify function argc count error info"];
+  Node4 [label="src/mkgen/badArgcMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d9e/badArgcMessage_8c.html",tooltip="prints information about wrong arguments"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/mkgen/htmlGen.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d14/htmlGen_8c.html",tooltip="the html generator system (works with openai api)"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/mkgen/secondArgument\lMissingMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9f/secondArgumentMissingMessage_8c.html",tooltip="prints information about missing second argument"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="src/mkgen/structureVerify.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d99/structureVerify_8c.html",tooltip="the general system for checking the file structure of the mkhtml"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="src/mkgen/wrongArguments\lMessage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d10/wrongArgumentsMessage_8c.html",tooltip="prints information about wrong arguments"];
 }
