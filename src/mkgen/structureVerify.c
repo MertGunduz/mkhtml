@@ -1,23 +1,38 @@
-/**
+/** 
  * @file structureVerify.c
  * 
- * @brief the general system for checking the file structure of the mkhtml
+ * @brief the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/.mkhtml folder
  * 
  * @author Mehmet Mert Gunduz
  * 
- * @date 25/01/2023
- * @bug no known bugs.
+ * @date 26/01/2023
+ * @bug No known bugs.
 */
 
 #include "mkgen.h"
 
-/// @brief the general system for checking the file structure of the mkhtml
-/// @return true or false
+/// @brief the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/.mkhtml folder
+/// @return true if argc is 2 and file structure found, otherwise returns false
 bool structureVerify()
 {
-    if (access("", F_OK) != 0) 
+    // struct stat for controlling directory /home/.mkhtml
+    struct stat st;
+
+    // .mkhtml paths
+    char folderPath[128]; 
+    char settingsFilePath[128];
+
+    // making the path strings 
+    sprintf(folderPath, "%s/.mkhtml", getenv("HOME"));
+    sprintf(settingsFilePath, "%s/.mkhtml/settings.txt", getenv("HOME"));
+
+    if (access(settingsFilePath, F_OK) == 0 && stat(folderPath, &st) == 0)
+    {   
+        return true;
+    }
+    else
     {
-        // stderr message no settings file found
-        exit(1);
+        verifyFileStructureError();
+        return false;
     }
 }

@@ -15,9 +15,11 @@
 #include <curl/curl.h>
 #include <string.h>
 #include <unistd.h>
+#include <sys/stat.h>
 
 /* CONTROL FUNCTIONS */
 bool argVerify(int argc, char *firstArgument);
+bool structureVerify();
 
 /* GENERATION FUNCTIONS */
 void htmlGen(char *subject);
@@ -26,3 +28,4 @@ void htmlGen(char *subject);
 void wrongArgumentsMessage();
 void secondArgumentMissingMessage();
 void badArgcMessage(int argc);
+void verifyFileStructureError();

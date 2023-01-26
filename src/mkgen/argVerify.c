@@ -20,10 +20,10 @@ bool checkArguments(char *argumentPrompt, int argumentCt, char *arguments[]);
 bool argVerify(int argc, char *firstArgument)
 {
     /* initializing the arguments and size for =two= argument command */
-    char *twoArguments[] = {"-g", "--generate", "-k", "--key", "-c", "--css"};
+    char *twoArguments[] = {"-G", "--generate", "-k", "--key", "-c", "--css"};
 
     /* initializing the arguments and size for =one= argument command */
-    char *oneArguments[] = {"-v", "--version", "-g", "--github", "-h", "--help", "-s", "--settings"};
+    char *oneArguments[] = {"-v", "--version", "-g", "--github", "-h", "--help", "-s", "--settings", "-w", "--website"};
     
     if (argc == 2)
     {
@@ -36,7 +36,7 @@ bool argVerify(int argc, char *firstArgument)
             }
         }
 
-        checkArguments(firstArgument, 8, oneArguments);
+        checkArguments(firstArgument, 10, oneArguments);
     }
     else if (argc == 3)
     {
