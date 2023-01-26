@@ -31,7 +31,7 @@ void htmlGen(char *subject)
     /* headers */
     struct curl_slist *headers=NULL;
     headers = curl_slist_append(headers, "Content-Type: application/json");
-    headers = curl_slist_append(headers, "Authorization: Bearer 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");
+    headers = curl_slist_append(headers, "Authorization: Bearer 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");
 
     /* curl control */
     if (!curl)
@@ -57,6 +57,6 @@ void htmlGen(char *subject)
     /* free curl struct */
     curl_easy_cleanup(curl);
 
-    /* free file */
-    free(fp);
+    /* fclose file */
+    fclose(fp);
 }
