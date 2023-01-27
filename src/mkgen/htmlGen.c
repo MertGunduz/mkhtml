@@ -10,17 +10,25 @@
 */
 
 #include "mkgen.h"
+#include "../mjson/mjson.h"
 
 /// @brief the html generator system (works with openai api)
 /// @param subject 
 void htmlGen(char *subject)
 {
+    /***********************************************
+    * CURL REQUEST AND WRITING RESPONSE [1]
+    ************************************************/
+    
+    /* html generation data*/
+    char htmlData[2048];
+
     /* request data */
     char requestData[512];
 
     /* writing request data */
-    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"say this is a test\", \"max_tokens\": 10, \"temperature\": 0}");
-
+    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a detailed and long html document about %s in english language without css\", \"max_tokens\": 2000, \"temperature\": 0}", subject);
+    
     /* FILE FOR WRITING */
     FILE *fp = fopen("mkhtml-response.json", "wb");
 
@@ -31,12 +39,12 @@ void htmlGen(char *subject)
     /* headers */
     struct curl_slist *headers=NULL;
     headers = curl_slist_append(headers, "Content-Type: application/json");
-    headers = curl_slist_append(headers, "Authorization: Bearer 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");
+    headers = curl_slist_append(headers, "Authorization: Bearer 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");
 
     /* curl control */
     if (!curl)
     {
-        fprintf(stderr, "curl error");
+        fprintf(stderr, "curl error"); // NEED A SEPERATE MESSAGE FUNCTION (curlErrorMessage.c) 
         exit(1);
     }
 
@@ -59,4 +67,61 @@ void htmlGen(char *subject)
 
     /* fclose file */
     fclose(fp);
+
+    /***********************************************
+    * JSON FILE READING [2]
+    ************************************************/
+
+    /* reading file initialization */
+    FILE *jsonFile = fopen("mkhtml-response.json", "r");
+
+    if (jsonFile == NULL) 
+    {
+        // error code write jsonInteractionErrorMessage.c (STDERR)
+        exit(1);
+    }
+
+    /* reading and malloc part */
+    char *jsonData = (char*)malloc(8192 * sizeof(char)); 
+    int jI = 0;
+
+    while (!feof(jsonFile))
+    {
+        jsonData[jI] = fgetc(jsonFile);
+        jI++;
+    }
+
+    /* null terminating string */
+    jsonData[jI--] = '\0';
+
+    /*  parsing json text data */
+    mjson_get_string(jsonData, strlen(jsonData), "$.choices[].text", htmlData, sizeof(htmlData));
+
+    /* freeing memory */
+    free(jsonData);
+
+    /* closing file */
+    fclose(jsonFile);
+
+    /***********************************************
+    * HTML FILE GENERATION & DELETING CURL JSON [3]
+    ************************************************/
+
+    /* initializing the html file */
+    FILE *htmlFile = fopen("subject.html", "w");
+
+    if (htmlFile == NULL) 
+    {
+        // error code write htmlFileErrorMessage.c (STDERR)
+        exit(1);
+    }
+
+    /* writing the file */
+    fprintf(htmlFile, "%s", htmlData);
+
+    /* closing file */
+    fclose(htmlFile);
+
+    /* deleting the curl response json file */
+    remove("mkhtml-response.json");
 }

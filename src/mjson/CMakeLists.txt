@@ -1,0 +1,1 @@
+add_library(mjson STATIC mjson.c)
