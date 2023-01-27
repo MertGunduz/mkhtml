@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['cssoption_85',['cssOption',['../d6/dda/structclicommand.html#a74fbcb3f7d2a8147e058c8f388a61fc1',1,'clicommand']]],
-  ['cssstyle_86',['cssStyle',['../d6/dda/structclicommand.html#a4aebd5bc8aff89e4a349dea7d903ae57',1,'clicommand']]]
+  ['cb_202',['cb',['../d1/d91/structjsonrpc__method.html#af6c7d04ce39657755a4f8b786522f5c8',1,'jsonrpc_method']]],
+  ['ctx_203',['ctx',['../d3/dbe/structjsonrpc__request.html#a5cf7dd2862fae5d46987d493c2baa008',1,'jsonrpc_request']]]
 ];

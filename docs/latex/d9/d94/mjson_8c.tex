@@ -1,0 +1,471 @@
+\hypertarget{mjson_8c}{}\doxysection{src/mjson/mjson.c File Reference}
+\label{mjson_8c}\index{src/mjson/mjson.c@{src/mjson/mjson.c}}
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mjson.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for mjson.\+c\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmsjon__get__data}{msjon\+\_\+get\+\_\+data}}
+\item 
+struct \mbox{\hyperlink{structnextdata}{nextdata}}
+\item 
+struct \mbox{\hyperlink{structprettydata}{prettydata}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mjson_8c_a43f61a6ce93ad21c25146a899f035930}{MJSONCALL}}(ev)~  if (cb != NULL \&\& cb(ev, s, start, i -\/ start + 1, ud)) return i + 1;
+\item 
+\#define \mbox{\hyperlink{mjson_8c_af7d6c2db12b233b740f1efa1db9d6eaa}{MJSONEOO}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mjson_8c_a3d041108bcbace58128bbf7116778b80}{mjson}} (const char $\ast$s, int len, \mbox{\hyperlink{mjson_8h_ac3bb1a252ee60ef62318da83e9c8f184}{mjson\+\_\+cb\+\_\+t}} cb, void $\ast$ud)
+\item 
+int \mbox{\hyperlink{mjson_8c_a1e95a6a8b811da5c03a9ca504540f31d}{mjson\+\_\+find}} (const char $\ast$s, int n, const char $\ast$jp, const char $\ast$$\ast$tp, int $\ast$tl)
+\item 
+int \mbox{\hyperlink{mjson_8c_a4097c24ecd09ea95fb3099fdd6028d6a}{mjson\+\_\+get\+\_\+number}} (const char $\ast$s, int len, const char $\ast$path, double $\ast$v)
+\item 
+int \mbox{\hyperlink{mjson_8c_a62fc8d7912e73e1a66f09b75fc2ca9d0}{mjson\+\_\+get\+\_\+bool}} (const char $\ast$s, int len, const char $\ast$path, int $\ast$v)
+\item 
+int \mbox{\hyperlink{mjson_8c_a0e3f4de03695c2f1a7441e0ecf7f4294}{mjson\+\_\+get\+\_\+string}} (const char $\ast$s, int len, const char $\ast$path, char $\ast$to, int n)
+\item 
+int \mbox{\hyperlink{mjson_8c_ae2576cf14d517344c4e4106297bda875}{mjson\+\_\+get\+\_\+hex}} (const char $\ast$s, int len, const char $\ast$x, char $\ast$to, int n)
+\item 
+int \mbox{\hyperlink{mjson_8c_a3f83003c2407e42a411ad8550c5ba73e}{mjson\+\_\+base64\+\_\+dec}} (const char $\ast$src, int n, char $\ast$dst, int dlen)
+\item 
+int \mbox{\hyperlink{mjson_8c_a8a7663ddb5abf4a638aa24ea15bb2ea0}{mjson\+\_\+get\+\_\+base64}} (const char $\ast$s, int len, const char $\ast$path, char $\ast$to, int n)
+\item 
+int \mbox{\hyperlink{mjson_8c_a4c36e1f8cde5de6d97844840e2f847e4}{mjson\+\_\+next}} (const char $\ast$s, int n, int off, int $\ast$koff, int $\ast$klen, int $\ast$voff, int $\ast$vlen, int $\ast$vtype)
+\item 
+int \mbox{\hyperlink{mjson_8c_a38de069af6915d1f8b72f9ec457b0319}{mjson\+\_\+print\+\_\+fixed\+\_\+buf}} (const char $\ast$ptr, int len, void $\ast$fn\+\_\+data)
+\item 
+int \mbox{\hyperlink{mjson_8c_a04b414106a7d6261417b29181c63d0d0}{mjson\+\_\+print\+\_\+dynamic\+\_\+buf}} (const char $\ast$ptr, int len, void $\ast$fn\+\_\+data)
+\item 
+int \mbox{\hyperlink{mjson_8c_ab3d68c4d7fd2399a8f30c8ba1f0b1fea}{mjson\+\_\+snprintf}} (char $\ast$buf, size\+\_\+t len, const char $\ast$fmt,...)
+\item 
+char $\ast$ \mbox{\hyperlink{mjson_8c_ac1677e253077e52771d65346be912adb}{mjson\+\_\+aprintf}} (const char $\ast$fmt,...)
+\item 
+int \mbox{\hyperlink{mjson_8c_ae915c1ff31cacefd73b933ee2b8ca9b7}{mjson\+\_\+print\+\_\+null}} (const char $\ast$ptr, int len, void $\ast$userdata)
+\item 
+int \mbox{\hyperlink{mjson_8c_ac7f24e7b2b90f4de28998e360f6498d7}{mjson\+\_\+print\+\_\+buf}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, const char $\ast$buf, int len)
+\item 
+int \mbox{\hyperlink{mjson_8c_a09a5c0e45382a7f1ea5cdb78176696e7}{mjson\+\_\+print\+\_\+long}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, long val, int is\+\_\+signed)
+\item 
+int \mbox{\hyperlink{mjson_8c_a16c92662344824e4ab540865842f115a}{mjson\+\_\+print\+\_\+int}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, int v, int s)
+\item 
+int \mbox{\hyperlink{mjson_8c_a8531b1c42bb500e0bfbc60c5265dcd3f}{mjson\+\_\+print\+\_\+dbl}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, double d, int width)
+\item 
+int \mbox{\hyperlink{mjson_8c_a63c7d3da074f335cd1d8a102b7577c7e}{mjson\+\_\+print\+\_\+str}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, const char $\ast$s, int len)
+\item 
+int \mbox{\hyperlink{mjson_8c_ad6a3dc019b1c988258490a8e223c9951}{mjson\+\_\+print\+\_\+b64}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, const unsigned char $\ast$s, int n)
+\item 
+int \mbox{\hyperlink{mjson_8c_ab2140ea4b73fb69ced2cce707e57172a}{mjson\+\_\+vprintf}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, const char $\ast$fmt, va\+\_\+list $\ast$ap)
+\item 
+int \mbox{\hyperlink{mjson_8c_a2f4a6694117ca9a9c518e8271c45889a}{mjson\+\_\+printf}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fnd, const char $\ast$fmt,...)
+\item 
+int \mbox{\hyperlink{mjson_8c_adeaeaff7a5f13b0022efc856febb6095}{mjson\+\_\+merge}} (const char $\ast$s, int n, const char $\ast$s2, int n2, \mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$userdata)
+\item 
+int \mbox{\hyperlink{mjson_8c_a9e7cfa8353f08a8811dce48f1502e6c6}{mjson\+\_\+pretty}} (const char $\ast$s, int n, const char $\ast$pad, \mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$userdata)
+\item 
+int \mbox{\hyperlink{mjson_8c_a80ea2c5373d51084b0b7afdf6162add6}{mjson\+\_\+globmatch}} (const char $\ast$s1, int n1, const char $\ast$s2, int n2)
+\item 
+void \mbox{\hyperlink{mjson_8c_a4ff4815bf7c05a1f6bf32f36f82da07b}{jsonrpc\+\_\+return\+\_\+errorv}} (struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$r, int code, const char $\ast$message, const char $\ast$data\+\_\+fmt, va\+\_\+list $\ast$ap)
+\item 
+void \mbox{\hyperlink{mjson_8c_a9277be79e1ce034b8cea7b6719610f46}{jsonrpc\+\_\+return\+\_\+error}} (struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$r, int code, const char $\ast$message, const char $\ast$data\+\_\+fmt,...)
+\item 
+void \mbox{\hyperlink{mjson_8c_a7c5c8e77143d8185a7b1ceea4f791b93}{jsonrpc\+\_\+return\+\_\+successv}} (struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$r, const char $\ast$result\+\_\+fmt, va\+\_\+list $\ast$ap)
+\item 
+void \mbox{\hyperlink{mjson_8c_a289a62faacceb0e9531e4832dd0541a2}{jsonrpc\+\_\+return\+\_\+success}} (struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$r, const char $\ast$result\+\_\+fmt,...)
+\item 
+void \mbox{\hyperlink{mjson_8c_a2af61dbdbc4322a7186a26b4c113b54c}{jsonrpc\+\_\+ctx\+\_\+process}} (struct \mbox{\hyperlink{structjsonrpc__ctx}{jsonrpc\+\_\+ctx}} $\ast$ctx, const char $\ast$buf, int len, \mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} fn, void $\ast$fn\+\_\+data, void $\ast$ud)
+\item 
+void \mbox{\hyperlink{mjson_8c_a43db45e6ff43d5dda2606e65f1f1e12b}{jsonrpc\+\_\+list}} (struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$r)
+\item 
+void \mbox{\hyperlink{mjson_8c_afc09e7edc2e79862df6e5271e957a8d5}{jsonrpc\+\_\+ctx\+\_\+init}} (struct \mbox{\hyperlink{structjsonrpc__ctx}{jsonrpc\+\_\+ctx}} $\ast$ctx, \mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} response\+\_\+cb, void $\ast$response\+\_\+cb\+\_\+data)
+\item 
+void \mbox{\hyperlink{mjson_8c_a246787c71d48bde8d493ec32b9d69931}{jsonrpc\+\_\+init}} (\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}} response\+\_\+cb, void $\ast$userdata)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structjsonrpc__ctx}{jsonrpc\+\_\+ctx}} \mbox{\hyperlink{mjson_8c_af348be8b54cd809950ec6b744a7d58c3}{jsonrpc\+\_\+default\+\_\+context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mjson_8c_a43f61a6ce93ad21c25146a899f035930}\label{mjson_8c_a43f61a6ce93ad21c25146a899f035930}} 
+\index{mjson.c@{mjson.c}!MJSONCALL@{MJSONCALL}}
+\index{MJSONCALL@{MJSONCALL}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{MJSONCALL}{MJSONCALL}}
+{\footnotesize\ttfamily \#define MJSONCALL(\begin{DoxyParamCaption}\item[{}]{ev }\end{DoxyParamCaption})~  if (cb != NULL \&\& cb(ev, s, start, i -\/ start + 1, ud)) return i + 1;}
+
+\mbox{\Hypertarget{mjson_8c_af7d6c2db12b233b740f1efa1db9d6eaa}\label{mjson_8c_af7d6c2db12b233b740f1efa1db9d6eaa}} 
+\index{mjson.c@{mjson.c}!MJSONEOO@{MJSONEOO}}
+\index{MJSONEOO@{MJSONEOO}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{MJSONEOO}{MJSONEOO}}
+{\footnotesize\ttfamily \#define MJSONEOO(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keywordflow}{do} \{                                                                 \(\backslash\)}
+\DoxyCodeLine{    if (c != nesting[depth -\/ 1] + 2) return \mbox{\hyperlink{mjson_8h_ab26c4f5b74b8caab99a83c7920aa0f59}{MJSON\_ERROR\_INVALID\_INPUT}}; \(\backslash\)}
+\DoxyCodeLine{    depth-\/-\/;                                                           \(\backslash\)}
+\DoxyCodeLine{    if (depth == 0) \{                                                  \(\backslash\)}
+\DoxyCodeLine{      MJSONCALL(tok);                                                  \(\backslash\)}
+\DoxyCodeLine{      return i + 1;                                                    \(\backslash\)}
+\DoxyCodeLine{    \}                                                                  \(\backslash\)}
+\DoxyCodeLine{  \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mjson_8c_afc09e7edc2e79862df6e5271e957a8d5}\label{mjson_8c_afc09e7edc2e79862df6e5271e957a8d5}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_ctx\_init@{jsonrpc\_ctx\_init}}
+\index{jsonrpc\_ctx\_init@{jsonrpc\_ctx\_init}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_ctx\_init()}{jsonrpc\_ctx\_init()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+ctx\+\_\+init (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structjsonrpc__ctx}{jsonrpc\+\_\+ctx}} $\ast$}]{ctx,  }\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{response\+\_\+cb,  }\item[{void $\ast$}]{response\+\_\+cb\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1054 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a2af61dbdbc4322a7186a26b4c113b54c}\label{mjson_8c_a2af61dbdbc4322a7186a26b4c113b54c}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_ctx\_process@{jsonrpc\_ctx\_process}}
+\index{jsonrpc\_ctx\_process@{jsonrpc\_ctx\_process}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_ctx\_process()}{jsonrpc\_ctx\_process()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+ctx\+\_\+process (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structjsonrpc__ctx}{jsonrpc\+\_\+ctx}} $\ast$}]{ctx,  }\item[{const char $\ast$}]{buf,  }\item[{int}]{len,  }\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fn\+\_\+data,  }\item[{void $\ast$}]{ud }\end{DoxyParamCaption})}
+
+
+
+Definition at line 998 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a246787c71d48bde8d493ec32b9d69931}\label{mjson_8c_a246787c71d48bde8d493ec32b9d69931}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_init@{jsonrpc\_init}}
+\index{jsonrpc\_init@{jsonrpc\_init}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_init()}{jsonrpc\_init()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{response\+\_\+cb,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1061 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a43db45e6ff43d5dda2606e65f1f1e12b}\label{mjson_8c_a43db45e6ff43d5dda2606e65f1f1e12b}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_list@{jsonrpc\_list}}
+\index{jsonrpc\_list@{jsonrpc\_list}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_list()}{jsonrpc\_list()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+list (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1050 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a9277be79e1ce034b8cea7b6719610f46}\label{mjson_8c_a9277be79e1ce034b8cea7b6719610f46}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_return\_error@{jsonrpc\_return\_error}}
+\index{jsonrpc\_return\_error@{jsonrpc\_return\_error}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_return\_error()}{jsonrpc\_return\_error()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+return\+\_\+error (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$}]{r,  }\item[{int}]{code,  }\item[{const char $\ast$}]{message,  }\item[{const char $\ast$}]{data\+\_\+fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 970 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a4ff4815bf7c05a1f6bf32f36f82da07b}\label{mjson_8c_a4ff4815bf7c05a1f6bf32f36f82da07b}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_return\_errorv@{jsonrpc\_return\_errorv}}
+\index{jsonrpc\_return\_errorv@{jsonrpc\_return\_errorv}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_return\_errorv()}{jsonrpc\_return\_errorv()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+return\+\_\+errorv (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$}]{r,  }\item[{int}]{code,  }\item[{const char $\ast$}]{message,  }\item[{const char $\ast$}]{data\+\_\+fmt,  }\item[{va\+\_\+list $\ast$}]{ap }\end{DoxyParamCaption})}
+
+
+
+Definition at line 956 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a289a62faacceb0e9531e4832dd0541a2}\label{mjson_8c_a289a62faacceb0e9531e4832dd0541a2}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_return\_success@{jsonrpc\_return\_success}}
+\index{jsonrpc\_return\_success@{jsonrpc\_return\_success}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_return\_success()}{jsonrpc\_return\_success()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+return\+\_\+success (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$}]{r,  }\item[{const char $\ast$}]{result\+\_\+fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 990 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a7c5c8e77143d8185a7b1ceea4f791b93}\label{mjson_8c_a7c5c8e77143d8185a7b1ceea4f791b93}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_return\_successv@{jsonrpc\_return\_successv}}
+\index{jsonrpc\_return\_successv@{jsonrpc\_return\_successv}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_return\_successv()}{jsonrpc\_return\_successv()}}
+{\footnotesize\ttfamily void jsonrpc\+\_\+return\+\_\+successv (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structjsonrpc__request}{jsonrpc\+\_\+request}} $\ast$}]{r,  }\item[{const char $\ast$}]{result\+\_\+fmt,  }\item[{va\+\_\+list $\ast$}]{ap }\end{DoxyParamCaption})}
+
+
+
+Definition at line 978 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a3d041108bcbace58128bbf7116778b80}\label{mjson_8c_a3d041108bcbace58128bbf7116778b80}} 
+\index{mjson.c@{mjson.c}!mjson@{mjson}}
+\index{mjson@{mjson}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson()}{mjson()}}
+{\footnotesize\ttfamily int mjson (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{len,  }\item[{\mbox{\hyperlink{mjson_8h_ac3bb1a252ee60ef62318da83e9c8f184}{mjson\+\_\+cb\+\_\+t}}}]{cb,  }\item[{void $\ast$}]{ud }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_ac1677e253077e52771d65346be912adb}\label{mjson_8c_ac1677e253077e52771d65346be912adb}} 
+\index{mjson.c@{mjson.c}!mjson\_aprintf@{mjson\_aprintf}}
+\index{mjson\_aprintf@{mjson\_aprintf}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_aprintf()}{mjson\_aprintf()}}
+{\footnotesize\ttfamily char$\ast$ mjson\+\_\+aprintf (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 511 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a3f83003c2407e42a411ad8550c5ba73e}\label{mjson_8c_a3f83003c2407e42a411ad8550c5ba73e}} 
+\index{mjson.c@{mjson.c}!mjson\_base64\_dec@{mjson\_base64\_dec}}
+\index{mjson\_base64\_dec@{mjson\_base64\_dec}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_base64\_dec()}{mjson\_base64\_dec()}}
+{\footnotesize\ttfamily int mjson\+\_\+base64\+\_\+dec (\begin{DoxyParamCaption}\item[{const char $\ast$}]{src,  }\item[{int}]{n,  }\item[{char $\ast$}]{dst,  }\item[{int}]{dlen }\end{DoxyParamCaption})}
+
+
+
+Definition at line 371 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a1e95a6a8b811da5c03a9ca504540f31d}\label{mjson_8c_a1e95a6a8b811da5c03a9ca504540f31d}} 
+\index{mjson.c@{mjson.c}!mjson\_find@{mjson\_find}}
+\index{mjson\_find@{mjson\_find}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_find()}{mjson\_find()}}
+{\footnotesize\ttfamily int mjson\+\_\+find (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{n,  }\item[{const char $\ast$}]{jp,  }\item[{const char $\ast$$\ast$}]{tp,  }\item[{int $\ast$}]{tl }\end{DoxyParamCaption})}
+
+
+
+Definition at line 276 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a8a7663ddb5abf4a638aa24ea15bb2ea0}\label{mjson_8c_a8a7663ddb5abf4a638aa24ea15bb2ea0}} 
+\index{mjson.c@{mjson.c}!mjson\_get\_base64@{mjson\_get\_base64}}
+\index{mjson\_get\_base64@{mjson\_get\_base64}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_get\_base64()}{mjson\_get\_base64()}}
+{\footnotesize\ttfamily int mjson\+\_\+get\+\_\+base64 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{len,  }\item[{const char $\ast$}]{path,  }\item[{char $\ast$}]{to,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 390 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a62fc8d7912e73e1a66f09b75fc2ca9d0}\label{mjson_8c_a62fc8d7912e73e1a66f09b75fc2ca9d0}} 
+\index{mjson.c@{mjson.c}!mjson\_get\_bool@{mjson\_get\_bool}}
+\index{mjson\_get\_bool@{mjson\_get\_bool}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_get\_bool()}{mjson\_get\_bool()}}
+{\footnotesize\ttfamily int mjson\+\_\+get\+\_\+bool (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{len,  }\item[{const char $\ast$}]{path,  }\item[{int $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+Definition at line 293 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_ae2576cf14d517344c4e4106297bda875}\label{mjson_8c_ae2576cf14d517344c4e4106297bda875}} 
+\index{mjson.c@{mjson.c}!mjson\_get\_hex@{mjson\_get\_hex}}
+\index{mjson\_get\_hex@{mjson\_get\_hex}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_get\_hex()}{mjson\_get\_hex()}}
+{\footnotesize\ttfamily int mjson\+\_\+get\+\_\+hex (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{len,  }\item[{const char $\ast$}]{x,  }\item[{char $\ast$}]{to,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 343 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a4097c24ecd09ea95fb3099fdd6028d6a}\label{mjson_8c_a4097c24ecd09ea95fb3099fdd6028d6a}} 
+\index{mjson.c@{mjson.c}!mjson\_get\_number@{mjson\_get\_number}}
+\index{mjson\_get\_number@{mjson\_get\_number}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_get\_number()}{mjson\_get\_number()}}
+{\footnotesize\ttfamily int mjson\+\_\+get\+\_\+number (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{len,  }\item[{const char $\ast$}]{path,  }\item[{double $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+Definition at line 284 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a0e3f4de03695c2f1a7441e0ecf7f4294}\label{mjson_8c_a0e3f4de03695c2f1a7441e0ecf7f4294}} 
+\index{mjson.c@{mjson.c}!mjson\_get\_string@{mjson\_get\_string}}
+\index{mjson\_get\_string@{mjson\_get\_string}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_get\_string()}{mjson\_get\_string()}}
+{\footnotesize\ttfamily int mjson\+\_\+get\+\_\+string (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{len,  }\item[{const char $\ast$}]{path,  }\item[{char $\ast$}]{to,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 335 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a80ea2c5373d51084b0b7afdf6162add6}\label{mjson_8c_a80ea2c5373d51084b0b7afdf6162add6}} 
+\index{mjson.c@{mjson.c}!mjson\_globmatch@{mjson\_globmatch}}
+\index{mjson\_globmatch@{mjson\_globmatch}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_globmatch()}{mjson\_globmatch()}}
+{\footnotesize\ttfamily int mjson\+\_\+globmatch (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{int}]{n1,  }\item[{const char $\ast$}]{s2,  }\item[{int}]{n2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 940 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_adeaeaff7a5f13b0022efc856febb6095}\label{mjson_8c_adeaeaff7a5f13b0022efc856febb6095}} 
+\index{mjson.c@{mjson.c}!mjson\_merge@{mjson\_merge}}
+\index{mjson\_merge@{mjson\_merge}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_merge()}{mjson\_merge()}}
+{\footnotesize\ttfamily int mjson\+\_\+merge (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{n,  }\item[{const char $\ast$}]{s2,  }\item[{int}]{n2,  }\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+
+
+Definition at line 818 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a4c36e1f8cde5de6d97844840e2f847e4}\label{mjson_8c_a4c36e1f8cde5de6d97844840e2f847e4}} 
+\index{mjson.c@{mjson.c}!mjson\_next@{mjson\_next}}
+\index{mjson\_next@{mjson\_next}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_next()}{mjson\_next()}}
+{\footnotesize\ttfamily int mjson\+\_\+next (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{n,  }\item[{int}]{off,  }\item[{int $\ast$}]{koff,  }\item[{int $\ast$}]{klen,  }\item[{int $\ast$}]{voff,  }\item[{int $\ast$}]{vlen,  }\item[{int $\ast$}]{vtype }\end{DoxyParamCaption})}
+
+
+
+Definition at line 464 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a9e7cfa8353f08a8811dce48f1502e6c6}\label{mjson_8c_a9e7cfa8353f08a8811dce48f1502e6c6}} 
+\index{mjson.c@{mjson.c}!mjson\_pretty@{mjson\_pretty}}
+\index{mjson\_pretty@{mjson\_pretty}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_pretty()}{mjson\_pretty()}}
+{\footnotesize\ttfamily int mjson\+\_\+pretty (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{int}]{n,  }\item[{const char $\ast$}]{pad,  }\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+
+
+Definition at line 929 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_ad6a3dc019b1c988258490a8e223c9951}\label{mjson_8c_ad6a3dc019b1c988258490a8e223c9951}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_b64@{mjson\_print\_b64}}
+\index{mjson\_print\_b64@{mjson\_print\_b64}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_b64()}{mjson\_print\_b64()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+b64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{const unsigned char $\ast$}]{s,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 635 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_ac7f24e7b2b90f4de28998e360f6498d7}\label{mjson_8c_ac7f24e7b2b90f4de28998e360f6498d7}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_buf@{mjson\_print\_buf}}
+\index{mjson\_print\_buf@{mjson\_print\_buf}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_buf()}{mjson\_print\_buf()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+buf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{const char $\ast$}]{buf,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 526 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a8531b1c42bb500e0bfbc60c5265dcd3f}\label{mjson_8c_a8531b1c42bb500e0bfbc60c5265dcd3f}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_dbl@{mjson\_print\_dbl}}
+\index{mjson\_print\_dbl@{mjson\_print\_dbl}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_dbl()}{mjson\_print\_dbl()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+dbl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{double}]{d,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 561 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a04b414106a7d6261417b29181c63d0d0}\label{mjson_8c_a04b414106a7d6261417b29181c63d0d0}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_dynamic\_buf@{mjson\_print\_dynamic\_buf}}
+\index{mjson\_print\_dynamic\_buf@{mjson\_print\_dynamic\_buf}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_dynamic\_buf()}{mjson\_print\_dynamic\_buf()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+dynamic\+\_\+buf (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ptr,  }\item[{int}]{len,  }\item[{void $\ast$}]{fn\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 486 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a38de069af6915d1f8b72f9ec457b0319}\label{mjson_8c_a38de069af6915d1f8b72f9ec457b0319}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_fixed\_buf@{mjson\_print\_fixed\_buf}}
+\index{mjson\_print\_fixed\_buf@{mjson\_print\_fixed\_buf}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_fixed\_buf()}{mjson\_print\_fixed\_buf()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+fixed\+\_\+buf (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ptr,  }\item[{int}]{len,  }\item[{void $\ast$}]{fn\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 473 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a16c92662344824e4ab540865842f115a}\label{mjson_8c_a16c92662344824e4ab540865842f115a}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_int@{mjson\_print\_int}}
+\index{mjson\_print\_int@{mjson\_print\_int}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_int()}{mjson\_print\_int()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{int}]{v,  }\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 545 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a09a5c0e45382a7f1ea5cdb78176696e7}\label{mjson_8c_a09a5c0e45382a7f1ea5cdb78176696e7}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_long@{mjson\_print\_long}}
+\index{mjson\_print\_long@{mjson\_print\_long}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_long()}{mjson\_print\_long()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+long (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{long}]{val,  }\item[{int}]{is\+\_\+signed }\end{DoxyParamCaption})}
+
+
+
+Definition at line 530 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_ae915c1ff31cacefd73b933ee2b8ca9b7}\label{mjson_8c_ae915c1ff31cacefd73b933ee2b8ca9b7}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_null@{mjson\_print\_null}}
+\index{mjson\_print\_null@{mjson\_print\_null}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_null()}{mjson\_print\_null()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+null (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ptr,  }\item[{int}]{len,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+
+
+Definition at line 520 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a63c7d3da074f335cd1d8a102b7577c7e}\label{mjson_8c_a63c7d3da074f335cd1d8a102b7577c7e}} 
+\index{mjson.c@{mjson.c}!mjson\_print\_str@{mjson\_print\_str}}
+\index{mjson\_print\_str@{mjson\_print\_str}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_print\_str()}{mjson\_print\_str()}}
+{\footnotesize\ttfamily int mjson\+\_\+print\+\_\+str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{const char $\ast$}]{s,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 620 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_a2f4a6694117ca9a9c518e8271c45889a}\label{mjson_8c_a2f4a6694117ca9a9c518e8271c45889a}} 
+\index{mjson.c@{mjson.c}!mjson\_printf@{mjson\_printf}}
+\index{mjson\_printf@{mjson\_printf}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_printf()}{mjson\_printf()}}
+{\footnotesize\ttfamily int mjson\+\_\+printf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 726 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_ab3d68c4d7fd2399a8f30c8ba1f0b1fea}\label{mjson_8c_ab3d68c4d7fd2399a8f30c8ba1f0b1fea}} 
+\index{mjson.c@{mjson.c}!mjson\_snprintf@{mjson\_snprintf}}
+\index{mjson\_snprintf@{mjson\_snprintf}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_snprintf()}{mjson\_snprintf()}}
+{\footnotesize\ttfamily int mjson\+\_\+snprintf (\begin{DoxyParamCaption}\item[{char $\ast$}]{buf,  }\item[{size\+\_\+t}]{len,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 502 of file mjson.\+c.
+
+\mbox{\Hypertarget{mjson_8c_ab2140ea4b73fb69ced2cce707e57172a}\label{mjson_8c_ab2140ea4b73fb69ced2cce707e57172a}} 
+\index{mjson.c@{mjson.c}!mjson\_vprintf@{mjson\_vprintf}}
+\index{mjson\_vprintf@{mjson\_vprintf}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{mjson\_vprintf()}{mjson\_vprintf()}}
+{\footnotesize\ttfamily int mjson\+\_\+vprintf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mjson_8h_a503d57da5ff237fffffefa49da76871e}{mjson\+\_\+print\+\_\+fn\+\_\+t}}}]{fn,  }\item[{void $\ast$}]{fnd,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list $\ast$}]{ap }\end{DoxyParamCaption})}
+
+
+
+Definition at line 651 of file mjson.\+c.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mjson_8c_af348be8b54cd809950ec6b744a7d58c3}\label{mjson_8c_af348be8b54cd809950ec6b744a7d58c3}} 
+\index{mjson.c@{mjson.c}!jsonrpc\_default\_context@{jsonrpc\_default\_context}}
+\index{jsonrpc\_default\_context@{jsonrpc\_default\_context}!mjson.c@{mjson.c}}
+\doxysubsubsection{\texorpdfstring{jsonrpc\_default\_context}{jsonrpc\_default\_context}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structjsonrpc__ctx}{jsonrpc\+\_\+ctx}} jsonrpc\+\_\+default\+\_\+context}
+
+
+
+Definition at line 929 of file mjson.\+c.
+

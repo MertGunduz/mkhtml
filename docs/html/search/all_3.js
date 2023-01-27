@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['htmlgen_6',['htmlGen',['../d7/d14/htmlGen_8c.html#a69b4c4c798cbe0cd340ff94d9ca393ef',1,'htmlGen(char *subject):&#160;htmlGen.c'],['../d2/d6e/mkgen_8h.html#a69b4c4c798cbe0cd340ff94d9ca393ef',1,'htmlGen(char *subject):&#160;htmlGen.c']]],
-  ['htmlgen_2ec_7',['htmlGen.c',['../d7/d14/htmlGen_8c.html',1,'']]]
+  ['d1_9',['d1',['../db/d3b/structmsjon__get__data.html#ad6f309b36de29c9743fe52923fd684d3',1,'msjon_get_data']]],
+  ['d2_10',['d2',['../db/d3b/structmsjon__get__data.html#a227816044bbf91b1a5c1973971f2813e',1,'msjon_get_data']]],
+  ['depth_11',['depth',['../d0/df2/structnextdata.html#aacc23431f2805912c410a81e08b8900f',1,'nextdata']]]
 ];

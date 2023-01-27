@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['terminate_43',['terminate',['../db/d85/genhtml_8h.html#a74a45d2648335936561898c390281a6a',1,'terminate():&#160;terminate.c'],['../dc/d5b/terminate_8c.html#a74a45d2648335936561898c390281a6a',1,'terminate():&#160;terminate.c']]],
-  ['terminate_2ec_44',['terminate.c',['../dc/d5b/terminate_8c.html',1,'']]]
+  ['next_108',['next',['../d1/d91/structjsonrpc__method.html#a36304da84ae78c5f6d8132d6b2f19dc3',1,'jsonrpc_method']]],
+  ['nextdata_109',['nextdata',['../d0/df2/structnextdata.html',1,'']]]
 ];

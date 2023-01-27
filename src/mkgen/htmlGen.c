@@ -7,6 +7,8 @@
  * 
  * @date 25/01/2023
  * @bug no known bugs. 
+ * 
+ * @version 1.0.0
 */
 
 #include "mkgen.h"
@@ -31,6 +33,12 @@ void htmlGen(char *subject)
     
     /* FILE FOR WRITING */
     FILE *fp = fopen("mkhtml-response.json", "wb");
+
+    if (fp == NULL)
+    {
+        // error code write can't write json file jsonFileCreationErrorMessage.c (STDERR)
+        exit(1);
+    }
 
     /* curl initialization */
     CURL *curl = curl_easy_init();
@@ -60,6 +68,7 @@ void htmlGen(char *subject)
     if(res != CURLE_OK) 
     {
         fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+        exit(1);
     }
 
     /* free curl struct */

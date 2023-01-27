@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['patherrormessage_37',['patherrorMessage',['../d9/d34/genmessages_8h.html#ac9ddd0f699734bb4389ce36640ae02c3',1,'patherrorMessage(char path[]):&#160;patherrorMessage.c'],['../df/d2a/patherrorMessage_8c.html#ac9ddd0f699734bb4389ce36640ae02c3',1,'patherrorMessage(char path[]):&#160;patherrorMessage.c']]],
-  ['patherrormessage_2ec_38',['patherrorMessage.c',['../df/d2a/patherrorMessage_8c.html',1,'']]]
+  ['klen_41',['klen',['../d0/df2/structnextdata.html#a80b9d26162e9046fedab21f2ba2cf217',1,'nextdata']]],
+  ['koff_42',['koff',['../d0/df2/structnextdata.html#a0760ad2cc3cc712b046b6001881e93b0',1,'nextdata']]]
 ];
