@@ -36,7 +36,7 @@ void htmlGen(char *subject)
     bool seperated = false; /* the boolean data that controls the seperator on the configuration string */
 
     /* html generation data*/
-    char htmlData[2048];
+    char htmlData[8192];
     char htmlHeader[128];
     char authorizationHeader[256];
 
@@ -47,7 +47,7 @@ void htmlGen(char *subject)
     char requestData[512];
 
     /* writing request data */
-    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a detailed and long html document about %s in english language without css\", \"max_tokens\": 2000, \"temperature\": 0}", subject);
+    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a detailed and long html5 document about %s in english language without css\", \"max_tokens\": 4000, \"temperature\": 0.2}", subject);
     
     /* file for writing the curl response json */
     FILE *fp = fopen("mkhtml-response.json", "wb");
@@ -189,7 +189,7 @@ void htmlGen(char *subject)
     fclose(htmlFile);
 
     /* deleting the curl response json file */
-    remove("mkhtml-response.json");
+    //remove("mkhtml-response.json");
 }
 
 /// @brief takes argument name and deletes the spaces and assigns it to a buffer
