@@ -23,6 +23,7 @@ bool structureVerify();
 
 /* GENERATION FUNCTIONS */
 void htmlGen(char *subject);
+void addcss(FILE *file, char *style);
 
 /* MESSAGE FUNCTIONS */
 void wrongArgumentsMessage();

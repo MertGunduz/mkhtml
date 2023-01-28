@@ -25,6 +25,8 @@ bool \mbox{\hyperlink{mkgen_8h_ab6ea1f9a659d797ed8db959140b8561f}{structure\+Ver
 \begin{DoxyCompactList}\small\item\em the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/.mkhtml folder \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}{html\+Gen}} (char $\ast$subject)
 \begin{DoxyCompactList}\small\item\em the html generator system (works with openai api) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a826fa27237ad5d90272c50b5dc0e2faf}{addcss}} (FILE $\ast$file, char $\ast$style)
+\begin{DoxyCompactList}\small\item\em adds inline css to the html file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}{wrong\+Arguments\+Message}} ()
 \begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}{second\+Argument\+Missing\+Message}} ()
@@ -57,10 +59,24 @@ Mehmet Mert Gunduz
 24/01/2023 
 \end{DoxyDate}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000010}{Bug}}]no known bugs. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000011}{Bug}}]no known bugs. \end{DoxyRefDesc}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mkgen_8h_a826fa27237ad5d90272c50b5dc0e2faf}\label{mkgen_8h_a826fa27237ad5d90272c50b5dc0e2faf}} 
+\index{mkgen.h@{mkgen.h}!addcss@{addcss}}
+\index{addcss@{addcss}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{addcss()}{addcss()}}
+{\footnotesize\ttfamily void addcss (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{char $\ast$}]{style }\end{DoxyParamCaption})}
+
+
+
+adds inline css to the html file 
+
+
+
+Definition at line 15 of file addcss.\+c.
+
 \mbox{\Hypertarget{mkgen_8h_accd7a277a011046979c4c497d64e40ee}\label{mkgen_8h_accd7a277a011046979c4c497d64e40ee}} 
 \index{mkgen.h@{mkgen.h}!argVerify@{argVerify}}
 \index{argVerify@{argVerify}!mkgen.h@{mkgen.h}}
