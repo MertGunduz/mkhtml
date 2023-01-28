@@ -14,6 +14,8 @@
 #include "mkgen.h"
 #include "../mjson/mjson.h"
 
+void htmlFileNameInitializer(char *argument, char *buffer);
+
 /// @brief the html generator system (works with openai api)
 /// @param subject 
 void htmlGen(char *subject)
@@ -24,6 +26,10 @@ void htmlGen(char *subject)
     
     /* html generation data*/
     char htmlData[2048];
+    char htmlHeader[128];
+
+    /* initializing html header */
+    htmlFileNameInitializer(subject, htmlHeader);
 
     /* request data */
     char requestData[512];
@@ -117,7 +123,7 @@ void htmlGen(char *subject)
     ************************************************/
 
     /* initializing the html file */
-    FILE *htmlFile = fopen("subject.html", "w");
+    FILE *htmlFile = fopen(htmlHeader, "w");
 
     if (htmlFile == NULL) 
     {
@@ -133,4 +139,29 @@ void htmlGen(char *subject)
 
     /* deleting the curl response json file */
     remove("mkhtml-response.json");
+}
+
+/// @brief takes argument name and deletes the spaces and assigns it to a buffer
+/// @param argument 
+/// @param buffer 
+void htmlFileNameInitializer(char *argument, char *buffer)
+{
+    int argLen = strlen(argument);
+    int bI = 0;
+
+    /* removing spaces */
+    for (int i = 0; i < argLen; i++)
+    {
+        if (argument[i] != ' ')
+        {
+            buffer[bI] = argument[i];
+            bI++;
+        }
+    }
+
+    /* null terminating */
+    buffer[bI] = '\0';
+
+    /* adding the file extension */
+    strcat(buffer, ".html");
 }
