@@ -11,8 +11,16 @@
 
 #include "mkgen.h"
 
+void cssgenSuccessfullIMessage();
+
 /// @brief adds inline css to the html file
 void addcss(FILE *file, char *style)
 {
     
+}
+
+/// @brief prints information css generation
+void cssgenSuccessfullIMessage()
+{
+    fprintf(stdout, "=%%= css file inserted successfully  =%%=\n");
 }
