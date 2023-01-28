@@ -24,9 +24,21 @@ void htmlGen(char *subject)
     * CURL REQUEST AND WRITING RESPONSE [1]
     ************************************************/
     
+    /* configuration data */
+    char settingsFilePath[128]; sprintf(settingsFilePath, "%s/.mkhtml/settings.txt", getenv("HOME")); /* /home/.mkhtml/settings.txt file path */
+    
+    char apiKey[128]; /* api key */
+    int apiI = 0; /* api key indexer */
+    
+    char css[64]; /* css selector */
+    int cssI = 0; /* css selector indexer */
+    
+    bool seperated = false; /* the boolean data that controls the seperator on the configuration string */
+
     /* html generation data*/
     char htmlData[2048];
     char htmlHeader[128];
+    char authorizationHeader[256];
 
     /* initializing html header */
     htmlFileNameInitializer(subject, htmlHeader);
@@ -37,7 +49,7 @@ void htmlGen(char *subject)
     /* writing request data */
     sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a detailed and long html document about %s in english language without css\", \"max_tokens\": 2000, \"temperature\": 0}", subject);
     
-    /* FILE FOR WRITING */
+    /* file for writing the curl response json */
     FILE *fp = fopen("mkhtml-response.json", "wb");
 
     if (fp == NULL)
@@ -46,14 +58,53 @@ void htmlGen(char *subject)
         exit(1);
     }
 
+    /* file for reading the api key and css selection */
+    FILE *settingsFile = fopen(settingsFilePath, "r");
+
+    if (settingsFile == NULL)
+    {
+        // error code write settings file can't be interacted settingsFileInteractionErrorMessage.c (STDERR)
+        exit(1);
+    }
+
+    /* reading and initializing the data strings (apikey and css selector) */
+    while (!feof(settingsFile))
+    {
+        char sChar = fgetc(settingsFile);
+
+        if (sChar == ':')
+        {
+            seperated = true;
+            continue;
+        }
+
+        if (!seperated)
+        {
+            apiKey[apiI] = sChar;
+            apiI++;
+        }
+        else
+        {
+            css[cssI] = sChar;
+            cssI++;
+        }
+    }
+
+    /* null terminating the apikey and css selector strings */
+    apiKey[apiI] = '\0';
+    css[cssI - 2] = '\0';
+
     /* curl initialization */
     CURL *curl = curl_easy_init();
     CURLcode res;
 
+    /* authorization header initalizing */
+    sprintf(authorizationHeader, "Authorization: Bearer %s", apiKey);
+
     /* headers */
     struct curl_slist *headers=NULL;
     headers = curl_slist_append(headers, "Content-Type: application/json");
-    headers = curl_slist_append(headers, "Authorization: Bearer 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");
+    headers = curl_slist_append(headers, authorizationHeader);
 
     /* curl control */
     if (!curl)
