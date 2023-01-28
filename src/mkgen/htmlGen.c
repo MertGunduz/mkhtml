@@ -47,22 +47,6 @@ void htmlGen(char *subject)
     /* request data */
     char requestData[512];
 
-    /* writing request data */
-    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a detailed and long html5 document about %s in english language without css\", \"max_tokens\": 4000, \"temperature\": 0.2}", subject);
-    
-    /* file for writing the curl response json */
-    FILE *fp = fopen("mkhtml-response.json", "wb");
-
-    if (fp == NULL)
-    {
-        jsonFileCreationErrorMessage();
-        exit(1);
-    }
-    else
-    {
-        fprintf(stdout, "=%%= json file created =%%=\n");
-    }
-
     /* file for reading the api key and css selection */
     FILE *settingsFile = fopen(settingsFilePath, "r");
 
@@ -70,10 +54,6 @@ void htmlGen(char *subject)
     {
         confInteractionErrorMessage();
         exit(1);
-    }
-    else
-    {
-        fprintf(stdout, "=%%= configuration file read =%%=\n");  
     }
 
     /* reading and initializing the data strings (apikey and css selector) */
@@ -102,6 +82,32 @@ void htmlGen(char *subject)
     /* null terminating the apikey and css selector strings */
     apiKey[apiI] = '\0';
     css[cssI - 2] = '\0';
+
+    if (strcmp(apiKey, "noapikey") == 0)
+    {
+        noApiKeyMessage();
+        exit(1);
+    }
+    else
+    {
+        fprintf(stdout, "=%%= api key found successfully =%%=\n");
+    }
+
+    /* writing request data */
+    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a detailed and long html5 document about %s in english language without css\", \"max_tokens\": 4000, \"temperature\": 0.2}", subject);
+    
+    /* file for writing the curl response json */
+    FILE *fp = fopen("mkhtml-response.json", "wb");
+
+    if (fp == NULL)
+    {
+        jsonFileCreationErrorMessage();
+        exit(1);
+    }
+    else
+    {
+        fprintf(stdout, "=%%= json file created =%%=\n");
+    }
 
     /* curl initialization */
     CURL *curl = curl_easy_init();

@@ -34,3 +34,4 @@ void confInteractionErrorMessage();
 void curlErrorMessage();
 void jsonReadErrorMessage();
 void htmlFileInitErrorMessage();
+void noApiKeyMessage();
