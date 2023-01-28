@@ -32,7 +32,19 @@ void \mbox{\hyperlink{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}{second\+Argume
 void \mbox{\hyperlink{mkgen_8h_af8d33a1b516f012b50b366f53496519b}{bad\+Argc\+Message}} (int argc)
 \begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a8f11f14157d85b08fb7564b5607da472}{verify\+File\+Structure\+Error}} ()
-\begin{DoxyCompactList}\small\item\em prints error information and solving advice about the file structure error \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em prints error information and solving advice about the file structure error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_ac8b1c36e93f58ca94a0e3d40fa5c5dd9}{json\+File\+Creation\+Error\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about curl json response error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_abaca231c0afa2c079d5d50856caa26e1}{conf\+Interaction\+Error\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about configuration file read error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a2b058d7bdf3ac12eba26f5dae609fc32}{curl\+Error\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about curl pointer error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a07247c06d2afb392bf347f472f226201}{json\+Read\+Error\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about curl response json read error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a29fe65421c56f62a316cd5bdfd96989f}{html\+File\+Init\+Error\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about html file creation error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a72f88757bcb790cd56ad83a8b22b091c}{no\+Api\+Key\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints information about no api key error \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -45,7 +57,7 @@ Mehmet Mert Gunduz
 24/01/2023 
 \end{DoxyDate}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000005}{Bug}}]no known bugs. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000010}{Bug}}]no known bugs. \end{DoxyRefDesc}
 
 
 \doxysubsection{Function Documentation}
@@ -87,6 +99,48 @@ prints information about wrong arguments
 
 Definition at line 15 of file bad\+Argc\+Message.\+c.
 
+\mbox{\Hypertarget{mkgen_8h_abaca231c0afa2c079d5d50856caa26e1}\label{mkgen_8h_abaca231c0afa2c079d5d50856caa26e1}} 
+\index{mkgen.h@{mkgen.h}!confInteractionErrorMessage@{confInteractionErrorMessage}}
+\index{confInteractionErrorMessage@{confInteractionErrorMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{confInteractionErrorMessage()}{confInteractionErrorMessage()}}
+{\footnotesize\ttfamily void conf\+Interaction\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about configuration file read error 
+
+
+
+Definition at line 15 of file conf\+Interaction\+Error\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a2b058d7bdf3ac12eba26f5dae609fc32}\label{mkgen_8h_a2b058d7bdf3ac12eba26f5dae609fc32}} 
+\index{mkgen.h@{mkgen.h}!curlErrorMessage@{curlErrorMessage}}
+\index{curlErrorMessage@{curlErrorMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{curlErrorMessage()}{curlErrorMessage()}}
+{\footnotesize\ttfamily void curl\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about curl pointer error 
+
+
+
+Definition at line 15 of file curl\+Error\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a29fe65421c56f62a316cd5bdfd96989f}\label{mkgen_8h_a29fe65421c56f62a316cd5bdfd96989f}} 
+\index{mkgen.h@{mkgen.h}!htmlFileInitErrorMessage@{htmlFileInitErrorMessage}}
+\index{htmlFileInitErrorMessage@{htmlFileInitErrorMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{htmlFileInitErrorMessage()}{htmlFileInitErrorMessage()}}
+{\footnotesize\ttfamily void html\+File\+Init\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about html file creation error 
+
+
+
+Definition at line 15 of file html\+File\+Init\+Error\+Message.\+c.
+
 \mbox{\Hypertarget{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}\label{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}} 
 \index{mkgen.h@{mkgen.h}!htmlGen@{htmlGen}}
 \index{htmlGen@{htmlGen}!mkgen.h@{mkgen.h}}
@@ -105,7 +159,49 @@ the html generator system (works with openai api)
 \end{DoxyParams}
 
 
-Definition at line 19 of file html\+Gen.\+c.
+Definition at line 22 of file html\+Gen.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_ac8b1c36e93f58ca94a0e3d40fa5c5dd9}\label{mkgen_8h_ac8b1c36e93f58ca94a0e3d40fa5c5dd9}} 
+\index{mkgen.h@{mkgen.h}!jsonFileCreationErrorMessage@{jsonFileCreationErrorMessage}}
+\index{jsonFileCreationErrorMessage@{jsonFileCreationErrorMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{jsonFileCreationErrorMessage()}{jsonFileCreationErrorMessage()}}
+{\footnotesize\ttfamily void json\+File\+Creation\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about curl json response error 
+
+
+
+Definition at line 15 of file json\+File\+Creation\+Error\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a07247c06d2afb392bf347f472f226201}\label{mkgen_8h_a07247c06d2afb392bf347f472f226201}} 
+\index{mkgen.h@{mkgen.h}!jsonReadErrorMessage@{jsonReadErrorMessage}}
+\index{jsonReadErrorMessage@{jsonReadErrorMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{jsonReadErrorMessage()}{jsonReadErrorMessage()}}
+{\footnotesize\ttfamily void json\+Read\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about curl response json read error 
+
+
+
+Definition at line 15 of file json\+Read\+Error\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a72f88757bcb790cd56ad83a8b22b091c}\label{mkgen_8h_a72f88757bcb790cd56ad83a8b22b091c}} 
+\index{mkgen.h@{mkgen.h}!noApiKeyMessage@{noApiKeyMessage}}
+\index{noApiKeyMessage@{noApiKeyMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{noApiKeyMessage()}{noApiKeyMessage()}}
+{\footnotesize\ttfamily void no\+Api\+Key\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about no api key error 
+
+
+
+Definition at line 15 of file no\+Api\+Key\+Message.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}\label{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}} 
 \index{mkgen.h@{mkgen.h}!secondArgumentMissingMessage@{secondArgumentMissingMessage}}

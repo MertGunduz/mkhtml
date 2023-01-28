@@ -12,6 +12,10 @@ Include dependency graph for html\+Gen.\+c\+:
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{htmlGen_8c_ac78f943821a905862faa7ecee105fbab}{html\+File\+Name\+Initializer}} (char $\ast$argument, char $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em takes argument name and deletes the spaces and assigns it to a buffer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{htmlGen_8c_aa3afa9b7f8090c0068461851188403fd}{creation\+Message}} (char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em writes information about created html output file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{htmlGen_8c_a69b4c4c798cbe0cd340ff94d9ca393ef}{html\+Gen}} (char $\ast$subject)
 \begin{DoxyCompactList}\small\item\em the html generator system (works with openai api) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -26,15 +30,56 @@ Mehmet Mert Gunduz
 25/01/2023 
 \end{DoxyDate}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000004}{Bug}}]no known bugs. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000007}{Bug}}]no known bugs. \end{DoxyRefDesc}
 
 
 \begin{DoxyVersion}{Version}
-1.\+0.\+0 
+1.\+1.\+0 
 \end{DoxyVersion}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{htmlGen_8c_aa3afa9b7f8090c0068461851188403fd}\label{htmlGen_8c_aa3afa9b7f8090c0068461851188403fd}} 
+\index{htmlGen.c@{htmlGen.c}!creationMessage@{creationMessage}}
+\index{creationMessage@{creationMessage}!htmlGen.c@{htmlGen.c}}
+\doxysubsubsection{\texorpdfstring{creationMessage()}{creationMessage()}}
+{\footnotesize\ttfamily void creation\+Message (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+writes information about created html output file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 256 of file html\+Gen.\+c.
+
+\mbox{\Hypertarget{htmlGen_8c_ac78f943821a905862faa7ecee105fbab}\label{htmlGen_8c_ac78f943821a905862faa7ecee105fbab}} 
+\index{htmlGen.c@{htmlGen.c}!htmlFileNameInitializer@{htmlFileNameInitializer}}
+\index{htmlFileNameInitializer@{htmlFileNameInitializer}!htmlGen.c@{htmlGen.c}}
+\doxysubsubsection{\texorpdfstring{htmlFileNameInitializer()}{htmlFileNameInitializer()}}
+{\footnotesize\ttfamily void html\+File\+Name\+Initializer (\begin{DoxyParamCaption}\item[{char $\ast$}]{argument,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+takes argument name and deletes the spaces and assigns it to a buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argument} & \\
+\hline
+{\em buffer} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 232 of file html\+Gen.\+c.
+
 \mbox{\Hypertarget{htmlGen_8c_a69b4c4c798cbe0cd340ff94d9ca393ef}\label{htmlGen_8c_a69b4c4c798cbe0cd340ff94d9ca393ef}} 
 \index{htmlGen.c@{htmlGen.c}!htmlGen@{htmlGen}}
 \index{htmlGen@{htmlGen}!htmlGen.c@{htmlGen.c}}
@@ -53,5 +98,5 @@ the html generator system (works with openai api)
 \end{DoxyParams}
 
 
-Definition at line 19 of file html\+Gen.\+c.
+Definition at line 22 of file html\+Gen.\+c.
 
