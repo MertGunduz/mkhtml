@@ -8,13 +8,14 @@
  * @date 25/01/2023
  * @bug no known bugs. 
  * 
- * @version 1.0.0
+ * @version 1.1.0
 */
 
 #include "mkgen.h"
 #include "../mjson/mjson.h"
 
 void htmlFileNameInitializer(char *argument, char *buffer);
+void creationMessage(char *fileName);
 
 /// @brief the html generator system (works with openai api)
 /// @param subject 
@@ -54,8 +55,12 @@ void htmlGen(char *subject)
 
     if (fp == NULL)
     {
-        // error code write can't write json file jsonFileCreationErrorMessage.c (STDERR)
+        jsonFileCreationErrorMessage();
         exit(1);
+    }
+    else
+    {
+        fprintf(stdout, "=%%= json file created =%%=\n");
     }
 
     /* file for reading the api key and css selection */
@@ -63,8 +68,12 @@ void htmlGen(char *subject)
 
     if (settingsFile == NULL)
     {
-        // error code write settings file can't be interacted settingsFileInteractionErrorMessage.c (STDERR)
+        confInteractionErrorMessage();
         exit(1);
+    }
+    else
+    {
+        fprintf(stdout, "=%%= configuration file read =%%=\n");  
     }
 
     /* reading and initializing the data strings (apikey and css selector) */
@@ -109,11 +118,15 @@ void htmlGen(char *subject)
     /* curl control */
     if (!curl)
     {
-        fprintf(stderr, "curl error"); // NEED A SEPERATE MESSAGE FUNCTION (curlErrorMessage.c) 
+        curlErrorMessage();
         exit(1);
     }
+    else
+    {
+        fprintf(stdout, "=%%= curl initialized successfully =%%=\n");
+    }
 
-    /*CURL OPTIONS */
+    /* curl easy options */
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.openai.com/v1/completions");
     curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
     curl_easy_setopt(curl, CURLOPT_POSTFIELDS, requestData);
@@ -126,6 +139,10 @@ void htmlGen(char *subject)
     {
         fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
         exit(1);
+    }
+    else
+    {
+        fprintf(stdout, "=%%= curl request sent successfully =%%=\n");
     }
 
     /* free curl struct */
@@ -143,8 +160,12 @@ void htmlGen(char *subject)
 
     if (jsonFile == NULL) 
     {
-        // error code write jsonInteractionErrorMessage.c (STDERR)
+        jsonReadErrorMessage();
         exit(1);
+    }
+    else
+    {
+        fprintf(stdout, "=%%= curl reading system initialized =%%=\n");
     }
 
     /* reading and malloc part */
@@ -178,8 +199,12 @@ void htmlGen(char *subject)
 
     if (htmlFile == NULL) 
     {
-        // error code write htmlFileErrorMessage.c (STDERR)
+        htmlFileInitErrorMessage();
         exit(1);
+    }
+    else
+    {
+        fprintf(stdout, "=%%= html file initialized =%%=\n");
     }
 
     /* writing the file */
@@ -189,7 +214,10 @@ void htmlGen(char *subject)
     fclose(htmlFile);
 
     /* deleting the curl response json file */
-    //remove("mkhtml-response.json");
+    remove("mkhtml-response.json");
+
+    /* creation message */
+    creationMessage(htmlHeader);
 }
 
 /// @brief takes argument name and deletes the spaces and assigns it to a buffer
@@ -215,4 +243,11 @@ void htmlFileNameInitializer(char *argument, char *buffer)
 
     /* adding the file extension */
     strcat(buffer, ".html");
+}
+
+/// @brief writes information about created html output file
+/// @param fileName
+void creationMessage(char *fileName)
+{
+    fprintf(stdout, "=%%= %s file created  =%%=\n", fileName);
 }

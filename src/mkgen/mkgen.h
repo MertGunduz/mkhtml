@@ -29,3 +29,8 @@ void wrongArgumentsMessage();
 void secondArgumentMissingMessage();
 void badArgcMessage(int argc);
 void verifyFileStructureError();
+void jsonFileCreationErrorMessage();
+void confInteractionErrorMessage();
+void curlErrorMessage();
+void jsonReadErrorMessage();
+void htmlFileInitErrorMessage();
