@@ -9,6 +9,9 @@
  * @bug no known bugs.
 */
 
+#ifndef MKGEN_H
+#define MKGEN_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -36,3 +39,5 @@ void curlErrorMessage();
 void jsonReadErrorMessage();
 void htmlFileInitErrorMessage();
 void noApiKeyMessage();
+
+#endif /* MKGEN_H */
