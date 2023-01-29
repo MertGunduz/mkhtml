@@ -255,5 +255,5 @@ void htmlFileNameInitializer(char *argument, char *buffer)
 /// @param fileName
 void creationMessage(char *fileName)
 {
-    fprintf(stdout, "=%%= %s file created  =%%=\n", fileName);
+    fprintf(stdout, "=%%= %s file created =%%=\n", fileName);
 }
