@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
         }
         else if (strcmp(argv[1], "-s") == 0 || strcmp(argv[1], "--settings") == 0)
         {
-            fprintf(stdout, "settings output menu\n");
+            mkSettingsMenu();
         }
         else if (strcmp(argv[1], "-w") == 0 || strcmp(argv[1], "--website") == 0)
         {

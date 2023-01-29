@@ -27,6 +27,8 @@ bool structureVerify();
 /* GENERATION FUNCTIONS */
 void htmlGen(char *subject);
 void addcss(FILE *file, char *style);
+void settingsDataReader(char *apiKey, char *css);
+void mkSettingsMenu();
 
 /* MESSAGE FUNCTIONS */
 void wrongArgumentsMessage();

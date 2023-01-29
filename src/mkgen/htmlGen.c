@@ -28,11 +28,8 @@ void htmlGen(char *subject)
     /* configuration data */
     char settingsFilePath[128]; sprintf(settingsFilePath, "%s/.mkhtml/settings.txt", getenv("HOME")); /* /home/.mkhtml/settings.txt file path */
     
-    char apiKey[128]; /* api key */
-    int apiI = 0; /* api key indexer */
-    
+    char apiKey[128]; /* api key */    
     char css[64]; /* css selector */
-    int cssI = 0; /* css selector indexer */
     
     bool seperated = false; /* the boolean data that controls the seperator on the configuration string */
 
@@ -47,41 +44,8 @@ void htmlGen(char *subject)
     /* request data */
     char requestData[512];
 
-    /* file for reading the api key and css selection */
-    FILE *settingsFile = fopen(settingsFilePath, "r");
-
-    if (settingsFile == NULL)
-    {
-        confInteractionErrorMessage();
-        exit(1);
-    }
-
-    /* reading and initializing the data strings (apikey and css selector) */
-    while (!feof(settingsFile))
-    {
-        char sChar = fgetc(settingsFile);
-
-        if (sChar == ':')
-        {
-            seperated = true;
-            continue;
-        }
-
-        if (!seperated)
-        {
-            apiKey[apiI] = sChar;
-            apiI++;
-        }
-        else
-        {
-            css[cssI] = sChar;
-            cssI++;
-        }
-    }
-
-    /* null terminating the apikey and css selector strings */
-    apiKey[apiI] = '\0';
-    css[cssI - 2] = '\0';
+    /* read api key and css selection from the /home/.mkhtml/settings.txt file */
+    settingsDataReader(apiKey, css);
 
     if (strcmp(apiKey, "noapikey") == 0)
     {
