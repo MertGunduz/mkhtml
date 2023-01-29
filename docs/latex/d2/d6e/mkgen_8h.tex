@@ -13,9 +13,21 @@ the html generation library of mkhtml
 {\ttfamily \#include $<$unistd.\+h$>$}\newline
 {\ttfamily \#include $<$sys/stat.\+h$>$}\newline
 Include dependency graph for mkgen.\+h\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/dbe/mkgen_8h__incl}
+\end{center}
+\end{figure}
 This graph shows which files directly or indirectly include this file\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/d2b/mkgen_8h__dep__incl}
+\end{center}
+\end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,6 +39,10 @@ void \mbox{\hyperlink{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}{html\+Gen}} (c
 \begin{DoxyCompactList}\small\item\em the html generator system (works with openai api) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a826fa27237ad5d90272c50b5dc0e2faf}{addcss}} (FILE $\ast$file, char $\ast$style)
 \begin{DoxyCompactList}\small\item\em adds inline css to the html file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}{settings\+Data\+Reader}} (char $\ast$api\+Key, char $\ast$css)
+\begin{DoxyCompactList}\small\item\em reads the informationg from the /home/.mkhtml/settings.\+txt file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a0ef5d8864ea6c2167c121f3b3265eeb5}{mk\+Settings\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em prints information about the /home/.mkhtml/settings.\+txt \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}{wrong\+Arguments\+Message}} ()
 \begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}{second\+Argument\+Missing\+Message}} ()
@@ -205,6 +221,20 @@ prints information about curl response json read error
 
 Definition at line 15 of file json\+Read\+Error\+Message.\+c.
 
+\mbox{\Hypertarget{mkgen_8h_a0ef5d8864ea6c2167c121f3b3265eeb5}\label{mkgen_8h_a0ef5d8864ea6c2167c121f3b3265eeb5}} 
+\index{mkgen.h@{mkgen.h}!mkSettingsMenu@{mkSettingsMenu}}
+\index{mkSettingsMenu@{mkSettingsMenu}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{mkSettingsMenu()}{mkSettingsMenu()}}
+{\footnotesize\ttfamily void mk\+Settings\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints information about the /home/.mkhtml/settings.\+txt 
+
+
+
+Definition at line 15 of file mk\+Settings\+Menu.\+c.
+
 \mbox{\Hypertarget{mkgen_8h_a72f88757bcb790cd56ad83a8b22b091c}\label{mkgen_8h_a72f88757bcb790cd56ad83a8b22b091c}} 
 \index{mkgen.h@{mkgen.h}!noApiKeyMessage@{noApiKeyMessage}}
 \index{noApiKeyMessage@{noApiKeyMessage}!mkgen.h@{mkgen.h}}
@@ -232,6 +262,20 @@ prints information about missing second argument
 
 
 Definition at line 15 of file second\+Argument\+Missing\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}\label{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}} 
+\index{mkgen.h@{mkgen.h}!settingsDataReader@{settingsDataReader}}
+\index{settingsDataReader@{settingsDataReader}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{settingsDataReader()}{settingsDataReader()}}
+{\footnotesize\ttfamily void settings\+Data\+Reader (\begin{DoxyParamCaption}\item[{char $\ast$}]{api\+Key,  }\item[{char $\ast$}]{css }\end{DoxyParamCaption})}
+
+
+
+reads the informationg from the /home/.mkhtml/settings.\+txt file 
+
+
+
+Definition at line 15 of file settings\+Data\+Reader.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_ab6ea1f9a659d797ed8db959140b8561f}\label{mkgen_8h_ab6ea1f9a659d797ed8db959140b8561f}} 
 \index{mkgen.h@{mkgen.h}!structureVerify@{structureVerify}}
