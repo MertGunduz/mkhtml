@@ -58,7 +58,7 @@ void htmlGen(char *subject)
     }
 
     /* writing request data */
-    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a detailed and long html5 document about %s in english language without css\", \"max_tokens\": 4000, \"temperature\": 0.2}", subject);
+    sprintf(requestData, "{\"model\": \"text-davinci-003\", \"prompt\": \"write a big, descriptive and detailed html5 document about %s in english language without css\", \"max_tokens\": 4000, \"temperature\": 0.2}", subject);
     
     /* file for writing the curl response json */
     FILE *fp = fopen("mkhtml-response.json", "wb");

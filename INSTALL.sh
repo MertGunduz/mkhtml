@@ -89,7 +89,7 @@ fi
 #****************************************
 # DELETING THE SOURCE BUILD DIRECTORY [7]
 #****************************************
-#cd .. && rm -r build
+cd .. && rm -r build
 
 echo "=%= removing the build directory =%="
 sleep 1

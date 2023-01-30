@@ -31,7 +31,7 @@ void mkSettingsMenu();
 int takeFileChar(FILE *file);
 
 /* CSS-DATA STYLES */
-static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant"};
-static int totalCssDataStyles = 5;
+static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant", "hacker"};
+static int totalCssDataStyles = 6;
 
 #endif /* MKGEN_H */

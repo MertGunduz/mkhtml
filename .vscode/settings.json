@@ -6,6 +6,7 @@
         "string.h": "c",
         "stdbool.h": "c",
         "mkgen.h": "c",
-        "mkgenmessages.h": "c"
+        "mkgenmessages.h": "c",
+        "stdlib.h": "c"
     }
 }

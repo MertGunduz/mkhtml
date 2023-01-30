@@ -1,107 +1,109 @@
- <style>
-        html {
-          scroll-behavior: smooth;
-          overflow-x: hidden;
-        }
+<style>
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
 
-        body {
-          display: flex;
-          flex-direction: column;
-        }
-        main {
-          flex: 1 1 auto;
-        }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 
-        h1 {
-          color: black;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          letter-spacing: 5px;
-          text-decoration: underline;
-        }
+    main {
+        flex: 1 1 auto;
+    }
 
-        h2 {
-          color: black;
-          font-weight: 600;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          text-decoration: underline;
-          letter-spacing: 5px;
-        }
+    h1 {
+        color: black;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+        letter-spacing: 5px;
+        text-decoration: underline;
+    }
 
-        h3 {
-          color: rgba(0, 0, 0, 1);
-          font-weight: 600;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          text-decoration: underline;
-          letter-spacing: 5px;
-        }
 
-        h4 {
-          color: black;
-          font-weight: 600;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          text-decoration: underline;
-          letter-spacing: 5px;
-        }
+    h2 {
+        color: black;
+        font-weight: 600;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+        text-decoration: underline;
+        letter-spacing: 5px;
+    }
 
-        h5 {
-          color: black;
-          font-weight: 600;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          text-decoration: underline;
-          letter-spacing: 5px;
-        }
+    h3 {
+        color: rgba(0, 0, 0, 1);
+        font-weight: 600;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+        text-decoration: underline;
+        letter-spacing: 5px;
+    }
 
-        h6 {
-          color: black;
-          font-weight: 600;
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          text-decoration: underline;
-          letter-spacing: 5px;
-        }
+    h4 {
+        color: black;
+        font-weight: 600;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+        text-decoration: underline;
+        letter-spacing: 5px;
+    }
 
-        p {
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-          color: rgba(0, 0, 0, 0.667);
-          font-size: 14px;
-        }
+    h5 {
+        color: black;
+        font-weight: 600;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+        text-decoration: underline;
+        letter-spacing: 5px;
+    }
 
-        ol,
-        ul {
-        }
+    h6 {
+        color: black;
+        font-weight: 600;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+        text-decoration: underline;
+        letter-spacing: 5px;
+    }
 
-        li {
-          font-family: "Courier New", Courier, monospace;
-          font-size: 14px;
-          font-weight: 600;
-          text-decoration: underline;
-        }
-        li::marker {
-          color: rgb(30, 205, 74);
-        }
+    p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+        color: rgba(0, 0, 0, 0.667);
+        font-size: 14px;
+    }
 
-        table {
-          width: min-content;
-          border: 1px solid rgb(213, 207, 8);
-          border-collapse: collapse;
-          background-color: rgb(58, 58, 58);
-          color: white;
-        }
+    ol, ul {
+        /* empty css */
+    }
 
-        th {
-          padding: 5px 10px;
-          border: 1px solid rgb(213, 207, 8);
-        }
+    li {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
 
-        td {
-          border: 1px solid rgb(213, 207, 8);
+    li::marker {
+        color: rgb(30, 205, 74);
+    }
 
-          padding: 3px 10px;
-        }
+    table {
+        width: min-content;
+        border: 1px solid rgb(213, 207, 8);
+        border-collapse: collapse;
+        background-color: rgb(58, 58, 58);
+        color: white;
+    }
+
+    th {
+        padding: 5px 10px;
+        border: 1px solid rgb(213, 207, 8);
+    }
+
+    td {
+        border: 1px solid rgb(213, 207, 8);
+        padding: 3px 10px;
+    }
 </style>
