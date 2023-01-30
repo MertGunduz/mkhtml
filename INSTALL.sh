@@ -14,7 +14,7 @@ fi
 #****************************************
 # USR-DIRECTORY CONTROL [2] 
 #****************************************
-if [ -d "$HOME/.mkhtml" ] && [ -f "/usr/bin/mkhtml" ] 
+if [ -d "$HOME/.mkhtml" ] && [ -d "$HOME/.mkhtml/cssgenerators" ] && [ -f "/usr/bin/mkhtml" ]
 then
     # delete the files if they are exist in the system
     sudo rm -r "$HOME/.mkhtml"
@@ -47,6 +47,9 @@ then
     # man page generation
     cp ../man/mkhtml.1 mkhtml.1
 
+    # cssgenerator generation
+    cp -r ../cssgenerators cssgenerators
+
     echo "=%= compiling and linking the project =%="
     sleep 1
 fi
@@ -72,6 +75,9 @@ if [ ! -d "$HOME/.mkhtml" ]
 then
     mkdir "$HOME/.mkhtml"
     sudo chmod 775 "$HOME/.mkhtml"
+    
+    sudo mv cssgenerators "$HOME/.mkhtml"
+    
     touch "$HOME/.mkhtml/settings.txt"
     sudo chmod 775 "$HOME/.mkhtml/settings.txt"
     echo "noapikey:empty" > "$HOME/.mkhtml/settings.txt"
@@ -83,12 +89,12 @@ fi
 #****************************************
 # DELETING THE SOURCE BUILD DIRECTORY [7]
 #****************************************
-cd .. && rm -r build
+#cd .. && rm -r build
 
 echo "=%= removing the build directory =%="
 sleep 1
 
-if [ -d "$HOME/.mkhtml" ] && [ -f "/usr/bin/mkhtml" ] && [ -f "$HOME/.mkhtml/settings.txt" ] && [  -f "/usr/share/man/man1/mkhtml.1.gz" ]
+if [ -d "$HOME/.mkhtml" ] && [ -d "$HOME/.mkhtml/cssgenerators" ] && [ -f "/usr/bin/mkhtml" ] && [ -f "$HOME/.mkhtml/settings.txt" ] && [  -f "/usr/share/man/man1/mkhtml.1.gz" ]
 then 
     sudo echo "=%= mkhtml installation succesful =%="
 else

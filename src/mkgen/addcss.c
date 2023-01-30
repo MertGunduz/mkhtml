@@ -14,7 +14,7 @@
 void cssgenSuccessfullIMessage();
 
 /// @brief adds inline css to the html file
-void addcss(FILE *file, char *style)
+void addcss(char *fileName, char *style)
 {
     
 }

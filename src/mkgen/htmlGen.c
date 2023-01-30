@@ -188,6 +188,9 @@ void htmlGen(char *subject)
 
     /* creation message */
     creationMessage(htmlHeader);
+
+    /* css insertion to the html file */
+    addcss(htmlHeader, css);
 }
 
 /// @brief takes argument name and deletes the spaces and assigns it to a buffer
