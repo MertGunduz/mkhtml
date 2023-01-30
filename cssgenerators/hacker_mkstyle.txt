@@ -1,3 +1,5 @@
+<style>
+
 body {
     margin: 0;
     padding: 0;
@@ -81,3 +83,5 @@ ol {
     margin-right: auto;
     list-style-position: inside;
 }
+
+</style>
