@@ -25,5 +25,6 @@ void jsonReadErrorMessage();
 void htmlFileInitErrorMessage();
 void noApiKeyMessage();
 void fileReadErrorMessage();
+void wrongCssErrorMessage();
 
 #endif /* MKGENMESSAGES_H */

@@ -22,9 +22,27 @@ void addcss(char *fileName, char *style)
         /* css file path */
         char cssPath[256]; sprintf(cssPath, "%s/.mkhtml/cssgenerators/%s_mkstyle.txt", getenv("HOME"), style);
 
-        /* file lenghts */
-        FILE *htmlFileLenFile = fopen(fileName, "r"); int htmlChars = takeFileChar(htmlFileLenFile); fclose(htmlFileLenFile);
-        FILE *cssFileLenFile = fopen(cssPath, "r"); int cssChars = takeFileChar(cssFileLenFile); fclose(cssFileLenFile);
+        /* html file lenght */
+        FILE *htmlFileLenFile = fopen(fileName, "r");
+
+        if (htmlFileLenFile == NULL)
+        {
+            fileReadErrorMessage();
+            exit(1);
+        }
+
+        int htmlChars = takeFileChar(htmlFileLenFile); fclose(htmlFileLenFile);
+
+        /* css file length */
+        FILE *cssFileLenFile = fopen(cssPath, "r");
+
+        if (cssFileLenFile == NULL)
+        {
+            fileReadErrorMessage();
+            exit(1);
+        }
+
+        int cssChars = takeFileChar(cssFileLenFile); fclose(cssFileLenFile);
 
         /* html file until head tag reading */
         bool isTagOpened;
@@ -41,7 +59,8 @@ void addcss(char *fileName, char *style)
 
         if (htmlCssFile == NULL)
         {
-            printf("asd");
+            htmlFileInitErrorMessage();
+            exit(1);
         }
 
         /* css reading file */
@@ -49,7 +68,8 @@ void addcss(char *fileName, char *style)
 
         if (cssFile == NULL)
         {
-            printf("asd");
+            fileReadErrorMessage();
+            exit(1);
         }
 
         /* html reading file*/
@@ -57,7 +77,8 @@ void addcss(char *fileName, char *style)
 
         if (htmlFile == NULL)
         {
-            printf("asd");
+            fileReadErrorMessage();
+            exit(1);
         }
 
         for (int i = 0; i < htmlChars; i++)
@@ -140,5 +161,6 @@ bool cssVerify(char *cssPick)
         }
     }
 
+    wrongCssErrorMessage();
     return false;
 }
