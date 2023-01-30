@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    line-height: 1.5;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #B5E853;
+    line-height: 1.5;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    text-align: left;
+    margin: 0 0 20px;
+}
+
+p {
+    color: #FFFFFF;
+    padding-left: 30px;
+    font-size: 15px;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+li {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    ;
+}
+
+blockquote {
+    border-left-style: dotted;
+    border-left-width: 1px;
+    border-left-color: gray;
+    color: #8D8D8D;
+    padding: 20px;
+}
+
+td {
+    color: #FFFFFF;
+    border-spacing: 20px;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    color: #FFFFFF;
+    border-bottom: 1px dashed #B5E853;
+    text-align: left;
+    padding: 8px;
+}
+
+dl {
+    color: #FFFFFF;
+    text-align: left;
+    padding: 5px;
+}
+
+dt {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: ">>  ";
+    color: #B5E853;
+}
+
+ol {
+    display: table;
+    margin-left: 0;
+    margin-right: auto;
+    list-style-position: inside;
+}
