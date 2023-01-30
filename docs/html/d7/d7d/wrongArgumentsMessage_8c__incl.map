@@ -1,11 +1,5 @@
-<map id="src/mkgen/wrongArgumentsMessage.c" name="src/mkgen/wrongArgumentsMessage.c">
-<area shape="rect" id="node1" title="prints information about wrong arguments" alt="" coords="240,5,445,47"/>
-<area shape="rect" id="node2" href="$d2/d6e/mkgen_8h.html" title="the html generation library of mkhtml" alt="" coords="303,95,382,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,169,72,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,169,167,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="192,169,275,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="299,169,386,196"/>
-<area shape="rect" id="node7" title=" " alt="" coords="410,169,481,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="505,169,580,196"/>
-<area shape="rect" id="node9" title=" " alt="" coords="604,169,689,196"/>
+<map id="src/mkgenmessages/wrongArgumentsMessage.c" name="src/mkgenmessages/wrongArgumentsMessage.c">
+<area shape="rect" id="node1" title="prints information about wrong arguments" alt="" coords="5,5,276,47"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="68,95,213,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="107,169,174,196"/>
 </map>

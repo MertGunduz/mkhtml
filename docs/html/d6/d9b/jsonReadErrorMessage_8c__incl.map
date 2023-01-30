@@ -1,11 +1,5 @@
-<map id="src/mkgen/jsonReadErrorMessage.c" name="src/mkgen/jsonReadErrorMessage.c">
-<area shape="rect" id="node1" title="prints information about curl response json read error" alt="" coords="215,5,470,32"/>
-<area shape="rect" id="node2" href="$d2/d6e/mkgen_8h.html" title="the html generation library of mkhtml" alt="" coords="303,80,382,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,72,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,155,167,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="192,155,275,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="299,155,386,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="410,155,481,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="505,155,580,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="604,155,689,181"/>
+<map id="src/mkgenmessages/jsonReadErrorMessage.c" name="src/mkgenmessages/jsonReadErrorMessage.c">
+<area shape="rect" id="node1" title="prints information about curl response json read error" alt="" coords="5,5,225,47"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="43,95,188,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="82,169,149,196"/>
 </map>
