@@ -12,16 +12,14 @@ the html generation library of mkhtml
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include $<$unistd.\+h$>$}\newline
 {\ttfamily \#include $<$sys/stat.\+h$>$}\newline
-Include dependency graph for mkgen.\+h\+:
-\nopagebreak
+Include dependency graph for mkgen.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{d5/dbe/mkgen_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -37,7 +35,7 @@ bool \mbox{\hyperlink{mkgen_8h_ab6ea1f9a659d797ed8db959140b8561f}{structure\+Ver
 \begin{DoxyCompactList}\small\item\em the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/.mkhtml folder \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}{html\+Gen}} (char $\ast$subject)
 \begin{DoxyCompactList}\small\item\em the html generator system (works with openai api) \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{mkgen_8h_a826fa27237ad5d90272c50b5dc0e2faf}{addcss}} (FILE $\ast$file, char $\ast$style)
+void \mbox{\hyperlink{mkgen_8h_a371bb5ce6ad675621899237ef8b35913}{addcss}} (char $\ast$file\+Name, char $\ast$style)
 \begin{DoxyCompactList}\small\item\em adds inline css to the html file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}{settings\+Data\+Reader}} (char $\ast$api\+Key, char $\ast$css)
 \begin{DoxyCompactList}\small\item\em reads the informationg from the /home/.mkhtml/settings.\+txt file \end{DoxyCompactList}\item 
@@ -79,11 +77,11 @@ Mehmet Mert Gunduz
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{mkgen_8h_a826fa27237ad5d90272c50b5dc0e2faf}\label{mkgen_8h_a826fa27237ad5d90272c50b5dc0e2faf}} 
+\mbox{\Hypertarget{mkgen_8h_a371bb5ce6ad675621899237ef8b35913}\label{mkgen_8h_a371bb5ce6ad675621899237ef8b35913}} 
 \index{mkgen.h@{mkgen.h}!addcss@{addcss}}
 \index{addcss@{addcss}!mkgen.h@{mkgen.h}}
 \doxysubsubsection{\texorpdfstring{addcss()}{addcss()}}
-{\footnotesize\ttfamily void addcss (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{char $\ast$}]{style }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void addcss (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+Name,  }\item[{char $\ast$}]{style }\end{DoxyParamCaption})}
 
 
 
