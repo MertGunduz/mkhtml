@@ -6,10 +6,9 @@
  * @author Mehmet Mert Gunduz
  *
  * @date 30/01/2023
- * @bug No known bugs.
 */
 
-#include "mkgen.h"
+#include "mkgenmessages.h"
 
 /// @brief prints the file access error information
 void fileReadErrorMessage()

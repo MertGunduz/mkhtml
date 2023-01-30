@@ -12,7 +12,7 @@
 #ifndef MKGEN_H
 #define MKGEN_H
 
-#include <stdio.h>
+#include "../mkgenmessages/mkgenmessages.h"
 #include <stdlib.h>
 #include <stdbool.h>
 #include <curl/curl.h>
@@ -30,19 +30,6 @@ void addcss(char *fileName, char *style);
 void settingsDataReader(char *apiKey, char *css);
 void mkSettingsMenu();
 int takeFileChar(FILE *file);
-
-/* MESSAGE FUNCTIONS */
-void wrongArgumentsMessage();
-void secondArgumentMissingMessage();
-void badArgcMessage(int argc);
-void verifyFileStructureError();
-void jsonFileCreationErrorMessage();
-void confInteractionErrorMessage();
-void curlErrorMessage();
-void jsonReadErrorMessage();
-void htmlFileInitErrorMessage();
-void noApiKeyMessage();
-void fileReadErrorMessage();
 
 /* CSS-DATA STYLES */
 static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant"};

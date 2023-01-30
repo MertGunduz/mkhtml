@@ -1,6 +1,6 @@
 add_executable(mkhtml mkhtml.c)
 
-target_link_libraries(mkhtml mkgen mjson)
+target_link_libraries(mkhtml mkgen mjson mkgenmessages)
 
 # curf part
 set( CURL_LIBRARY ${CMAKE_SOURCE_DIR}/lib )

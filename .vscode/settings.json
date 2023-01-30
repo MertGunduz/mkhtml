@@ -5,6 +5,7 @@
         "genhtml.h": "c",
         "string.h": "c",
         "stdbool.h": "c",
-        "mkgen.h": "c"
+        "mkgen.h": "c",
+        "mkgenmessages.h": "c"
     }
 }

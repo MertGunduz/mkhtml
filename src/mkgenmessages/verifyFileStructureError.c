@@ -6,10 +6,9 @@
  * @author Mehmet Mert Gunduz
  * 
  * @date 26/01/2023
- * @bug No known bugs.
 */
 
-#include "mkgen.h"
+#include "mkgenmessages.h"
 
 /// @brief prints error information and solving advice about the file structure error
 void verifyFileStructureError()

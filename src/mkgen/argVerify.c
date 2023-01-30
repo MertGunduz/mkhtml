@@ -6,7 +6,7 @@
  * @author Mehmet Mert Gunduz
  * 
  * @date 24/01/2023
- * @bug no known bugs. 
+ * @bug not tested yet, no known bugs (need testing)
 */
 
 #include "mkgen.h"

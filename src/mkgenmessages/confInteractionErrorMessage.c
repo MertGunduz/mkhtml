@@ -6,10 +6,9 @@
  * @author Mehmet Mert Gunduz
  * 
  * @date 28/01/2023
- * @bug no known bugs
 */
 
-#include "mkgen.h"
+#include "mkgenmessages.h"
 
 /// @brief prints information about configuration file read error
 void confInteractionErrorMessage()
