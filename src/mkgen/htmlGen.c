@@ -190,7 +190,10 @@ void htmlGen(char *subject)
     creationMessage(htmlHeader);
 
     /* css insertion to the html file */
-    addcss(htmlHeader, css);
+    if (strcmp(css, "empty") != 0)
+    {
+        addcss(htmlHeader, css);
+    }
 }
 
 /// @brief takes argument name and deletes the spaces and assigns it to a buffer

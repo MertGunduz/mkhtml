@@ -29,6 +29,7 @@ void htmlGen(char *subject);
 void addcss(char *fileName, char *style);
 void settingsDataReader(char *apiKey, char *css);
 void mkSettingsMenu();
+int takeFileChar(FILE *file);
 
 /* MESSAGE FUNCTIONS */
 void wrongArgumentsMessage();
@@ -41,5 +42,10 @@ void curlErrorMessage();
 void jsonReadErrorMessage();
 void htmlFileInitErrorMessage();
 void noApiKeyMessage();
+void fileReadErrorMessage();
+
+/* CSS-DATA STYLES */
+static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant"};
+static int totalCssDataStyles = 5;
 
 #endif /* MKGEN_H */

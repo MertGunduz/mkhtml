@@ -1,20 +1,22 @@
 <map id="src/mkgen/mkgen.h" name="src/mkgen/mkgen.h">
-<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="1656,5,1807,32"/>
+<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="1927,5,2077,32"/>
 <area shape="rect" id="node2" href="$df/d61/mkhtml_8c.html" title="the main application file of mkhtml" alt="" coords="5,87,140,114"/>
 <area shape="rect" id="node3" href="$d4/d65/addcss_8c.html" title="adds inline css to the html file" alt="" coords="164,87,315,114"/>
 <area shape="rect" id="node4" href="$d1/d2a/argVerify_8c.html" title="the control cli argument control system of mkhtml" alt="" coords="339,87,500,114"/>
 <area shape="rect" id="node5" href="$d0/d9e/badArgcMessage_8c.html" title="prints information about wrong arguments" alt="" coords="525,87,741,114"/>
 <area shape="rect" id="node6" href="$dc/d8b/confInteractionErrorMessage_8c.html" title="prints information about configuration file read error" alt="" coords="765,80,957,121"/>
 <area shape="rect" id="node7" href="$d5/df8/curlErrorMessage_8c.html" title="prints information about curl pointer error" alt="" coords="981,87,1199,114"/>
-<area shape="rect" id="node8" href="$d6/ddd/htmlFileInitErrorMessage_8c.html" title="prints information about html file creation error" alt="" coords="1224,80,1423,121"/>
-<area shape="rect" id="node9" href="$d7/d14/htmlGen_8c.html" title="the html generator system (works with openai api)" alt="" coords="1447,87,1608,114"/>
-<area shape="rect" id="node10" href="$d2/d25/jsonFileCreationErrorMessage_8c.html" title="prints information about curl json response error" alt="" coords="1632,80,1831,121"/>
-<area shape="rect" id="node11" href="$d9/d7d/jsonReadErrorMessage_8c.html" title="prints information about curl response json read error" alt="" coords="1855,87,2109,114"/>
-<area shape="rect" id="node12" href="$d9/d64/mkSettingsMenu_8c.html" title="prints information about the /home/.mkhtml/settings.txt" alt="" coords="2133,87,2348,114"/>
-<area shape="rect" id="node13" href="$df/d9c/noApiKeyMessage_8c.html" title="prints information about no api key error" alt="" coords="2373,87,2597,114"/>
-<area shape="rect" id="node14" href="$da/d9f/secondArgumentMissingMessage_8c.html" title="prints information about missing second argument" alt="" coords="2621,80,2825,121"/>
-<area shape="rect" id="node15" href="$da/d82/settingsDataReader_8c.html" title="reads the informationg from the /home/.mkhtml/settings.txt file" alt="" coords="2849,87,3083,114"/>
-<area shape="rect" id="node16" href="$d1/d99/structureVerify_8c.html" title="the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/...." alt="" coords="3107,87,3305,114"/>
-<area shape="rect" id="node17" href="$df/d4d/verifyFileStructureError_8c.html" title="prints the verify function file structure availability error info" alt="" coords="3330,80,3543,121"/>
-<area shape="rect" id="node18" href="$dd/d10/wrongArgumentsMessage_8c.html" title="prints information about wrong arguments" alt="" coords="3567,80,3773,121"/>
+<area shape="rect" id="node8" href="$d6/d3c/fileReadErrorMessage_8c.html" title="prints the file access error information" alt="" coords="1224,87,1471,114"/>
+<area shape="rect" id="node9" href="$d6/ddd/htmlFileInitErrorMessage_8c.html" title="prints information about html file creation error" alt="" coords="1495,80,1693,121"/>
+<area shape="rect" id="node10" href="$d7/d14/htmlGen_8c.html" title="the html generator system (works with openai api)" alt="" coords="1717,87,1879,114"/>
+<area shape="rect" id="node11" href="$d2/d25/jsonFileCreationErrorMessage_8c.html" title="prints information about curl json response error" alt="" coords="1903,80,2101,121"/>
+<area shape="rect" id="node12" href="$d9/d7d/jsonReadErrorMessage_8c.html" title="prints information about curl response json read error" alt="" coords="2125,87,2380,114"/>
+<area shape="rect" id="node13" href="$d9/d64/mkSettingsMenu_8c.html" title="prints information about the /home/.mkhtml/settings.txt" alt="" coords="2404,87,2619,114"/>
+<area shape="rect" id="node14" href="$df/d9c/noApiKeyMessage_8c.html" title="prints information about no api key error" alt="" coords="2643,87,2867,114"/>
+<area shape="rect" id="node15" href="$da/d9f/secondArgumentMissingMessage_8c.html" title="prints information about missing second argument" alt="" coords="2892,80,3096,121"/>
+<area shape="rect" id="node16" href="$da/d82/settingsDataReader_8c.html" title="reads the informationg from the /home/.mkhtml/settings.txt file" alt="" coords="3120,87,3353,114"/>
+<area shape="rect" id="node17" href="$d1/d99/structureVerify_8c.html" title="the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/...." alt="" coords="3377,87,3576,114"/>
+<area shape="rect" id="node18" href="$dd/dde/takeFileChar_8c.html" title="takes the total chars of a file" alt="" coords="3600,87,3785,114"/>
+<area shape="rect" id="node19" href="$df/d4d/verifyFileStructureError_8c.html" title="prints the verify function file structure availability error info" alt="" coords="3810,80,4023,121"/>
+<area shape="rect" id="node20" href="$dd/d10/wrongArgumentsMessage_8c.html" title="prints information about wrong arguments" alt="" coords="4047,80,4253,121"/>
 </map>

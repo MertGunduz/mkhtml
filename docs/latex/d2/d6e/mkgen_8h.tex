@@ -19,7 +19,8 @@ Include dependency graph for mkgen.\+h\+:\nopagebreak
 \includegraphics[width=350pt]{d5/dbe/mkgen_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -41,6 +42,8 @@ void \mbox{\hyperlink{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}{settings\+Data
 \begin{DoxyCompactList}\small\item\em reads the informationg from the /home/.mkhtml/settings.\+txt file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a0ef5d8864ea6c2167c121f3b3265eeb5}{mk\+Settings\+Menu}} ()
 \begin{DoxyCompactList}\small\item\em prints information about the /home/.mkhtml/settings.\+txt \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mkgen_8h_a203799c867d5db39f6115704542aa871}{take\+File\+Char}} (FILE $\ast$file)
+\begin{DoxyCompactList}\small\item\em takes the total chars of a file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a17dd96e3e5f4d48cc1876b97f619868f}{wrong\+Arguments\+Message}} ()
 \begin{DoxyCompactList}\small\item\em prints information about wrong arguments \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_af55d67ebf5deeb8f5f7bbe3a43605bcb}{second\+Argument\+Missing\+Message}} ()
@@ -60,7 +63,9 @@ void \mbox{\hyperlink{mkgen_8h_a07247c06d2afb392bf347f472f226201}{json\+Read\+Er
 void \mbox{\hyperlink{mkgen_8h_a29fe65421c56f62a316cd5bdfd96989f}{html\+File\+Init\+Error\+Message}} ()
 \begin{DoxyCompactList}\small\item\em prints information about html file creation error \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a72f88757bcb790cd56ad83a8b22b091c}{no\+Api\+Key\+Message}} ()
-\begin{DoxyCompactList}\small\item\em prints information about no api key error \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em prints information about no api key error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_af614c9921498e05357ce38b40207797f}{file\+Read\+Error\+Message}} ()
+\begin{DoxyCompactList}\small\item\em prints the file access error information \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -73,7 +78,7 @@ Mehmet Mert Gunduz
 24/01/2023 
 \end{DoxyDate}
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000011}{Bug}}]no known bugs. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000012}{Bug}}]no known bugs. \end{DoxyRefDesc}
 
 
 \doxysubsection{Function Documentation}
@@ -89,7 +94,7 @@ adds inline css to the html file
 
 
 
-Definition at line 17 of file addcss.\+c.
+Definition at line 18 of file addcss.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_accd7a277a011046979c4c497d64e40ee}\label{mkgen_8h_accd7a277a011046979c4c497d64e40ee}} 
 \index{mkgen.h@{mkgen.h}!argVerify@{argVerify}}
@@ -156,6 +161,20 @@ prints information about curl pointer error
 
 
 Definition at line 15 of file curl\+Error\+Message.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_af614c9921498e05357ce38b40207797f}\label{mkgen_8h_af614c9921498e05357ce38b40207797f}} 
+\index{mkgen.h@{mkgen.h}!fileReadErrorMessage@{fileReadErrorMessage}}
+\index{fileReadErrorMessage@{fileReadErrorMessage}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{fileReadErrorMessage()}{fileReadErrorMessage()}}
+{\footnotesize\ttfamily void file\+Read\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints the file access error information 
+
+
+
+Definition at line 15 of file file\+Read\+Error\+Message.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_a29fe65421c56f62a316cd5bdfd96989f}\label{mkgen_8h_a29fe65421c56f62a316cd5bdfd96989f}} 
 \index{mkgen.h@{mkgen.h}!htmlFileInitErrorMessage@{htmlFileInitErrorMessage}}
@@ -291,6 +310,28 @@ true if argc is 2 and file structure found, otherwise returns false
 
 
 Definition at line 16 of file structure\+Verify.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a203799c867d5db39f6115704542aa871}\label{mkgen_8h_a203799c867d5db39f6115704542aa871}} 
+\index{mkgen.h@{mkgen.h}!takeFileChar@{takeFileChar}}
+\index{takeFileChar@{takeFileChar}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{takeFileChar()}{takeFileChar()}}
+{\footnotesize\ttfamily int take\+File\+Char (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+takes the total chars of a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+total lines of the text 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file take\+File\+Char.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_a8f11f14157d85b08fb7564b5607da472}\label{mkgen_8h_a8f11f14157d85b08fb7564b5607da472}} 
 \index{mkgen.h@{mkgen.h}!verifyFileStructureError@{verifyFileStructureError}}
