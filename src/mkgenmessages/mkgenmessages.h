@@ -6,7 +6,6 @@
  * @author Mehmet Mert Gunduz 
  * 
  * @date 30/01/2023
- * @bug no known bugs.
 */
 
 #ifndef MKGENMESSAGES_H
