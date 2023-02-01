@@ -1,0 +1,111 @@
+<style>
+    html {
+        font-size: 12px;
+        background-color: #f3ebe5;
+    }
+
+    body {
+        font-family: "Rubik", sans-serif;
+        line-height: 1;
+        font-weight: 400;
+        color: #3b3b3b;
+    }
+
+    h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+        color: #49304b;
+    }
+
+    h2 {
+        font-size: 44px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+        color: #49304b;
+    }
+
+    h3 {
+        font-size: 36px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+        color: #49304b;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+        color: #49304b;
+    }
+
+    h5 {
+        font-size: 24px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+        color: #49304b;
+    }
+
+    h6 {
+        font-size: 20px;
+        line-height: 1.05;
+        color: #49304b;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 48px;
+    }
+
+    ul {   
+        list-style-type: square;
+        list-style-position: outside;
+        color: #49304b;
+        margin-bottom: 48px;
+    }
+
+    ol{   
+        list-style-type: upper-alpha;
+        list-style-position: outside;
+        color: #49304b;
+        margin-bottom: 48px;
+    }
+
+    li {
+        font-size: 20px;
+        list-style-position: outside;
+    }
+
+    table {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        margin-bottom: 48px;
+    }
+
+    table td, table th {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #49304b;
+    color: #f3ebe5;
+    }
+
+    td {
+        font-size: 18px;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    table tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+</style>
