@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         }
         else if (strcmp(argv[1], "-k") == 0 || strcmp(argv[1], "--key") == 0)
         {
-            fprintf(stdout, "api key menu\n");
+            apiKeyMenu(argv[2]);
         }
         else if (strcmp(argv[1], "-c") == 0 || strcmp(argv[1], "--css") == 0)
         {
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
         }
         else if (strcmp(argv[1], "-s") == 0 || strcmp(argv[1], "--settings") == 0)
         {
-            mkSettingsMenu();
+            mkSettingsMenu(1);
         }
         else if (strcmp(argv[1], "-w") == 0 || strcmp(argv[1], "--website") == 0)
         {

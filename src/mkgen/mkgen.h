@@ -27,9 +27,10 @@ bool structureVerify();
 void htmlGen(char *subject);
 void addcss(char *fileName, char *style);
 void settingsDataReader(char *apiKey, char *css);
-void mkSettingsMenu();
+void mkSettingsMenu(int write);
 int takeFileChar(FILE *file);
 void webMenu();
+void apiKeyMenu(char *newApiKey);
 
 /* CSS-DATA STYLES */
 static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant", "hacker", "violenta"};

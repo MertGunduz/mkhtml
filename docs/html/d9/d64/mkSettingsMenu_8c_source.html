@@ -75,17 +75,26 @@ $(function() {
 <a href="../../d9/d64/mkSettingsMenu_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d6e/mkgen_8h.html">mkgen.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d2/d6e/mkgen_8h.html#a0ef5d8864ea6c2167c121f3b3265eeb5">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d64/mkSettingsMenu_8c.html#a0ef5d8864ea6c2167c121f3b3265eeb5">mkSettingsMenu</a>()</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">char</span> apiKey[256];</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">char</span> css[64];</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d2/d6e/mkgen_8h.html#a75c9ed55c0084ac0ef95964b81ff7894">settingsDataReader</a>(apiKey, css);</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d2/d6e/mkgen_8h.html#a2f92f1b825e902f0cf44bcba257cdf30">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d64/mkSettingsMenu_8c.html#a2f92f1b825e902f0cf44bcba257cdf30">mkSettingsMenu</a>(<span class="keywordtype">int</span> write)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">/* api key and css strings */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">char</span> apiKey[256];</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">char</span> css[64];</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;api-key: %s\n&quot;</span>, apiKey);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;css: %s\n&quot;</span>, css);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="ttc" id="amkSettingsMenu_8c_html_a0ef5d8864ea6c2167c121f3b3265eeb5"><div class="ttname"><a href="../../d9/d64/mkSettingsMenu_8c.html#a0ef5d8864ea6c2167c121f3b3265eeb5">mkSettingsMenu</a></div><div class="ttdeci">void mkSettingsMenu()</div><div class="ttdoc">prints information about the /home/.mkhtml/settings.txt</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d64/mkSettingsMenu_8c_source.html#l00015">mkSettingsMenu.c:15</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/* initializing the api key and css */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../d2/d6e/mkgen_8h.html#a75c9ed55c0084ac0ef95964b81ff7894">settingsDataReader</a>(apiKey, css);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/* writing information message */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (write == 1)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        fprintf(stdout, <span class="stringliteral">&quot;=%%= configuration data fetched successfully =%%=\n\n&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/* writing data */</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;api-key: %s\n&quot;</span>, apiKey);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    fprintf(stdout, <span class="stringliteral">&quot;css: %s\n&quot;</span>, css);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="ttc" id="amkSettingsMenu_8c_html_a2f92f1b825e902f0cf44bcba257cdf30"><div class="ttname"><a href="../../d9/d64/mkSettingsMenu_8c.html#a2f92f1b825e902f0cf44bcba257cdf30">mkSettingsMenu</a></div><div class="ttdeci">void mkSettingsMenu(int write)</div><div class="ttdoc">prints information about the /home/.mkhtml/settings.txt</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d64/mkSettingsMenu_8c_source.html#l00016">mkSettingsMenu.c:16</a></div></div>
 <div class="ttc" id="amkgen_8h_html"><div class="ttname"><a href="../../d2/d6e/mkgen_8h.html">mkgen.h</a></div><div class="ttdoc">the html generation library of mkhtml</div></div>
 <div class="ttc" id="amkgen_8h_html_a75c9ed55c0084ac0ef95964b81ff7894"><div class="ttname"><a href="../../d2/d6e/mkgen_8h.html#a75c9ed55c0084ac0ef95964b81ff7894">settingsDataReader</a></div><div class="ttdeci">void settingsDataReader(char *apiKey, char *css)</div><div class="ttdoc">reads the informationg from the /home/.mkhtml/settings.txt file</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d82/settingsDataReader_8c_source.html#l00015">settingsDataReader.c:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

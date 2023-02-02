@@ -40,12 +40,14 @@ void \mbox{\hyperlink{mkgen_8h_a371bb5ce6ad675621899237ef8b35913}{addcss}} (char
 \begin{DoxyCompactList}\small\item\em adds inline css to the html file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}{settings\+Data\+Reader}} (char $\ast$api\+Key, char $\ast$css)
 \begin{DoxyCompactList}\small\item\em reads the informationg from the /home/.mkhtml/settings.\+txt file \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{mkgen_8h_a0ef5d8864ea6c2167c121f3b3265eeb5}{mk\+Settings\+Menu}} ()
+void \mbox{\hyperlink{mkgen_8h_a2f92f1b825e902f0cf44bcba257cdf30}{mk\+Settings\+Menu}} (int write)
 \begin{DoxyCompactList}\small\item\em prints information about the /home/.mkhtml/settings.\+txt \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{mkgen_8h_a203799c867d5db39f6115704542aa871}{take\+File\+Char}} (FILE $\ast$file)
 \begin{DoxyCompactList}\small\item\em takes the total chars of a file \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a44dec54dd89fc712550d48a3adbf1402}{web\+Menu}} ()
-\begin{DoxyCompactList}\small\item\em prints information about mkhtml.\+org \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em prints information about mkhtml.\+org \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a4262ce14b7deda575e7fac03e1d6c098}{api\+Key\+Menu}} (char $\ast$new\+Api\+Key)
+\begin{DoxyCompactList}\small\item\em changes api key and shows the new settings configuration file \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -73,6 +75,20 @@ adds inline css to the html file
 
 
 Definition at line 18 of file addcss.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a4262ce14b7deda575e7fac03e1d6c098}\label{mkgen_8h_a4262ce14b7deda575e7fac03e1d6c098}} 
+\index{mkgen.h@{mkgen.h}!apiKeyMenu@{apiKeyMenu}}
+\index{apiKeyMenu@{apiKeyMenu}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{apiKeyMenu()}{apiKeyMenu()}}
+{\footnotesize\ttfamily void api\+Key\+Menu (\begin{DoxyParamCaption}\item[{char $\ast$}]{new\+Api\+Key }\end{DoxyParamCaption})}
+
+
+
+changes api key and shows the new settings configuration file 
+
+
+
+Definition at line 14 of file api\+Key\+Menu.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_accd7a277a011046979c4c497d64e40ee}\label{mkgen_8h_accd7a277a011046979c4c497d64e40ee}} 
 \index{mkgen.h@{mkgen.h}!argVerify@{argVerify}}
@@ -118,19 +134,24 @@ the html generator system (works with openai api)
 
 Definition at line 22 of file html\+Gen.\+c.
 
-\mbox{\Hypertarget{mkgen_8h_a0ef5d8864ea6c2167c121f3b3265eeb5}\label{mkgen_8h_a0ef5d8864ea6c2167c121f3b3265eeb5}} 
+\mbox{\Hypertarget{mkgen_8h_a2f92f1b825e902f0cf44bcba257cdf30}\label{mkgen_8h_a2f92f1b825e902f0cf44bcba257cdf30}} 
 \index{mkgen.h@{mkgen.h}!mkSettingsMenu@{mkSettingsMenu}}
 \index{mkSettingsMenu@{mkSettingsMenu}!mkgen.h@{mkgen.h}}
 \doxysubsubsection{\texorpdfstring{mkSettingsMenu()}{mkSettingsMenu()}}
-{\footnotesize\ttfamily void mk\+Settings\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void mk\+Settings\+Menu (\begin{DoxyParamCaption}\item[{int}]{write }\end{DoxyParamCaption})}
 
 
 
 prints information about the /home/.mkhtml/settings.\+txt 
 
 
+\begin{DoxyParams}{Parameters}
+{\em write} & writes the fetch information if it is 1 \\
+\hline
+\end{DoxyParams}
 
-Definition at line 15 of file mk\+Settings\+Menu.\+c.
+
+Definition at line 16 of file mk\+Settings\+Menu.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}\label{mkgen_8h_a75c9ed55c0084ac0ef95964b81ff7894}} 
 \index{mkgen.h@{mkgen.h}!settingsDataReader@{settingsDataReader}}

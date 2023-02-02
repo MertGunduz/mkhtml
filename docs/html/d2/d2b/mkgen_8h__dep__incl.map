@@ -1,12 +1,13 @@
 <map id="src/mkgen/mkgen.h" name="src/mkgen/mkgen.h">
-<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="741,5,892,32"/>
+<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="844,5,995,32"/>
 <area shape="rect" id="node2" href="$df/d61/mkhtml_8c.html" title="the main application file of mkhtml" alt="" coords="5,80,140,107"/>
 <area shape="rect" id="node3" href="$d4/d65/addcss_8c.html" title="adds inline css to the html file" alt="" coords="164,80,315,107"/>
-<area shape="rect" id="node4" href="$d1/d2a/argVerify_8c.html" title="the control cli argument control system of mkhtml" alt="" coords="339,80,500,107"/>
-<area shape="rect" id="node5" href="$d7/d14/htmlGen_8c.html" title="the html generator system (works with openai api)" alt="" coords="524,80,685,107"/>
-<area shape="rect" id="node6" href="$d9/d64/mkSettingsMenu_8c.html" title="prints information about the /home/.mkhtml/settings.txt" alt="" coords="709,80,924,107"/>
-<area shape="rect" id="node7" href="$da/d82/settingsDataReader_8c.html" title="reads the informationg from the /home/.mkhtml/settings.txt file" alt="" coords="948,80,1181,107"/>
-<area shape="rect" id="node8" href="$d1/d99/structureVerify_8c.html" title="the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/...." alt="" coords="1205,80,1404,107"/>
-<area shape="rect" id="node9" href="$dd/dde/takeFileChar_8c.html" title="takes the total chars of a file" alt="" coords="1428,80,1613,107"/>
-<area shape="rect" id="node10" href="$dd/d18/webMenu_8c.html" title="prints information about mkhtml.org" alt="" coords="1638,80,1806,107"/>
+<area shape="rect" id="node4" href="$dd/d59/apiKeyMenu_8c.html" title="changes api key and shows the new settings configuration file" alt="" coords="339,80,524,107"/>
+<area shape="rect" id="node5" href="$d1/d2a/argVerify_8c.html" title="the control cli argument control system of mkhtml" alt="" coords="548,80,709,107"/>
+<area shape="rect" id="node6" href="$d7/d14/htmlGen_8c.html" title="the html generator system (works with openai api)" alt="" coords="733,80,895,107"/>
+<area shape="rect" id="node7" href="$d9/d64/mkSettingsMenu_8c.html" title="prints information about the /home/.mkhtml/settings.txt" alt="" coords="919,80,1133,107"/>
+<area shape="rect" id="node8" href="$da/d82/settingsDataReader_8c.html" title="reads the informationg from the /home/.mkhtml/settings.txt file" alt="" coords="1157,80,1391,107"/>
+<area shape="rect" id="node9" href="$d1/d99/structureVerify_8c.html" title="the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/...." alt="" coords="1415,80,1613,107"/>
+<area shape="rect" id="node10" href="$dd/dde/takeFileChar_8c.html" title="takes the total chars of a file" alt="" coords="1637,80,1823,107"/>
+<area shape="rect" id="node11" href="$dd/d18/webMenu_8c.html" title="prints information about mkhtml.org" alt="" coords="1847,80,2015,107"/>
 </map>
