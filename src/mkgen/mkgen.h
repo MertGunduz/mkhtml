@@ -32,7 +32,7 @@ int takeFileChar(FILE *file);
 void webMenu();
 
 /* CSS-DATA STYLES */
-static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant", "hacker"};
-static int totalCssDataStyles = 6;
+static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant", "hacker", "violenta"};
+static int totalCssDataStyles = 7;
 
 #endif /* MKGEN_H */
