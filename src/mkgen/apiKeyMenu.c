@@ -24,7 +24,7 @@ void apiKeyMenu(char *newApiKey)
     settingsDataReader(apiKey, css);
 
     /* new data to write */
-    char newData[256]; sprintf(newData, "%s:%s\n", newApiKey, css);
+    char newData[258]; sprintf(newData, "%s:%s\n", newApiKey, css);
 
     /* file to write initialization */
     FILE *newDataFile = fopen(settingsFilePath, "w");

@@ -11,8 +11,16 @@
 #include "mkgenmessages.h"
 
 /// @brief prints information about wrong selected css data
-void wrongCssErrorMessage()
+void wrongCssErrorMessage(int selection)
 {
-    fprintf(stderr, "mkhtml: css-data changed from outside, please select a valid css-data\n");
-    fprintf(stderr, "mkhtml: try giving an actual css-data by mkhtml -c [CSS-DATA]\n");
+    if (selection == 0)
+    {
+        fprintf(stderr, "mkhtml: css-data changed from outside, please select a valid css-data\n");
+        fprintf(stderr, "mkhtml: try giving an actual css-data by writing mkhtml -c [CSS-DATA]\n");
+    }
+    else if (selection == 1)
+    {
+        fprintf(stderr, "mkhtml: invalid css data selected\n");
+        fprintf(stderr, "mkhtml: please check css types by looking at the man pages by writing man mkhtml\n");
+    }
 }

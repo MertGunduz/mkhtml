@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         }
         else if (strcmp(argv[1], "-c") == 0 || strcmp(argv[1], "--css") == 0)
         {
-            fprintf(stdout, "stylesheet menu\n");
+            cssMenu(argv[2]);
         }
         else if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
         {

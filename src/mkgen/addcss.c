@@ -12,12 +12,11 @@
 #include "mkgen.h"
 
 void cssgenSuccessfullIMessage();
-bool cssVerify(char *cssPick);
 
 /// @brief adds inline css to the html file
 void addcss(char *fileName, char *style)
 {
-    if (cssVerify(style))
+    if (cssVerify(style, 0))
     {
         /* css file path */
         char cssPath[256]; sprintf(cssPath, "%s/.mkhtml/cssgenerators/%s_mkstyle.txt", getenv("HOME"), style);
@@ -149,18 +148,4 @@ void addcss(char *fileName, char *style)
 void cssgenSuccessfullIMessage()
 {
     fprintf(stdout, "=%%= css file inserted to html file successfully  =%%=\n");
-}
-
-bool cssVerify(char *cssPick)
-{
-    for (int i = 0; i < totalCssDataStyles; i++)
-    {
-        if (strcmp(cssPick, cssDataStyles[i]) == 0)
-        {
-            return true;
-        }
-    }
-
-    wrongCssErrorMessage();
-    return false;
 }
