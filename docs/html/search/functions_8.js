@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['secondargumentmissingmessage_269',['secondArgumentMissingMessage',['../d3/dd9/mkgenmessages_8h.html#af55d67ebf5deeb8f5f7bbe3a43605bcb',1,'secondArgumentMissingMessage():&#160;secondArgumentMissingMessage.c'],['../da/d9f/secondArgumentMissingMessage_8c.html#af55d67ebf5deeb8f5f7bbe3a43605bcb',1,'secondArgumentMissingMessage():&#160;secondArgumentMissingMessage.c']]],
-  ['settingsdatareader_270',['settingsDataReader',['../d2/d6e/mkgen_8h.html#a75c9ed55c0084ac0ef95964b81ff7894',1,'settingsDataReader(char *apiKey, char *css):&#160;settingsDataReader.c'],['../da/d82/settingsDataReader_8c.html#a75c9ed55c0084ac0ef95964b81ff7894',1,'settingsDataReader(char *apiKey, char *css):&#160;settingsDataReader.c']]],
-  ['structureverify_271',['structureVerify',['../d2/d6e/mkgen_8h.html#ab6ea1f9a659d797ed8db959140b8561f',1,'structureVerify():&#160;structureVerify.c'],['../d1/d99/structureVerify_8c.html#ab6ea1f9a659d797ed8db959140b8561f',1,'structureVerify():&#160;structureVerify.c']]]
+  ['noapikeymessage_272',['noApiKeyMessage',['../d3/dd9/mkgenmessages_8h.html#a72f88757bcb790cd56ad83a8b22b091c',1,'noApiKeyMessage():&#160;noApiKeyMessage.c'],['../df/d9c/noApiKeyMessage_8c.html#a72f88757bcb790cd56ad83a8b22b091c',1,'noApiKeyMessage():&#160;noApiKeyMessage.c']]]
 ];
