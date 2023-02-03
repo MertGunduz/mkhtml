@@ -1,18 +1,18 @@
 <map id="src/mkgenmessages/mkgenmessages.h" name="src/mkgenmessages/mkgenmessages.h">
-<area shape="rect" id="node1" title="the information output library of mkhtml" alt="" coords="2597,5,2879,32"/>
-<area shape="rect" id="node2" href="$d2/d6e/mkgen_8h.html" title="the html generation library of mkhtml" alt="" coords="1223,87,1373,114"/>
-<area shape="rect" id="node17" href="$d0/d9e/badArgcMessage_8c.html" title="prints information about wrong arguments" alt="" coords="1398,80,1611,121"/>
-<area shape="rect" id="node18" href="$dc/d8b/confInteractionErrorMessage_8c.html" title="prints information about configuration file read error" alt="" coords="1635,80,1894,121"/>
-<area shape="rect" id="node19" href="$d5/df8/curlErrorMessage_8c.html" title="prints information about curl pointer error" alt="" coords="1919,80,2133,121"/>
-<area shape="rect" id="node20" href="$d6/d3c/fileReadErrorMessage_8c.html" title="prints the file access error information" alt="" coords="2158,80,2371,121"/>
-<area shape="rect" id="node21" href="$d6/ddd/htmlFileInitErrorMessage_8c.html" title="prints information about html file creation error" alt="" coords="2395,80,2609,121"/>
-<area shape="rect" id="node22" href="$d2/d25/jsonFileCreationErrorMessage_8c.html" title="prints information about curl json response error" alt="" coords="2633,80,2843,121"/>
-<area shape="rect" id="node23" href="$d9/d7d/jsonReadErrorMessage_8c.html" title="prints information about curl response json read error" alt="" coords="2868,80,3088,121"/>
-<area shape="rect" id="node24" href="$df/d9c/noApiKeyMessage_8c.html" title="prints information about no api key error" alt="" coords="3113,80,3334,121"/>
-<area shape="rect" id="node25" href="$da/d9f/secondArgumentMissingMessage_8c.html" title="prints information about missing second argument" alt="" coords="3359,80,3565,121"/>
-<area shape="rect" id="node26" href="$df/d4d/verifyFileStructureError_8c.html" title="prints the verify function file structure availability error info" alt="" coords="3590,80,3787,121"/>
-<area shape="rect" id="node27" href="$dd/d10/wrongArgumentsMessage_8c.html" title="prints information about wrong arguments" alt="" coords="3812,80,4083,121"/>
-<area shape="rect" id="node28" href="$d6/d9c/wrongCssErrorMessage_8c.html" title="prints information about wrong selected css data" alt="" coords="4107,80,4329,121"/>
+<area shape="rect" id="node1" title="the information output library of mkhtml" alt="" coords="2697,5,2979,32"/>
+<area shape="rect" id="node2" href="$d2/d6e/mkgen_8h.html" title="the html generation library of mkhtml" alt="" coords="1323,87,1473,114"/>
+<area shape="rect" id="node18" href="$d0/d9e/badArgcMessage_8c.html" title="prints information about wrong arguments" alt="" coords="1498,80,1711,121"/>
+<area shape="rect" id="node19" href="$dc/d8b/confInteractionErrorMessage_8c.html" title="prints information about configuration file read error" alt="" coords="1735,80,1994,121"/>
+<area shape="rect" id="node20" href="$d5/df8/curlErrorMessage_8c.html" title="prints information about curl pointer error" alt="" coords="2019,80,2233,121"/>
+<area shape="rect" id="node21" href="$d6/d3c/fileReadErrorMessage_8c.html" title="prints the file access error information" alt="" coords="2258,80,2471,121"/>
+<area shape="rect" id="node22" href="$d6/ddd/htmlFileInitErrorMessage_8c.html" title="prints information about html file creation error" alt="" coords="2495,80,2709,121"/>
+<area shape="rect" id="node23" href="$d2/d25/jsonFileCreationErrorMessage_8c.html" title="prints information about curl json response error" alt="" coords="2733,80,2943,121"/>
+<area shape="rect" id="node24" href="$d9/d7d/jsonReadErrorMessage_8c.html" title="prints information about curl response json read error" alt="" coords="2968,80,3188,121"/>
+<area shape="rect" id="node25" href="$df/d9c/noApiKeyMessage_8c.html" title="prints information about no api key error" alt="" coords="3213,80,3434,121"/>
+<area shape="rect" id="node26" href="$da/d9f/secondArgumentMissingMessage_8c.html" title="prints information about missing second argument" alt="" coords="3459,80,3665,121"/>
+<area shape="rect" id="node27" href="$df/d4d/verifyFileStructureError_8c.html" title="prints the verify function file structure availability error info" alt="" coords="3690,80,3887,121"/>
+<area shape="rect" id="node28" href="$dd/d10/wrongArgumentsMessage_8c.html" title="prints information about wrong arguments" alt="" coords="3912,80,4183,121"/>
+<area shape="rect" id="node29" href="$d6/d9c/wrongCssErrorMessage_8c.html" title="prints information about wrong selected css data" alt="" coords="4207,80,4429,121"/>
 <area shape="rect" id="node3" href="$df/d61/mkhtml_8c.html" title="the main application file of mkhtml" alt="" coords="5,169,140,196"/>
 <area shape="rect" id="node4" href="$d4/d65/addcss_8c.html" title="adds inline css to the html file" alt="" coords="164,169,315,196"/>
 <area shape="rect" id="node5" href="$dd/d59/apiKeyMenu_8c.html" title="changes api key and shows the new settings configuration file" alt="" coords="339,169,524,196"/>
@@ -26,5 +26,6 @@
 <area shape="rect" id="node13" href="$da/d82/settingsDataReader_8c.html" title="reads the informationg from the /home/.mkhtml/settings.txt file" alt="" coords="1931,169,2164,196"/>
 <area shape="rect" id="node14" href="$d1/d99/structureVerify_8c.html" title="the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/...." alt="" coords="2188,169,2387,196"/>
 <area shape="rect" id="node15" href="$dd/dde/takeFileChar_8c.html" title="takes the total chars of a file" alt="" coords="2411,169,2596,196"/>
-<area shape="rect" id="node16" href="$dd/d18/webMenu_8c.html" title="prints information about mkhtml.org" alt="" coords="2621,169,2789,196"/>
+<area shape="rect" id="node16" href="$de/d5d/versionMenu_8c.html" title="prints the mkhtml version" alt="" coords="2621,169,2810,196"/>
+<area shape="rect" id="node17" href="$dd/d18/webMenu_8c.html" title="prints information about mkhtml.org" alt="" coords="2834,169,3002,196"/>
 </map>

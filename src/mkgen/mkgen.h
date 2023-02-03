@@ -35,6 +35,7 @@ void cssMenu(char *newCss);
 bool cssVerify(char *cssPick, int cssMessageIndex);
 void helpMenu();
 void githubMenu();
+void versionMenu();
 
 /* CSS-DATA STYLES */
 static char *cssDataStyles[] = {"empty", "simple", "unix", "cartoon", "elegant", "hacker", "violenta"};

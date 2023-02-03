@@ -1,1 +1,1 @@
-add_library(mkgen STATIC argVerify.c htmlGen.c structureVerify.c takeFileChar.c addcss.c settingsDataReader.c mkSettingsMenu.c webMenu.c apiKeyMenu.c cssMenu.c cssVerify.c helpMenu.c githubMenu.c)
+add_library(mkgen STATIC argVerify.c htmlGen.c structureVerify.c takeFileChar.c addcss.c settingsDataReader.c mkSettingsMenu.c webMenu.c apiKeyMenu.c cssMenu.c cssVerify.c helpMenu.c githubMenu.c versionMenu.c)
