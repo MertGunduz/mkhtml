@@ -47,7 +47,11 @@ int \mbox{\hyperlink{mkgen_8h_a203799c867d5db39f6115704542aa871}{take\+File\+Cha
 void \mbox{\hyperlink{mkgen_8h_a44dec54dd89fc712550d48a3adbf1402}{web\+Menu}} ()
 \begin{DoxyCompactList}\small\item\em prints information about mkhtml.\+org \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{mkgen_8h_a4262ce14b7deda575e7fac03e1d6c098}{api\+Key\+Menu}} (char $\ast$new\+Api\+Key)
-\begin{DoxyCompactList}\small\item\em changes api key and shows the new settings configuration file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em changes api key and shows the new settings configuration file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mkgen_8h_a8c6b7710146897a39e2c93b09e02d0e0}{css\+Menu}} (char $\ast$new\+Css)
+\begin{DoxyCompactList}\small\item\em changes css and shows the new settings configuration file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{mkgen_8h_a77ebe0f7abbb688c5452ae5a9685c76a}{css\+Verify}} (char $\ast$css\+Pick, int css\+Message\+Index)
+\begin{DoxyCompactList}\small\item\em checks the css arguments \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -74,7 +78,7 @@ adds inline css to the html file
 
 
 
-Definition at line 18 of file addcss.\+c.
+Definition at line 17 of file addcss.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_a4262ce14b7deda575e7fac03e1d6c098}\label{mkgen_8h_a4262ce14b7deda575e7fac03e1d6c098}} 
 \index{mkgen.h@{mkgen.h}!apiKeyMenu@{apiKeyMenu}}
@@ -113,6 +117,42 @@ true or false
 
 
 Definition at line 20 of file arg\+Verify.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a8c6b7710146897a39e2c93b09e02d0e0}\label{mkgen_8h_a8c6b7710146897a39e2c93b09e02d0e0}} 
+\index{mkgen.h@{mkgen.h}!cssMenu@{cssMenu}}
+\index{cssMenu@{cssMenu}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{cssMenu()}{cssMenu()}}
+{\footnotesize\ttfamily void css\+Menu (\begin{DoxyParamCaption}\item[{char $\ast$}]{new\+Css }\end{DoxyParamCaption})}
+
+
+
+changes css and shows the new settings configuration file 
+
+
+
+Definition at line 14 of file css\+Menu.\+c.
+
+\mbox{\Hypertarget{mkgen_8h_a77ebe0f7abbb688c5452ae5a9685c76a}\label{mkgen_8h_a77ebe0f7abbb688c5452ae5a9685c76a}} 
+\index{mkgen.h@{mkgen.h}!cssVerify@{cssVerify}}
+\index{cssVerify@{cssVerify}!mkgen.h@{mkgen.h}}
+\doxysubsubsection{\texorpdfstring{cssVerify()}{cssVerify()}}
+{\footnotesize\ttfamily bool css\+Verify (\begin{DoxyParamCaption}\item[{char $\ast$}]{css\+Pick,  }\item[{int}]{css\+Message\+Index }\end{DoxyParamCaption})}
+
+
+
+checks the css arguments 
+
+
+\begin{DoxyParams}{Parameters}
+{\em css\+Pick} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file css\+Verify.\+c.
 
 \mbox{\Hypertarget{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}\label{mkgen_8h_a69b4c4c798cbe0cd340ff94d9ca393ef}} 
 \index{mkgen.h@{mkgen.h}!htmlGen@{htmlGen}}
