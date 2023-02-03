@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
         }
         else if (strcmp(argv[1], "-g") == 0 || strcmp(argv[1], "--github") == 0)
         {
-            fprintf(stdout, "github menu\n");
+            githubMenu();
         }
         else if (strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0)
         {
