@@ -19,6 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+/**
+ * @file mjson.c
+ * 
+ * @brief json functions file written by Cesanta Software Limited
+ *
+ * @author Mehmet Mert Gunduz
+ * 
+ * @date 04/02/2023
+*/
+
 #include <float.h>
 #include <math.h>
 

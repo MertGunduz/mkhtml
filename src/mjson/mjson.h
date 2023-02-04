@@ -19,6 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+/**
+ * @file mjson.h
+ * 
+ * @brief json header file written by Cesanta Software Limited
+ *
+ * @author Mehmet Mert Gunduz
+ * 
+ * @date 04/02/2023
+*/
+
 #ifndef MJSON_H
 #define MJSON_H
 
