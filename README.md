@@ -92,7 +92,7 @@ mkhtml --settings
 ```
 outputs the configurations 
 
-### Outputting Website URL
+### Outputting Version
 
 ```sh
 mkhtml -v
