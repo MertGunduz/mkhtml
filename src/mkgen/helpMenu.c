@@ -6,7 +6,6 @@
  * @author Mehmet Mert Gunduz
  * 
  * @date 03/02/2022
- * @bug No known bugs.
 */
 
 #include "mkgen.h"
