@@ -1,6 +1,7 @@
 # mkhtml
 
-mkhtml is an html document generator that works with chatgpt text-davinci-003
+mkhtml is an html document generator that works with chatgpt text-davinci-003 <br>
+YouTube: https://youtu.be/ULvErLMKrTo
 
 ## Programming Language and Tools
 
