@@ -14,64 +14,116 @@
     }
 
     h1 {
-        color: black;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        letter-spacing: 5px;
-        text-decoration: underline;
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: #222;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px #ccc;
+        background: -webkit-linear-gradient(top, #f8f8f8, #eee);
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     }
 
 
     h2 {
-        color: black;
-        font-weight: 600;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        text-decoration: underline;
-        letter-spacing: 5px;
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 5px;
+        text-transform: uppercase;
+        color: #1d1d1d;
+        letter-spacing: 2px;
+        text-shadow: 0px 2px 4px rgba(41,41,41,0.25);
     }
 
     h3 {
-        color: rgba(0, 0, 0, 1);
-        font-weight: 600;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        text-decoration: underline;
-        letter-spacing: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #1B4F72;
+        text-align: center;
+        text-shadow: 1px 1px #FFC107;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        margin-bottom: 0.3em;
+        padding: 0.3em 0;
+        border-bottom: 2px solid #FFC107;
     }
 
-    h4 {
-        color: black;
-        font-weight: 600;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        text-decoration: underline;
-        letter-spacing: 5px;
+    h4 { 
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        margin: 20px 0px;
     }
 
     h5 {
-        color: black;
-        font-weight: 600;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        text-decoration: underline;
-        letter-spacing: 5px;
+        font-family: Georgia, serif;
+        font-style: italic;
+        color: #2A2A2A;
+        font-size: 1.2em;
+        font-weight: bold;
+        line-height: 1.5em;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 0 0 10px 0;
+        background: #FFF;
+        border: 1px solid #ddd;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        word-spacing: 0.2em;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
     }
 
     h6 {
-        color: black;
-        font-weight: 600;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        text-decoration: underline;
-        letter-spacing: 5px;
+        font-family: 'Roboto', sans-serif; 
+        font-size: 1.7rem;
+        font-weight: 500; 
+        color: #000;
+        letter-spacing: 0.1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        text-transform: uppercase; 
+        text-align: center;
+        background: #f0f0f0;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
-    p {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-        color: rgba(0, 0, 0, 0.667);
-        font-size: 14px;
+    
+    p { 
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #999;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        letter-spacing: .02em;
+        text-transform: uppercase;
+        text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+        text-indent: 30px;
+        opacity: 0.9;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
     }
 
     ol, ul {
