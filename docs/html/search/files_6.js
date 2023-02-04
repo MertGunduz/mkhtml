@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['jsonfilecreationerrormessage_2ec_203',['jsonFileCreationErrorMessage.c',['../d2/d25/jsonFileCreationErrorMessage_8c.html',1,'']]],
-  ['jsonreaderrormessage_2ec_204',['jsonReadErrorMessage.c',['../d9/d7d/jsonReadErrorMessage_8c.html',1,'']]]
+  ['helpmenu_2ec_203',['helpMenu.c',['../d6/d4d/helpMenu_8c.html',1,'']]],
+  ['htmlfileiniterrormessage_2ec_204',['htmlFileInitErrorMessage.c',['../d6/ddd/htmlFileInitErrorMessage_8c.html',1,'']]],
+  ['htmlgen_2ec_205',['htmlGen.c',['../d7/d14/htmlGen_8c.html',1,'']]]
 ];

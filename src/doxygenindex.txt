@@ -1,0 +1,144 @@
+/*! \mainpage mkhtml
+ *
+ * \section intro_sec Introduction
+ * <hr>
+ * mkhtml is an html document generator that works with chatgpt text-davinci-003\n
+ *
+ * \n
+ *
+ * \section programminglanguage_sec Programming Language and Tools
+ * <hr>
+ * Programming Language: C, Bash \n
+ * Compiler: GNU GCC \n
+ * Build Tool: CMake \n
+ *
+ * \n
+ *
+ * \section dependency_sec Dependencies
+ * <hr>
+ * Libcurl \n
+ * CMake (MIN 3.22)
+ *
+ * \n
+ *
+ * \section install_sec Installation
+ * <hr>
+ * \subsection step1 Step 1: Download the Source codes
+ *
+ * https://github.com/MertGunduz/mkhtml
+ *
+ * \n
+ *
+ * \subsection step2 Step 2: Change permissions of INSTALL.sh
+ *
+ * \code{.sh}
+ * chmod 755 INSTALL.sh
+ * \endcode
+ *
+ * running this command will change the permission of the INSTALL.sh 
+ *
+ * \n
+ *
+ * \subsection step3 Step 3: Run INSTALL.sh
+ *
+ * \code{.sh}
+ * ./INSTALL.sh
+ * \endcode
+ *
+ * running this bash file will build the application and create the folders.
+ *
+ * \note It can ask for sudo requirements.
+ *
+ * \n
+ *
+ * \subsection step4 Step 4: Test Application
+ *
+ * try running 
+ * \code{.unparsed}
+ * mkhtml -h
+ * \endcode
+ * if there are some output related to mkhtml then it means it is successfully builded and installed
+ *
+ * \n
+ *
+ * \section use_sec How to use
+ * <hr>
+ *
+ * \subsection generatingHtmlFiles Generating HTML Files
+ * \code{.unparsed}
+ * mkhtml -G [DATA]
+ * mkhtml --generate [DATA]
+ * \endcode 
+ *
+ * sends a request to openai api and generates the html file with the selected style
+ *
+ * \n
+ *
+ * \subsection settingApiKey Setting API Key
+ * \code{.unparsed}
+ * mkhtml -k [DATA]
+ * mkhtml --key [DATA]
+ * \endcode 
+ *
+ * sets the openai api key
+ *
+ * \n
+ *
+ * \subsection settingCss Setting CSS Style
+ * \code{.unparsed}
+ * mkhtml -c [CSS-DATA]
+ * mkhtml --css [CSS-DATA]
+ * \endcode 
+ *
+ * sets the css style
+ *
+ * \n
+ *
+ * \subsection outputtingWebisteURL Outputting Website URL
+ * \code{.unparsed}
+ * mkhtml -w
+ * mkhtml --website
+ * \endcode 
+ *
+ * outputs the mkhtml website url
+ *
+ * \n
+ *
+ * \subsection outputtingGithubURL Outputting Github URL
+ * \code{.unparsed}
+ * mkhtml -g
+ * mkhtml --github
+ * \endcode 
+ *
+ * outputs the mkhtml github url
+ *
+ * \n
+ *
+ * \subsection outputtingConfigurations Outputting Configurations
+ * \code{.unparsed}
+ * mkhtml -s
+ * mkhtml --settings
+ * \endcode 
+ *
+ * outputs the configurations
+ *
+ * \n
+ * 
+ * \subsection outputtingVersion Outputting Version
+ * \code{.unparsed}
+ * mkhtml -v
+ * mkhtml --version
+ * \endcode 
+ *
+ * outputs the mkhtml version
+ *
+ * \n
+ *
+ * \subsection outputtingHelpMenu Outputting Help Menu
+ * \code{.unparsed}
+ * mkhtml -h
+ * mkhtml --help
+ * \endcode 
+ *
+ * outputs the help menu
+*/

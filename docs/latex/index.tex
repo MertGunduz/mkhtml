@@ -1,0 +1,152 @@
+\hypertarget{index_intro_sec}{}\doxysection{Introduction}\label{index_intro_sec}
+\DoxyHorRuler{0}
+ mkhtml is an html document generator that works with chatgpt text-\/davinci-\/003~\newline
+ ~\newline
+ \hypertarget{index_programminglanguage_sec}{}\doxysection{Programming Language and Tools}\label{index_programminglanguage_sec}
+\DoxyHorRuler{0}
+ Programming Language\+: C, Bash ~\newline
+Compiler\+: GNU GCC ~\newline
+Build Tool\+: CMake ~\newline
+ ~\newline
+ \hypertarget{index_dependency_sec}{}\doxysection{Dependencies}\label{index_dependency_sec}
+\DoxyHorRuler{0}
+ Libcurl ~\newline
+CMake (MIN 3.\+22)
+
+~\newline
+ \hypertarget{index_install_sec}{}\doxysection{Installation}\label{index_install_sec}
+\DoxyHorRuler{0}
+ \hypertarget{index_step1}{}\doxysubsection{Step 1\+: Download the Source codes}\label{index_step1}
+\href{https://github.com/MertGunduz/mkhtml}{\texttt{ https\+://github.\+com/\+Mert\+Gunduz/mkhtml}}
+
+~\newline
+ \hypertarget{index_step2}{}\doxysubsection{Step 2\+: Change permissions of INSTALL.\+sh}\label{index_step2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{chmod 755 INSTALL.sh}
+
+\end{DoxyCode}
+
+
+running this command will change the permission of the INSTALL.\+sh
+
+~\newline
+ \hypertarget{index_step3}{}\doxysubsection{Step 3\+: Run INSTALL.\+sh}\label{index_step3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./INSTALL.sh}
+
+\end{DoxyCode}
+
+
+running this bash file will build the application and create the folders.
+
+\begin{DoxyNote}{Note}
+It can ask for sudo requirements.
+\end{DoxyNote}
+~\newline
+ \hypertarget{index_step4}{}\doxysubsection{Step 4\+: Test Application}\label{index_step4}
+try running 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/h}
+
+\end{DoxyCode}
+ if there are some output related to mkhtml then it means it is successfully builded and installed
+
+~\newline
+ \hypertarget{index_use_sec}{}\doxysection{How to use}\label{index_use_sec}
+\DoxyHorRuler{0}
+\hypertarget{index_generatingHtmlFiles}{}\doxysubsection{Generating HTML Files}\label{index_generatingHtmlFiles}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/G [DATA]}
+\DoxyCodeLine{mkhtml -\/-\/generate [DATA]}
+
+\end{DoxyCode}
+
+
+sends a request to openai api and generates the html file with the selected style
+
+~\newline
+ \hypertarget{index_settingApiKey}{}\doxysubsection{Setting API Key}\label{index_settingApiKey}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/k [DATA]}
+\DoxyCodeLine{mkhtml -\/-\/key [DATA]}
+
+\end{DoxyCode}
+
+
+sets the openai api key
+
+~\newline
+ \hypertarget{index_settingCss}{}\doxysubsection{Setting CSS Style}\label{index_settingCss}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/c [CSS-\/DATA]}
+\DoxyCodeLine{mkhtml -\/-\/css [CSS-\/DATA]}
+
+\end{DoxyCode}
+
+
+sets the css style
+
+~\newline
+ \hypertarget{index_outputtingWebisteURL}{}\doxysubsection{Outputting Website URL}\label{index_outputtingWebisteURL}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/w}
+\DoxyCodeLine{mkhtml -\/-\/website}
+
+\end{DoxyCode}
+
+
+outputs the mkhtml website url
+
+~\newline
+ \hypertarget{index_outputtingGithubURL}{}\doxysubsection{Outputting Github URL}\label{index_outputtingGithubURL}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/g}
+\DoxyCodeLine{mkhtml -\/-\/github}
+
+\end{DoxyCode}
+
+
+outputs the mkhtml github url
+
+~\newline
+ \hypertarget{index_outputtingConfigurations}{}\doxysubsection{Outputting Configurations}\label{index_outputtingConfigurations}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/s}
+\DoxyCodeLine{mkhtml -\/-\/settings}
+
+\end{DoxyCode}
+
+
+outputs the configurations
+
+~\newline
+ \hypertarget{index_outputtingVersion}{}\doxysubsection{Outputting Version}\label{index_outputtingVersion}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/v}
+\DoxyCodeLine{mkhtml -\/-\/version}
+
+\end{DoxyCode}
+
+
+outputs the mkhtml version
+
+~\newline
+ \hypertarget{index_outputtingHelpMenu}{}\doxysubsection{Outputting Help Menu}\label{index_outputtingHelpMenu}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkhtml -\/h}
+\DoxyCodeLine{mkhtml -\/-\/help}
+
+\end{DoxyCode}
+
+
+outputs the help menu 

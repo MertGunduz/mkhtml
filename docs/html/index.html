@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mkhtml: Main Page</title>
+<title>mkhtml: mkhtml</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,11 +63,117 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">mkhtml Documentation</div>  </div>
+<div class="title">mkhtml </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<hr  />
+<p> mkhtml is an html document generator that works with chatgpt text-davinci-003<br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="programminglanguage_sec"></a>
+Programming Language and Tools</h1>
+<hr  />
+<p> Programming Language: C, Bash <br  />
+Compiler: GNU GCC <br  />
+Build Tool: CMake <br  />
+ <br  />
+ </p>
+<h1><a class="anchor" id="dependency_sec"></a>
+Dependencies</h1>
+<hr  />
+<p> Libcurl <br  />
+CMake (MIN 3.22)</p>
+<p><br  />
+ </p>
+<h1><a class="anchor" id="install_sec"></a>
+Installation</h1>
+<hr  />
+ <h2><a class="anchor" id="step1"></a>
+Step 1: Download the Source codes</h2>
+<p><a href="https://github.com/MertGunduz/mkhtml">https://github.com/MertGunduz/mkhtml</a></p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="step2"></a>
+Step 2: Change permissions of INSTALL.sh</h2>
+<div class="fragment"><div class="line">chmod 755 INSTALL.sh</div>
+</div><!-- fragment --><p>running this command will change the permission of the INSTALL.sh</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="step3"></a>
+Step 3: Run INSTALL.sh</h2>
+<div class="fragment"><div class="line">./INSTALL.sh</div>
+</div><!-- fragment --><p>running this bash file will build the application and create the folders.</p>
+<dl class="section note"><dt>Note</dt><dd>It can ask for sudo requirements.</dd></dl>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="step4"></a>
+Step 4: Test Application</h2>
+<p>try running </p><div class="fragment"><div class="line">mkhtml -h</div>
+</div><!-- fragment --><p> if there are some output related to mkhtml then it means it is successfully builded and installed</p>
+<p><br  />
+ </p>
+<h1><a class="anchor" id="use_sec"></a>
+How to use</h1>
+<hr  />
+<h2><a class="anchor" id="generatingHtmlFiles"></a>
+Generating HTML Files</h2>
+<div class="fragment"><div class="line">mkhtml -G [DATA]</div>
+<div class="line">mkhtml --generate [DATA]</div>
+</div><!-- fragment --><p>sends a request to openai api and generates the html file with the selected style</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="settingApiKey"></a>
+Setting API Key</h2>
+<div class="fragment"><div class="line">mkhtml -k [DATA]</div>
+<div class="line">mkhtml --key [DATA]</div>
+</div><!-- fragment --><p>sets the openai api key</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="settingCss"></a>
+Setting CSS Style</h2>
+<div class="fragment"><div class="line">mkhtml -c [CSS-DATA]</div>
+<div class="line">mkhtml --css [CSS-DATA]</div>
+</div><!-- fragment --><p>sets the css style</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="outputtingWebisteURL"></a>
+Outputting Website URL</h2>
+<div class="fragment"><div class="line">mkhtml -w</div>
+<div class="line">mkhtml --website</div>
+</div><!-- fragment --><p>outputs the mkhtml website url</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="outputtingGithubURL"></a>
+Outputting Github URL</h2>
+<div class="fragment"><div class="line">mkhtml -g</div>
+<div class="line">mkhtml --github</div>
+</div><!-- fragment --><p>outputs the mkhtml github url</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="outputtingConfigurations"></a>
+Outputting Configurations</h2>
+<div class="fragment"><div class="line">mkhtml -s</div>
+<div class="line">mkhtml --settings</div>
+</div><!-- fragment --><p>outputs the configurations</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="outputtingVersion"></a>
+Outputting Version</h2>
+<div class="fragment"><div class="line">mkhtml -v</div>
+<div class="line">mkhtml --version</div>
+</div><!-- fragment --><p>outputs the mkhtml version</p>
+<p><br  />
+ </p>
+<h2><a class="anchor" id="outputtingHelpMenu"></a>
+Outputting Help Menu</h2>
+<div class="fragment"><div class="line">mkhtml -h</div>
+<div class="line">mkhtml --help</div>
+</div><!-- fragment --><p>outputs the help menu </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
