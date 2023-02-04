@@ -28,9 +28,9 @@ struct \mbox{\hyperlink{structprettydata}{prettydata}}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{mjson_8c_a43f61a6ce93ad21c25146a899f035930}{M\+J\+S\+O\+N\+C\+A\+LL}}(ev)~if (cb != N\+U\+LL \&\& cb(ev, s, start, i -\/ start + 1, ud)) return i + 1;
+\#define \mbox{\hyperlink{mjson_8c_a43f61a6ce93ad21c25146a899f035930}{MJSONCALL}}(ev)~  if (cb != NULL \&\& cb(ev, s, start, i -\/ start + 1, ud)) return i + 1;
 \item 
-\#define \mbox{\hyperlink{mjson_8c_af7d6c2db12b233b740f1efa1db9d6eaa}{M\+J\+S\+O\+N\+E\+OO}}()
+\#define \mbox{\hyperlink{mjson_8c_af7d6c2db12b233b740f1efa1db9d6eaa}{MJSONEOO}}()
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -124,13 +124,13 @@ Mehmet Mert Gunduz
 \index{mjson.c@{mjson.c}!MJSONCALL@{MJSONCALL}}
 \index{MJSONCALL@{MJSONCALL}!mjson.c@{mjson.c}}
 \doxysubsubsection{\texorpdfstring{MJSONCALL}{MJSONCALL}}
-{\footnotesize\ttfamily \#define M\+J\+S\+O\+N\+C\+A\+LL(\begin{DoxyParamCaption}\item[{}]{ev }\end{DoxyParamCaption})~if (cb != N\+U\+LL \&\& cb(ev, s, start, i -\/ start + 1, ud)) return i + 1;}
+{\footnotesize\ttfamily \#define MJSONCALL(\begin{DoxyParamCaption}\item[{}]{ev }\end{DoxyParamCaption})~  if (cb != NULL \&\& cb(ev, s, start, i -\/ start + 1, ud)) return i + 1;}
 
 \mbox{\Hypertarget{mjson_8c_af7d6c2db12b233b740f1efa1db9d6eaa}\label{mjson_8c_af7d6c2db12b233b740f1efa1db9d6eaa}} 
 \index{mjson.c@{mjson.c}!MJSONEOO@{MJSONEOO}}
 \index{MJSONEOO@{MJSONEOO}!mjson.c@{mjson.c}}
 \doxysubsubsection{\texorpdfstring{MJSONEOO}{MJSONEOO}}
-{\footnotesize\ttfamily \#define M\+J\+S\+O\+N\+E\+OO(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \#define MJSONEOO(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
@@ -488,5 +488,5 @@ Definition at line 661 of file mjson.\+c.
 
 
 
-Definition at line 948 of file mjson.\+c.
+Definition at line 939 of file mjson.\+c.
 
