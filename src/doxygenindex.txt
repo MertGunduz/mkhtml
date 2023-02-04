@@ -2,7 +2,7 @@
  *
  * \section intro_sec Introduction
  * <hr>
- * mkhtml is an html document generator that works with chatgpt text-davinci-003\n
+ * mkhtml is an html document generator that works with text-davinci-003\n
  *
  * \n
  *

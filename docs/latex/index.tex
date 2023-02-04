@@ -1,17 +1,17 @@
 \hypertarget{index_intro_sec}{}\doxysection{Introduction}\label{index_intro_sec}
 \DoxyHorRuler{0}
- mkhtml is an html document generator that works with chatgpt text-\/davinci-\/003~\newline
+ mkhtml is an html document generator that works with text-\/davinci-\/003~\newline
  ~\newline
  \hypertarget{index_programminglanguage_sec}{}\doxysection{Programming Language and Tools}\label{index_programminglanguage_sec}
 \DoxyHorRuler{0}
  Programming Language\+: C, Bash ~\newline
-Compiler\+: GNU GCC ~\newline
-Build Tool\+: CMake ~\newline
+Compiler\+: G\+NU G\+CC ~\newline
+Build Tool\+: C\+Make ~\newline
  ~\newline
  \hypertarget{index_dependency_sec}{}\doxysection{Dependencies}\label{index_dependency_sec}
 \DoxyHorRuler{0}
  Libcurl ~\newline
-CMake (MIN 3.\+22)
+C\+Make (M\+IN 3.\+22)
 
 ~\newline
  \hypertarget{index_install_sec}{}\doxysection{Installation}\label{index_install_sec}
@@ -20,22 +20,20 @@ CMake (MIN 3.\+22)
 \href{https://github.com/MertGunduz/mkhtml}{\texttt{ https\+://github.\+com/\+Mert\+Gunduz/mkhtml}}
 
 ~\newline
- \hypertarget{index_step2}{}\doxysubsection{Step 2\+: Change permissions of INSTALL.\+sh}\label{index_step2}
+ \hypertarget{index_step2}{}\doxysubsection{Step 2\+: Change permissions of I\+N\+S\+T\+A\+L\+L.\+sh}\label{index_step2}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{chmod 755 INSTALL.sh}
-
 \end{DoxyCode}
 
 
-running this command will change the permission of the INSTALL.\+sh
+running this command will change the permission of the I\+N\+S\+T\+A\+L\+L.\+sh
 
 ~\newline
- \hypertarget{index_step3}{}\doxysubsection{Step 3\+: Run INSTALL.\+sh}\label{index_step3}
+ \hypertarget{index_step3}{}\doxysubsection{Step 3\+: Run I\+N\+S\+T\+A\+L\+L.\+sh}\label{index_step3}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{./INSTALL.sh}
-
 \end{DoxyCode}
 
 
@@ -49,67 +47,61 @@ It can ask for sudo requirements.
 try running 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/h}
-
 \end{DoxyCode}
  if there are some output related to mkhtml then it means it is successfully builded and installed
 
 ~\newline
  \hypertarget{index_use_sec}{}\doxysection{How to use}\label{index_use_sec}
 \DoxyHorRuler{0}
-\hypertarget{index_generatingHtmlFiles}{}\doxysubsection{Generating HTML Files}\label{index_generatingHtmlFiles}
+\hypertarget{index_generatingHtmlFiles}{}\doxysubsection{Generating H\+T\+M\+L Files}\label{index_generatingHtmlFiles}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/G [DATA]}
 \DoxyCodeLine{mkhtml -\/-\/generate [DATA]}
-
 \end{DoxyCode}
 
 
 sends a request to openai api and generates the html file with the selected style
 
 ~\newline
- \hypertarget{index_settingApiKey}{}\doxysubsection{Setting API Key}\label{index_settingApiKey}
+ \hypertarget{index_settingApiKey}{}\doxysubsection{Setting A\+P\+I Key}\label{index_settingApiKey}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/k [DATA]}
 \DoxyCodeLine{mkhtml -\/-\/key [DATA]}
-
 \end{DoxyCode}
 
 
 sets the openai api key
 
 ~\newline
- \hypertarget{index_settingCss}{}\doxysubsection{Setting CSS Style}\label{index_settingCss}
+ \hypertarget{index_settingCss}{}\doxysubsection{Setting C\+S\+S Style}\label{index_settingCss}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/c [CSS-\/DATA]}
 \DoxyCodeLine{mkhtml -\/-\/css [CSS-\/DATA]}
-
 \end{DoxyCode}
 
 
 sets the css style
 
 ~\newline
- \hypertarget{index_outputtingWebisteURL}{}\doxysubsection{Outputting Website URL}\label{index_outputtingWebisteURL}
+ \hypertarget{index_outputtingWebisteURL}{}\doxysubsection{Outputting Website U\+RL}\label{index_outputtingWebisteURL}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/w}
 \DoxyCodeLine{mkhtml -\/-\/website}
-
 \end{DoxyCode}
 
 
 outputs the mkhtml website url
 
 ~\newline
- \hypertarget{index_outputtingGithubURL}{}\doxysubsection{Outputting Github URL}\label{index_outputtingGithubURL}
+ \hypertarget{index_outputtingGithubURL}{}\doxysubsection{Outputting Github U\+RL}\label{index_outputtingGithubURL}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/g}
 \DoxyCodeLine{mkhtml -\/-\/github}
-
 \end{DoxyCode}
 
 
@@ -121,7 +113,6 @@ outputs the mkhtml github url
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/s}
 \DoxyCodeLine{mkhtml -\/-\/settings}
-
 \end{DoxyCode}
 
 
@@ -133,7 +124,6 @@ outputs the configurations
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/v}
 \DoxyCodeLine{mkhtml -\/-\/version}
-
 \end{DoxyCode}
 
 
@@ -145,7 +135,6 @@ outputs the mkhtml version
 \begin{DoxyCode}{0}
 \DoxyCodeLine{mkhtml -\/h}
 \DoxyCodeLine{mkhtml -\/-\/help}
-
 \end{DoxyCode}
 
 
