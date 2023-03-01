@@ -176,4 +176,7 @@ void apiKeyMenu(char *newApiKey)
 
     /* writing the new api key and css style */
     mkSettingsMenu(0);
+
+    /* deleting the curl response json file */
+    remove("mkhtml-response.json");
 }
