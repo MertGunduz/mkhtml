@@ -12,7 +12,6 @@
 */
 
 #include "mkgen.h"
-#include "../mjson/mjson.h"
 
 void htmlFileNameInitializer(char *argument, char *buffer);
 void creationMessage(char *fileName);

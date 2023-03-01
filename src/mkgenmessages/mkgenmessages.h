@@ -26,5 +26,6 @@ void htmlFileInitErrorMessage();
 void noApiKeyMessage();
 void fileReadErrorMessage();
 void wrongCssErrorMessage(int selection);
+void apiKeyControlUnsuccessfulMessage();
 
 #endif /* MKGENMESSAGES_H */

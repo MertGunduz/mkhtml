@@ -11,6 +11,7 @@
 #ifndef MKGEN_H
 #define MKGEN_H
 
+#include "../mjson/mjson.h"
 #include "../mkgenmessages/mkgenmessages.h"
 #include <stdlib.h>
 #include <stdbool.h>
