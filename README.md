@@ -1,3 +1,5 @@
+<img width="60" align="left" alt="commision_unix" src="https://user-images.githubusercontent.com/65850970/234680595-0c2756d8-12ee-45e3-ae76-5100bc0156d4.png">
+
 # mkhtml
 
 mkhtml is an html document generator that works with text-davinci-003 <br>
