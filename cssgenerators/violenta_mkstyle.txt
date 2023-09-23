@@ -1,111 +1,140 @@
 <style>
+    :root {
+        --primary-color: #49304b;
+        --secondary-color: #765c78;
+        --background-color: #f3ebe5;
+        --text-color: #3b3b3b;
+        --alt-color: #f2f2f2;
+        --highlight-color: #f3ebe5;
+        --transition-duration: 0.3s;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes typewriter {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
     html {
         font-size: 12px;
-        background-color: #f3ebe5;
+        background: linear-gradient(45deg, var(--background-color), var(--alt-color));
     }
 
     body {
         font-family: "Rubik", sans-serif;
-        line-height: 1;
+        line-height: 1.5;
         font-weight: 400;
-        color: #3b3b3b;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 1s ease;
     }
 
-    h1 {
-        font-size: 52px;
+    h1, h2, h3, h4, h5, h6 {
         margin-bottom: 32px;
         line-height: 1.05;
-        color: #49304b;
+        color: var(--primary-color);
+        transition: color var(--transition-duration) ease, transform var(--transition-duration) ease;
     }
 
-    h2 {
-        font-size: 44px;
-        margin-bottom: 32px;
-        line-height: 1.05;
-        color: #49304b;
+    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+        color: var(--secondary-color);
+        transform: scale(1.05);
     }
 
-    h3 {
-        font-size: 36px;
-        margin-bottom: 32px;
-        line-height: 1.05;
-        color: #49304b;
-    }
-
-    h4 {
-        font-size: 30px;
-        margin-bottom: 32px;
-        line-height: 1.05;
-        color: #49304b;
-    }
-
-    h5 {
-        font-size: 24px;
-        margin-bottom: 32px;
-        line-height: 1.05;
-        color: #49304b;
-    }
-
-    h6 {
-        font-size: 20px;
-        line-height: 1.05;
-        color: #49304b;
-        margin-bottom: 32px;
-    }
+    h1 { font-size: 52px; }
+    h2 { font-size: 44px; }
+    h3 { font-size: 36px; }
+    h4 { font-size: 30px; }
+    h5 { font-size: 24px; }
+    h6 { font-size: 20px; }
 
     p {
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 48px;
+        overflow: hidden;
+        border-right: .15em solid var(--primary-color);
+        white-space: nowrap;
+        animation: typewriter 4s steps(30, end), fadeIn 0.5s ease;
     }
 
-    ul {   
-        list-style-type: square;
-        list-style-position: outside;
-        color: #49304b;
+    ul, ol {   
+        color: var(--primary-color);
         margin-bottom: 48px;
+        padding-left: 1.5rem;
     }
 
-    ol{   
-        list-style-type: upper-alpha;
-        list-style-position: outside;
-        color: #49304b;
-        margin-bottom: 48px;
+    ul { 
+        list-style-type: none;
     }
 
-    li {
-        font-size: 20px;
-        list-style-position: outside;
+    ul li:before {
+        content: '•';
+        color: var(--primary-color);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1.5em;
+    }
+
+    ol { 
+        list-style-type: none;
+        counter-reset: alpha-counter;
+    }
+
+    ol li {
+        counter-increment: alpha-counter;
+    }
+
+    ol li:before {
+        content: counter(alpha-counter, upper-alpha) ". ";
+        color: var(--primary-color);
+        display: inline-block;
+        margin-left: -2em;
     }
 
     table {
         font-family: sans-serif;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
         width: 60%;
-        margin-bottom: 48px;
+        margin: 2rem auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
     table td, table th {
         padding: 8px;
         border: 1px solid #ddd;
+        transition: background-color var(--transition-duration) ease, transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
     }
 
     th {
-    font-size: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #49304b;
-    color: #f3ebe5;
+        font-size: 20px;
+        text-align: left;
+        background-color: var(--primary-color);
+        color: var(--highlight-color);
     }
 
     td {
         font-size: 18px;
-        padding: 8px;
-        border: 1px solid #ddd;
     }
 
     table tr:nth-child(even){
-        background-color: #f2f2f2;
+        background-color: var(--alt-color);
+    }
+
+    table tr:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    table td:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 </style>
