@@ -27,5 +27,6 @@ void noApiKeyMessage();
 void fileReadErrorMessage();
 void wrongCssErrorMessage(int selection);
 void apiKeyControlUnsuccessfulMessage();
+void mallocErrorMessage();
 
 #endif /* MKGENMESSAGES_H */

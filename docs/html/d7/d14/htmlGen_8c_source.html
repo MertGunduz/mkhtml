@@ -25,7 +25,7 @@
    <div id="projectname">mkhtml
    &#160;<span id="projectnumber">1.0.1</span>
    </div>
-   <div id="projectbrief">a cli document generation tool that works with text-davinci-003</div>
+   <div id="projectbrief">a cli document generation tool that works with gpt</div>
   </td>
  </tr>
  </tbody>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">/* writing request data */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    sprintf(requestData, <span class="stringliteral">&quot;{\&quot;model\&quot;: \&quot;text-davinci-003\&quot;, \&quot;prompt\&quot;: \&quot;write a big, descriptive and detailed html5 document about %s in english language without css\&quot;, \&quot;max_tokens\&quot;: 4000, \&quot;temperature\&quot;: 0.2}&quot;</span>, subject);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    sprintf(requestData, <span class="stringliteral">&quot;{\&quot;model\&quot;: \&quot;gpt-3.5-turbo-instruct\&quot;, \&quot;prompt\&quot;: \&quot;write a big, descriptive and detailed html5 document about %s in english language without css\&quot;, \&quot;max_tokens\&quot;: 4000, \&quot;temperature\&quot;: 0.2}&quot;</span>, subject);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">/* file for writing the curl response json */</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    FILE *fp = fopen(<span class="stringliteral">&quot;mkhtml-response.json&quot;</span>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
@@ -243,7 +243,7 @@ $(function() {
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    fclose(htmlFile);</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">/* deleting the curl response json file */</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    remove(<span class="stringliteral">&quot;mkhtml-response.json&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">//remove(&quot;mkhtml-response.json&quot;);</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">/* creation message */</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="../../d7/d14/htmlGen_8c.html#aa3afa9b7f8090c0068461851188403fd">creationMessage</a>(htmlHeader);</div>

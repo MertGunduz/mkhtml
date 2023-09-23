@@ -7,6 +7,7 @@
         "stdbool.h": "c",
         "mkgen.h": "c",
         "mkgenmessages.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "mjson.h": "c"
     }
 }

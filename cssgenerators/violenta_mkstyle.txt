@@ -1,27 +1,17 @@
 <style>
     :root {
-        --primary-color: #49304b;
-        --secondary-color: #765c78;
-        --background-color: #f3ebe5;
-        --text-color: #3b3b3b;
-        --alt-color: #f2f2f2;
-        --highlight-color: #f3ebe5;
-        --transition-duration: 0.3s;
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    @keyframes typewriter {
-        from { width: 0; }
-        to { width: 100%; }
+        --primary-color: #6c2e85;          /* Dark Purple */
+        --secondary-color: #a84fd1;       /* Light Purple */
+        --background-color: #eae0f2;      /* Light Lavender */
+        --text-color: #3b3b3b;            /* Keeping Text color unchanged for readability */
+        --alt-color: #d4c7e7;             /* Alternate light lavender */
+        --highlight-color: #f7ebff;       /* Very light lavender for highlights */
+        --transition-duration: 0.3s;      /* Unchanged */
     }
 
     html {
         font-size: 12px;
-        background: linear-gradient(45deg, var(--background-color), var(--alt-color));
+        background: linear-gradient(135deg, var(--background-color) 0%, var(--alt-color) 100%);
     }
 
     body {
@@ -29,21 +19,16 @@
         line-height: 1.5;
         font-weight: 400;
         color: var(--text-color);
-        margin: 0;
-        padding: 0;
-        animation: fadeIn 1s ease;
     }
 
     h1, h2, h3, h4, h5, h6 {
         margin-bottom: 32px;
-        line-height: 1.05;
-        color: var(--primary-color);
-        transition: color var(--transition-duration) ease, transform var(--transition-duration) ease;
+        line-height: 1.2;
+        transition: color var(--transition-duration) ease;
     }
 
     h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
         color: var(--secondary-color);
-        transform: scale(1.05);
     }
 
     h1 { font-size: 52px; }
@@ -57,10 +42,6 @@
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 48px;
-        overflow: hidden;
-        border-right: .15em solid var(--primary-color);
-        white-space: nowrap;
-        animation: typewriter 4s steps(30, end), fadeIn 0.5s ease;
     }
 
     ul, ol {   
@@ -99,19 +80,15 @@
 
     table {
         font-family: sans-serif;
-        border-collapse: separate;
-        border-spacing: 0;
+        border-collapse: collapse;
         width: 60%;
         margin: 2rem auto;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
     table td, table th {
         padding: 8px;
         border: 1px solid #ddd;
-        transition: background-color var(--transition-duration) ease, transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+        transition: background-color var(--transition-duration) ease;
     }
 
     th {
@@ -131,10 +108,5 @@
 
     table tr:hover {
         background-color: rgba(0, 0, 0, 0.05);
-    }
-
-    table td:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 </style>
