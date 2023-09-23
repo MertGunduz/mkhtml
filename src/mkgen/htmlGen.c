@@ -33,15 +33,15 @@ void htmlGen(char *subject)
     bool seperated = false; /* the boolean data that controls the seperator on the configuration string */
 
     /* html generation data*/
-    char htmlData[8192];
-    char htmlHeader[128];
-    char authorizationHeader[256];
+    char* htmlData = (char*)malloc(sizeof(char) * 8192);
+    char* htmlHeader = (char*)malloc(sizeof(char) * 128);
+    char* authorizationHeader = (char*)malloc(sizeof(char) * 256);
 
     /* initializing html header */
     htmlFileNameInitializer(subject, htmlHeader);
 
     /* request data */
-    char requestData[512];
+    char* requestData = (char*)malloc(sizeof(char) * 512);
 
     /* read api key and css selection from the /home/.mkhtml/settings.txt file */
     settingsDataReader(apiKey, css);
@@ -101,6 +101,8 @@ void htmlGen(char *subject)
     curl_easy_setopt(curl, CURLOPT_POSTFIELDS, requestData);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
 
+    free(authorizationHeader);
+
     /* perform */
     res = curl_easy_perform(curl);
 
@@ -139,6 +141,12 @@ void htmlGen(char *subject)
 
     /* reading and malloc part */
     char *jsonData = (char*)malloc(8192 * sizeof(char)); 
+
+    if(jsonData == NULL) {
+        mallocErrorMessage();
+        exit(EXIT_FAILURE);
+    }
+
     int jI = 0;
 
     while (!feof(jsonFile))
@@ -179,6 +187,8 @@ void htmlGen(char *subject)
     /* writing the file */
     fprintf(htmlFile, "%s", htmlData);
 
+    free(htmlData);
+
     /* closing file */
     fclose(htmlFile);
 
@@ -193,6 +203,8 @@ void htmlGen(char *subject)
     {
         addcss(htmlHeader, css);
     }
+
+    free(htmlHeader);
 }
 
 /// @brief takes argument name and deletes the spaces and assigns it to a buffer
