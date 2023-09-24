@@ -1,13 +1,13 @@
-<map id="src/mkgen/mkgen.h" name="src/mkgen/mkgen.h">
-<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="441,5,592,32"/>
+<map id="src/gen/mkgen.h" name="src/gen/mkgen.h">
+<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="390,5,521,32"/>
 <area shape="rect" id="node2" href="$dc/d9e/mjson_8h.html" title="json header file written by Cesanta Software Limited" alt="" coords="75,80,206,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,155,76,181"/>
 <area shape="rect" id="node5" title=" " alt="" coords="205,155,276,181"/>
-<area shape="rect" id="node6" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="281,80,553,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="577,80,659,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="684,80,771,107"/>
-<area shape="rect" id="node10" title=" " alt="" coords="795,80,870,107"/>
-<area shape="rect" id="node11" title=" " alt="" coords="894,80,979,107"/>
+<area shape="rect" id="node6" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="281,80,470,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="494,80,577,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="601,80,688,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="713,80,787,107"/>
+<area shape="rect" id="node11" title=" " alt="" coords="811,80,897,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="103,155,178,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="383,155,450,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="342,155,409,181"/>
 </map>

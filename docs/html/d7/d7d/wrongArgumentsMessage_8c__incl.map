@@ -1,5 +1,5 @@
-<map id="src/mkgenmessages/wrongArgumentsMessage.c" name="src/mkgenmessages/wrongArgumentsMessage.c">
-<area shape="rect" id="node1" title="prints information about wrong arguments" alt="" coords="5,5,276,47"/>
-<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="68,95,213,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="107,169,174,196"/>
+<map id="src/msg/wrongArgumentsMessage.c" name="src/msg/wrongArgumentsMessage.c">
+<area shape="rect" id="node1" title="prints information about wrong arguments" alt="" coords="5,5,263,32"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="61,80,207,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,155,167,181"/>
 </map>

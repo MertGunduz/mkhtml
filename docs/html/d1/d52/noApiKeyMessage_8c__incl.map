@@ -1,5 +1,5 @@
-<map id="src/mkgenmessages/noApiKeyMessage.c" name="src/mkgenmessages/noApiKeyMessage.c">
-<area shape="rect" id="node1" title="prints information about no api key error" alt="" coords="5,5,227,47"/>
-<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="43,95,189,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="83,169,149,196"/>
+<map id="src/msg/noApiKeyMessage.c" name="src/msg/noApiKeyMessage.c">
+<area shape="rect" id="node1" title="prints information about no api key error" alt="" coords="5,5,212,32"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="36,80,181,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="75,155,142,181"/>
 </map>

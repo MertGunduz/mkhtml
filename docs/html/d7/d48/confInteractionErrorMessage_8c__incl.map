@@ -1,5 +1,5 @@
-<map id="src/mkgenmessages/confInteractionErrorMessage.c" name="src/mkgenmessages/confInteractionErrorMessage.c">
-<area shape="rect" id="node1" title="prints information about configuration file read error" alt="" coords="5,5,264,47"/>
-<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="62,95,207,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="101,169,168,196"/>
+<map id="src/msg/confInteractionErrorMessage.c" name="src/msg/confInteractionErrorMessage.c">
+<area shape="rect" id="node1" title="prints information about configuration file read error" alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="36,95,181,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="75,169,142,196"/>
 </map>

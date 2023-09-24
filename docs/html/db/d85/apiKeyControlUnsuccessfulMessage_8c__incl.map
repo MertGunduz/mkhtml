@@ -1,5 +1,5 @@
-<map id="src/mkgenmessages/apiKeyControlUnsuccessfulMessage.c" name="src/mkgenmessages/apiKeyControlUnsuccessfulMessage.c">
-<area shape="rect" id="node1" title="prints information about wrong arguments" alt="" coords="5,5,229,47"/>
-<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="45,95,190,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="84,169,151,196"/>
+<map id="src/msg/apiKeyControlUnsuccessfulMessage.c" name="src/msg/apiKeyControlUnsuccessfulMessage.c">
+<area shape="rect" id="node1" title="prints information about wrong arguments" alt="" coords="5,5,260,47"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="60,95,205,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="99,169,166,196"/>
 </map>

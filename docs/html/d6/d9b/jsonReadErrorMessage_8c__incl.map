@@ -1,5 +1,5 @@
-<map id="src/mkgenmessages/jsonReadErrorMessage.c" name="src/mkgenmessages/jsonReadErrorMessage.c">
-<area shape="rect" id="node1" title="prints information about curl response json read error" alt="" coords="5,5,225,47"/>
-<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="43,95,188,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="82,169,149,196"/>
+<map id="src/msg/jsonReadErrorMessage.c" name="src/msg/jsonReadErrorMessage.c">
+<area shape="rect" id="node1" title="prints information about curl response json read error" alt="" coords="5,5,243,32"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="51,80,197,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,155,157,181"/>
 </map>

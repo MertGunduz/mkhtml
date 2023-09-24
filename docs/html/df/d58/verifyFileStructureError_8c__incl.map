@@ -1,5 +1,5 @@
-<map id="src/mkgenmessages/verifyFileStructureError.c" name="src/mkgenmessages/verifyFileStructureError.c">
-<area shape="rect" id="node1" title="prints the verify function file structure availability error info" alt="" coords="5,5,203,47"/>
-<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="31,95,177,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="71,169,137,196"/>
+<map id="src/msg/verifyFileStructureError.c" name="src/msg/verifyFileStructureError.c">
+<area shape="rect" id="node1" title="prints the verify function file structure availability error info" alt="" coords="5,5,201,47"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="31,95,176,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="70,169,137,196"/>
 </map>

@@ -1,5 +1,5 @@
-<map id="src/mkgenmessages/curlErrorMessage.c" name="src/mkgenmessages/curlErrorMessage.c">
-<area shape="rect" id="node1" title="prints information about curl pointer error" alt="" coords="5,5,220,47"/>
-<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="40,95,185,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="79,169,146,196"/>
+<map id="src/msg/curlErrorMessage.c" name="src/msg/curlErrorMessage.c">
+<area shape="rect" id="node1" title="prints information about curl pointer error" alt="" coords="5,5,207,32"/>
+<area shape="rect" id="node2" href="$d3/dd9/mkgenmessages_8h.html" title="the information output library of mkhtml" alt="" coords="33,80,179,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="73,155,139,181"/>
 </map>

@@ -1,18 +1,18 @@
-<map id="src/mkgen/mkgen.h" name="src/mkgen/mkgen.h">
-<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="1323,5,1473,32"/>
+<map id="src/gen/mkgen.h" name="src/gen/mkgen.h">
+<area shape="rect" id="node1" title="the html generation library of mkhtml" alt="" coords="1194,5,1325,32"/>
 <area shape="rect" id="node2" href="$df/d61/mkhtml_8c.html" title="the main application file of mkhtml" alt="" coords="5,80,140,107"/>
-<area shape="rect" id="node3" href="$d4/d65/addcss_8c.html" title="adds inline css to the html file" alt="" coords="164,80,315,107"/>
-<area shape="rect" id="node4" href="$dd/d59/apiKeyMenu_8c.html" title="changes api key and shows the new settings configuration file" alt="" coords="339,80,524,107"/>
-<area shape="rect" id="node5" href="$d1/d2a/argVerify_8c.html" title="the control cli argument control system of mkhtml" alt="" coords="548,80,709,107"/>
-<area shape="rect" id="node6" href="$d0/d51/cssMenu_8c.html" title="changes css and shows the new settings configuration file" alt="" coords="734,80,897,107"/>
-<area shape="rect" id="node7" href="$d6/d8f/cssVerify_8c.html" title="checks the css arguments" alt="" coords="921,80,1083,107"/>
-<area shape="rect" id="node8" href="$dc/d5a/githubMenu_8c.html" title="prints the github source code information" alt="" coords="1107,80,1289,107"/>
-<area shape="rect" id="node9" href="$d6/d4d/helpMenu_8c.html" title="prints the help information" alt="" coords="1313,80,1483,107"/>
-<area shape="rect" id="node10" href="$d7/d14/htmlGen_8c.html" title="the html generator system (works with openai api)" alt="" coords="1507,80,1668,107"/>
-<area shape="rect" id="node11" href="$d9/d64/mkSettingsMenu_8c.html" title="prints information about the /home/.mkhtml/settings.txt" alt="" coords="1692,80,1907,107"/>
-<area shape="rect" id="node12" href="$da/d82/settingsDataReader_8c.html" title="reads the informationg from the /home/.mkhtml/settings.txt file" alt="" coords="1931,80,2164,107"/>
-<area shape="rect" id="node13" href="$d1/d99/structureVerify_8c.html" title="the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/...." alt="" coords="2188,80,2387,107"/>
-<area shape="rect" id="node14" href="$dd/dde/takeFileChar_8c.html" title="takes the total chars of a file" alt="" coords="2411,80,2596,107"/>
-<area shape="rect" id="node15" href="$de/d5d/versionMenu_8c.html" title="prints the mkhtml version" alt="" coords="2621,80,2810,107"/>
-<area shape="rect" id="node16" href="$dd/d18/webMenu_8c.html" title="prints information about mkhtml.org" alt="" coords="2834,80,3002,107"/>
+<area shape="rect" id="node3" href="$d4/d65/addcss_8c.html" title="adds inline css to the html file" alt="" coords="164,80,293,107"/>
+<area shape="rect" id="node4" href="$dd/d59/apiKeyMenu_8c.html" title="changes api key and shows the new settings configuration file" alt="" coords="317,80,481,107"/>
+<area shape="rect" id="node5" href="$d1/d2a/argVerify_8c.html" title="the control cli argument control system of mkhtml" alt="" coords="505,80,645,107"/>
+<area shape="rect" id="node6" href="$d0/d51/cssMenu_8c.html" title="changes css and shows the new settings configuration file" alt="" coords="670,80,811,107"/>
+<area shape="rect" id="node7" href="$d6/d8f/cssVerify_8c.html" title="checks the css arguments" alt="" coords="836,80,976,107"/>
+<area shape="rect" id="node8" href="$dc/d5a/githubMenu_8c.html" title="prints the github source code information" alt="" coords="1000,80,1161,107"/>
+<area shape="rect" id="node9" href="$d6/d4d/helpMenu_8c.html" title="prints the help information" alt="" coords="1185,80,1333,107"/>
+<area shape="rect" id="node10" href="$d7/d14/htmlGen_8c.html" title="the html generator system (works with openai api)" alt="" coords="1357,80,1497,107"/>
+<area shape="rect" id="node11" href="$d9/d64/mkSettingsMenu_8c.html" title="prints information about the /home/.mkhtml/settings.txt" alt="" coords="1522,80,1717,107"/>
+<area shape="rect" id="node12" href="$da/d82/settingsDataReader_8c.html" title="reads the informationg from the /home/.mkhtml/settings.txt file" alt="" coords="1741,80,1953,107"/>
+<area shape="rect" id="node13" href="$d1/d99/structureVerify_8c.html" title="the file structure control function for mkhtml, it checks the /home/settings.txt file and /home/...." alt="" coords="1977,80,2155,107"/>
+<area shape="rect" id="node14" href="$dd/dde/takeFileChar_8c.html" title="takes the total chars of a file" alt="" coords="2179,80,2343,107"/>
+<area shape="rect" id="node15" href="$de/d5d/versionMenu_8c.html" title="prints the mkhtml version" alt="" coords="2367,80,2535,107"/>
+<area shape="rect" id="node16" href="$dd/d18/webMenu_8c.html" title="prints information about mkhtml.org" alt="" coords="2559,80,2706,107"/>
 </map>
