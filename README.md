@@ -2,7 +2,7 @@
 
 # mkhtml
 
-mkhtml is an html document generator that works with text-davinci-003 <br>
+mkhtml is an html document generator that works with gpt <br>
 YouTube: https://youtu.be/ULvErLMKrTo
 
 ## Programming Language and Tools
