@@ -183,7 +183,7 @@ void htmlGen(char *subject)
     fclose(htmlFile);
 
     /* deleting the curl response json file */
-    //remove("mkhtml-response.json");
+    remove("mkhtml-response.json");
 
     /* creation message */
     creationMessage(htmlHeader);

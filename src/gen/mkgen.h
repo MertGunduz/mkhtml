@@ -12,7 +12,7 @@
 #define MKGEN_H
 
 #include "../mjson/mjson.h"
-#include "../mkgenmessages/mkgenmessages.h"
+#include "../msg/mkgenmessages.h"
 #include <stdlib.h>
 #include <stdbool.h>
 #include <curl/curl.h>

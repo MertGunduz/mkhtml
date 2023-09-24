@@ -8,7 +8,7 @@
  * @date 24/01/2023
 */
 
-#include "../mkgen/mkgen.h"
+#include "../gen/mkgen.h"
 
 int main(int argc, char *argv[])
 {
