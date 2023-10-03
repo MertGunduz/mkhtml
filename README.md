@@ -14,7 +14,7 @@ Build Tool: CMake
 ## Dependencies
 
 Libcurl <br>
-CMake (MIN 3.22)
+CMake (MIN 3.15)
 
 ## Installation
 
